@@ -33,6 +33,6 @@ https://api.apidirect.io
 
 ## Next Steps
 
-- Follow the [Quickstart](/docs/quickstart) guide to make your first API call
-- Learn about [Authentication](/docs/authentication)
-- Browse the [endpoint documentation](/docs/linkedin-posts) for detailed parameter and response references
+- Follow the [Quickstart](quickstart.md) guide to make your first API call
+- Learn about [Authentication](authentication.md)
+- Browse the [endpoint documentation](../endpoints/linkedin-posts.md) for detailed parameter and response references

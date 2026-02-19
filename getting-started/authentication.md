@@ -37,7 +37,7 @@ You can create and manage API keys from your [dashboard](https://apidirect.io/da
 - **Revoke** a key to immediately disable it (can be re-enabled later)
 - **Delete** a key to permanently remove it
 
-See [API Keys](/docs/api-keys) for more details on key management.
+See [API Keys](../account/api-keys.md) for more details on key management.
 
 ## Error Responses
 

@@ -60,6 +60,6 @@ for post in data["posts"]:
 
 ## What's Next
 
-- Learn about [Authentication](/docs/authentication) and managing API keys
-- Understand the [Response Format](/docs/response-format) shared across all endpoints
-- Browse the full [endpoint reference](/docs/linkedin-posts)
+- Learn about [Authentication](authentication.md) and managing API keys
+- Understand the [Response Format](../core-concepts/response-format.md) shared across all endpoints
+- Browse the full [endpoint reference](../endpoints/linkedin-posts.md)

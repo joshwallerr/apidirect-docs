@@ -38,9 +38,9 @@ A `402` means your free tier is exhausted and you need to add a payment method. 
 
 ### Rate Limits and Spending Limits (429)
 
-A `429` with `concurrency_limit_exceeded` means you have too many in-flight requests to the same endpoint. Wait for current requests to complete. See [Rate Limits](/docs/rate-limits) for details.
+A `429` with `concurrency_limit_exceeded` means you have too many in-flight requests to the same endpoint. Wait for current requests to complete. See [Rate Limits](rate-limits.md) for details.
 
-A `429` with `daily_limit_exceeded` or `monthly_limit_exceeded` means you've hit a spending cap. See [Spending Limits](/docs/spending-limits).
+A `429` with `daily_limit_exceeded` or `monthly_limit_exceeded` means you've hit a spending cap. See [Spending Limits](../account/spending-limits.md).
 
 ### Upstream Errors (502, 504)
 

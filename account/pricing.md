@@ -40,4 +40,4 @@ When your accumulated charges reach your billing threshold, your card is charged
 
 ## Adding a Payment Method
 
-To use the API beyond the free tier, add a credit or debit card in your [billing dashboard](https://apidirect.io/dashboard/billing). You can also set [spending limits](/docs/spending-limits) to control your costs.
+To use the API beyond the free tier, add a credit or debit card in your [billing dashboard](https://apidirect.io/dashboard/billing). You can also set [spending limits](spending-limits.md) to control your costs.
