@@ -16,7 +16,7 @@ API Direct is a pay-as-you-go social media API that lets you search real-time da
 All API requests are made to:
 
 ```
-https://api.apidirect.io
+https://apidirect.io
 ```
 
 ## Key Features

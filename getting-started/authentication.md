@@ -7,7 +7,7 @@ All API requests require authentication using an API key passed in the `X-API-Ke
 Include your API key in every request:
 
 ```bash
-curl "https://api.apidirect.io/v1/reddit/posts?query=test" \
+curl "https://apidirect.io/v1/reddit/posts?query=test" \
   -H "X-API-Key: ak_live_abc123..."
 ```
 
@@ -15,7 +15,7 @@ curl "https://api.apidirect.io/v1/reddit/posts?query=test" \
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/reddit/posts",
+    "https://apidirect.io/v1/reddit/posts",
     headers={"X-API-Key": "ak_live_abc123..."},
     params={"query": "test"}
 )

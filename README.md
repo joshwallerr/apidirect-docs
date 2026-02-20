@@ -4,7 +4,7 @@ Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-g
 
 Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, and web forums through a unified REST API.
 
-**Base URL:** `https://api.apidirect.io`
+**Base URL:** `https://apidirect.io`
 **Auth:** `X-API-Key` header
 **Docs:** [apidirect.io/docs](https://apidirect.io/docs)
 
@@ -46,7 +46,7 @@ Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, an
 ## Quick Example
 
 ```bash
-curl "https://api.apidirect.io/v1/reddit/posts?query=programming&page=1" \
+curl "https://apidirect.io/v1/reddit/posts?query=programming&page=1" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -54,7 +54,7 @@ curl "https://api.apidirect.io/v1/reddit/posts?query=programming&page=1" \
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/reddit/posts",
+    "https://apidirect.io/v1/reddit/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={"query": "programming", "page": 1}
 )

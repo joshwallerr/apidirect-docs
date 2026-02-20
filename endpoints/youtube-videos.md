@@ -38,7 +38,7 @@ GET /v1/youtube/posts
 ### cURL
 
 ```bash
-curl "https://api.apidirect.io/v1/youtube/posts?query=tutorial&pages=2&upload_date=this_week" \
+curl "https://apidirect.io/v1/youtube/posts?query=tutorial&pages=2&upload_date=this_week" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -48,7 +48,7 @@ curl "https://api.apidirect.io/v1/youtube/posts?query=tutorial&pages=2&upload_da
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/youtube/posts",
+    "https://apidirect.io/v1/youtube/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
         "query": "tutorial",

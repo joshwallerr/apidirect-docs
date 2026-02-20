@@ -38,7 +38,7 @@ GET /v1/linkedin/posts
 ### cURL
 
 ```bash
-curl "https://api.apidirect.io/v1/linkedin/posts?query=artificial%20intelligence&page=1&sort_by=most_recent" \
+curl "https://apidirect.io/v1/linkedin/posts?query=artificial%20intelligence&page=1&sort_by=most_recent" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -48,7 +48,7 @@ curl "https://api.apidirect.io/v1/linkedin/posts?query=artificial%20intelligence
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/linkedin/posts",
+    "https://apidirect.io/v1/linkedin/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
         "query": "artificial intelligence",

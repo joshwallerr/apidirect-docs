@@ -39,7 +39,7 @@ GET /v1/reddit/comments
 ### cURL
 
 ```bash
-curl "https://api.apidirect.io/v1/reddit/comments?query=python&pages=2&sort_by=relevance" \
+curl "https://apidirect.io/v1/reddit/comments?query=python&pages=2&sort_by=relevance" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -49,7 +49,7 @@ curl "https://api.apidirect.io/v1/reddit/comments?query=python&pages=2&sort_by=r
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/reddit/comments",
+    "https://apidirect.io/v1/reddit/comments",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
         "query": "python",

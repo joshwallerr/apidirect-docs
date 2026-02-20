@@ -10,11 +10,11 @@ Some endpoints use a `page` parameter where you request one page at a time. Each
 
 ```bash
 # Get page 1
-curl "https://api.apidirect.io/v1/reddit/posts?query=python&page=1" \
+curl "https://apidirect.io/v1/reddit/posts?query=python&page=1" \
   -H "X-API-Key: YOUR_API_KEY"
 
 # Get page 2
-curl "https://api.apidirect.io/v1/reddit/posts?query=python&page=2" \
+curl "https://apidirect.io/v1/reddit/posts?query=python&page=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -36,7 +36,7 @@ Other endpoints use a `pages` parameter that fetches multiple pages in a single 
 
 ```bash
 # Fetch 3 pages of results in one call
-curl "https://api.apidirect.io/v1/twitter/posts?query=AI&pages=3" \
+curl "https://apidirect.io/v1/twitter/posts?query=AI&pages=3" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 

@@ -39,7 +39,7 @@ GET /v1/forums/posts
 ### cURL
 
 ```bash
-curl "https://api.apidirect.io/v1/forums/posts?query=programming&time=week&country=US" \
+curl "https://apidirect.io/v1/forums/posts?query=programming&time=week&country=US" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -49,7 +49,7 @@ curl "https://api.apidirect.io/v1/forums/posts?query=programming&time=week&count
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/forums/posts",
+    "https://apidirect.io/v1/forums/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
         "query": "programming",

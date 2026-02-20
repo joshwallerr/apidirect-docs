@@ -38,7 +38,7 @@ GET /v1/instagram/posts
 ### cURL
 
 ```bash
-curl "https://api.apidirect.io/v1/instagram/posts?query=technology&pages=2" \
+curl "https://apidirect.io/v1/instagram/posts?query=technology&pages=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -48,7 +48,7 @@ curl "https://api.apidirect.io/v1/instagram/posts?query=technology&pages=2" \
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/instagram/posts",
+    "https://apidirect.io/v1/instagram/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
         "query": "technology",

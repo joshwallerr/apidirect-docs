@@ -41,7 +41,7 @@ Deleting a key permanently removes it. This cannot be undone. Any application us
 Pass your API key in the `X-API-Key` header:
 
 ```bash
-curl "https://api.apidirect.io/v1/reddit/posts?query=test" \
+curl "https://apidirect.io/v1/reddit/posts?query=test" \
   -H "X-API-Key: ak_live_7f3a9b2c1d4e5f6a8b9c0d1e2f3a4b5c"
 ```
 
@@ -49,7 +49,7 @@ curl "https://api.apidirect.io/v1/reddit/posts?query=test" \
 import requests
 
 response = requests.get(
-    "https://api.apidirect.io/v1/reddit/posts",
+    "https://apidirect.io/v1/reddit/posts",
     headers={"X-API-Key": "ak_live_7f3a9b2c1d4e5f6a8b9c0d1e2f3a4b5c"},
     params={"query": "test"}
 )
