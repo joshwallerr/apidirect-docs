@@ -29,6 +29,7 @@ GET /v1/reddit/posts
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Reddit username |
 | `posts[].source` | string | `"Reddit"` |
+| `posts[].domain` | string | `"reddit.com"` |
 | `posts[].subreddit` | string | Subreddit name |
 | `posts[].snippet` | string | Post content text |
 | `page` | integer | Current page number |
@@ -71,6 +72,7 @@ print(response.json())
       "date": "2024-01-15 14:30:00",
       "author": "redditor",
       "source": "Reddit",
+      "domain": "reddit.com",
       "subreddit": "programming",
       "snippet": "Post content..."
     }

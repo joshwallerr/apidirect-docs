@@ -26,9 +26,10 @@ GET /v1/forums/posts
 |-------|------|-------------|
 | `posts` | array | Array of matching forum posts |
 | `posts[].position` | integer | Result ranking position |
+| `posts[].rank` | integer | Result rank value |
 | `posts[].title` | string | Post or thread title |
 | `posts[].url` | string | Direct link to the post |
-| `posts[].source` | string | Forum domain name |
+| `posts[].source` | string | Source name or forum domain |
 | `posts[].domain` | string | Forum domain name |
 | `posts[].snippet` | string | Post content preview |
 | `page` | integer | Current page number |
@@ -67,6 +68,7 @@ print(response.json())
   "posts": [
     {
       "position": 1,
+      "rank": 1,
       "title": "Discussion about programming",
       "url": "https://forum.example.com/thread/...",
       "source": "forum.example.com",

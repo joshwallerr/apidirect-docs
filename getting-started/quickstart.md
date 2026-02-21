@@ -49,6 +49,7 @@ for post in data["posts"]:
       "date": "2024-06-15 10:30:00",
       "author": "dev_learner",
       "source": "Reddit",
+      "domain": "reddit.com",
       "subreddit": "learnprogramming",
       "snippet": "I've compiled a list of the best free resources..."
     }

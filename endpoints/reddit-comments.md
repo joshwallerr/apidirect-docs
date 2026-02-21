@@ -24,13 +24,15 @@ GET /v1/reddit/comments
 | Field | Type | Description |
 |-------|------|-------------|
 | `posts` | array | Array of matching comments |
-| `posts[].title` | string | Comment title (format: `u/username on r/subreddit`) |
+| `posts[].title` | string | Comment title (format: `username on subreddit`) |
 | `posts[].url` | string | Link to the parent post |
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Reddit username |
 | `posts[].source` | string | `"Reddit (Comment)"` |
+| `posts[].domain` | string | `"reddit.com"` |
 | `posts[].subreddit` | string | Subreddit name |
 | `posts[].snippet` | string | Comment content text |
+| `posts[].type` | string | `"comment"` |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -66,13 +68,15 @@ print(response.json())
 {
   "posts": [
     {
-      "title": "u/username on r/python",
+      "title": "commenter on python",
       "url": "https://reddit.com/r/python/comments/...",
       "date": "2024-01-15 14:30:00",
       "author": "commenter",
       "source": "Reddit (Comment)",
+      "domain": "reddit.com",
       "subreddit": "python",
-      "snippet": "Comment content..."
+      "snippet": "Comment content...",
+      "type": "comment"
     }
   ],
   "pages": 2,

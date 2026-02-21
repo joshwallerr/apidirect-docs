@@ -28,7 +28,8 @@ GET /v1/youtube/posts
 | `posts[].url` | string | Direct link to the video |
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Channel name |
-| `posts[].source` | string | `"YouTube"` |
+| `posts[].source` | string | `"YouTube"` or `"YouTube Shorts"` |
+| `posts[].domain` | string | `"youtube.com"` |
 | `posts[].snippet` | string | Video description text |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -70,6 +71,7 @@ print(response.json())
       "date": "2024-01-15 14:30:00",
       "author": "Channel Name",
       "source": "YouTube",
+      "domain": "youtube.com",
       "snippet": "Video description..."
     }
   ],

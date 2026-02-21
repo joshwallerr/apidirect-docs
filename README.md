@@ -33,7 +33,7 @@ Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, an
 | Reddit Comments | $0.003/page | [reddit-comments.md](endpoints/reddit-comments.md) |
 | YouTube Videos | $0.005/page | [youtube-videos.md](endpoints/youtube-videos.md) |
 | Instagram Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
-| Forum Posts | $0.008/request | [endpoints/forum-posts.md](endpoints/forum-posts.md) |
+| Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
 
 ## Account
 

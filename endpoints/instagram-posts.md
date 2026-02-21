@@ -29,6 +29,7 @@ GET /v1/instagram/posts
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Instagram username |
 | `posts[].source` | string | `"Instagram"` |
+| `posts[].domain` | string | `"instagram.com"` |
 | `posts[].snippet` | string | Post caption text |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -69,6 +70,7 @@ print(response.json())
       "date": "2024-01-15 14:30:00",
       "author": "instagramuser",
       "source": "Instagram",
+      "domain": "instagram.com",
       "snippet": "Post caption here..."
     }
   ],

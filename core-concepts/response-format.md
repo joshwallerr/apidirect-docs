@@ -13,6 +13,7 @@ All endpoints return a consistent JSON structure, making it easy to work with da
       "date": "2024-06-15 14:30:00",
       "author": "username",
       "source": "Platform Name",
+      "domain": "platform.com",
       "snippet": "Content preview or excerpt..."
     }
   ],
@@ -23,15 +24,16 @@ All endpoints return a consistent JSON structure, making it easy to work with da
 
 ## Core Fields
 
-Every post object contains these fields:
+Most post objects contain these fields:
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `title` | string | Post title or formatted heading |
 | `url` | string | Direct link to the original post |
-| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`) |
-| `author` | string | Author name or username |
+| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`). Not returned by Forum Posts. |
+| `author` | string | Author name or username. Not returned by Forum Posts. |
 | `source` | string | Platform name (e.g., "Reddit", "LinkedIn") |
+| `domain` | string | Platform domain (e.g., "reddit.com", "linkedin.com") |
 | `snippet` | string | Content text or preview |
 
 ## Pagination Fields
@@ -51,8 +53,9 @@ Some endpoints include additional fields:
 | Field | Endpoints | Description |
 |-------|-----------|-------------|
 | `subreddit` | Reddit Posts, Reddit Comments | The subreddit name |
-| `domain` | Forum Posts | The forum's domain name |
+| `type` | Reddit Comments | Content type (`"comment"`) |
 | `position` | Forum Posts | Result ranking position |
+| `rank` | Forum Posts | Result rank value |
 
 ## Full Example
 
@@ -65,6 +68,7 @@ Some endpoints include additional fields:
       "date": "2024-06-15 14:30:00",
       "author": "dev_user",
       "source": "Reddit",
+      "domain": "reddit.com",
       "subreddit": "programming",
       "snippet": "After building dozens of APIs, here are the patterns that work best..."
     },
@@ -74,6 +78,7 @@ Some endpoints include additional fields:
       "date": "2024-06-14 09:15:00",
       "author": "web_architect",
       "source": "Reddit",
+      "domain": "reddit.com",
       "subreddit": "webdev",
       "snippet": "Despite the rise of GraphQL, REST APIs continue to be the standard..."
     }

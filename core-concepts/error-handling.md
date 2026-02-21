@@ -15,15 +15,23 @@ When a request fails, API Direct returns a JSON error response with an HTTP stat
 
 | Status | Code | Description |
 |--------|------|-------------|
+| `400` | `missing_parameter` | A required parameter (e.g., `query`) was not provided |
+| `400` | `invalid_parameter` | A parameter value is invalid (too long, wrong format, etc.) |
 | `401` | `missing_api_key` | No `X-API-Key` header was provided |
 | `401` | `invalid_api_key` | The API key is invalid, revoked, or deleted |
 | `401` | `user_not_found` | The user account associated with the key was not found |
-| `402` | `payment_required` | Free tier exhausted and no payment method on file |
+| `402` | `payment_required` | Free tier limit reached for this endpoint and no payment method on file |
 | `403` | `account_blocked` | Account blocked due to payment failure |
 | `429` | `daily_limit_exceeded` | Daily spending limit reached |
 | `429` | `monthly_limit_exceeded` | Monthly spending limit reached |
 | `429` | `concurrency_limit_exceeded` | Too many concurrent requests to this endpoint |
+| `429` | `upstream_rate_limit` | The upstream data source is rate-limiting requests |
 | `502` | `upstream_error` | The data source returned an error |
+| `502` | `upstream_connection_error` | Could not connect to the upstream data source |
+| `503` | `service_error` | Service configuration error |
+| `503` | `upstream_auth_error` | Authentication with the upstream data source failed |
+| `500` | `auth_error` | An error occurred during API key validation |
+| `500` | `billing_error` | Billing configuration or processing error |
 | `504` | `upstream_timeout` | The data source did not respond in time |
 
 ## Handling Errors
@@ -38,17 +46,21 @@ A `402` means your free tier is exhausted and you need to add a payment method. 
 
 ### Rate Limits and Spending Limits (429)
 
-A `429` with `concurrency_limit_exceeded` means you have too many in-flight requests to the same endpoint. Wait for current requests to complete. See [Rate Limits](rate-limits.md) for details.
+A `429` with `concurrency_limit_exceeded` means you have too many in-flight requests to the same endpoint. Wait for current requests to complete. See [Rate Limits](/docs/rate-limits) for details.
 
-A `429` with `daily_limit_exceeded` or `monthly_limit_exceeded` means you've hit a spending cap. See [Spending Limits](../account/spending-limits.md).
+A `429` with `daily_limit_exceeded` or `monthly_limit_exceeded` means you've hit a spending cap. See [Spending Limits](/docs/spending-limits).
 
-### Upstream Errors (502, 504)
+### Parameter Errors (400)
 
-These indicate a temporary issue with the data source. Retry after a short delay (1-2 seconds). If the error persists, the platform may be experiencing an outage.
+A `400` with `missing_parameter` means you forgot a required parameter (e.g., `query`). A `400` with `invalid_parameter` means a parameter value is invalid — check the endpoint documentation for allowed values and limits.
+
+### Upstream Errors (502, 503, 504)
+
+These indicate a temporary issue with the data source. A `503` with `service_error` or `upstream_auth_error` typically resolves on its own. Retry after a short delay (1-2 seconds). If the error persists, the platform may be experiencing an outage.
 
 ## Retry Strategy
 
-For transient errors (`502`, `504`, `429`), we recommend:
+For transient errors (`502`, `504`, `429` with `concurrency_limit_exceeded` or `upstream_rate_limit`), we recommend:
 
 1. Wait 1-2 seconds before retrying
 2. Use exponential backoff for repeated failures

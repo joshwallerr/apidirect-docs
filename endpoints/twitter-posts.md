@@ -29,6 +29,7 @@ GET /v1/twitter/posts
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Twitter username |
 | `posts[].source` | string | `"Twitter (X)"` |
+| `posts[].domain` | string | `"x.com"` |
 | `posts[].snippet` | string | Tweet content text |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -70,6 +71,7 @@ print(response.json())
       "date": "2024-01-15 14:30:00",
       "author": "username",
       "source": "Twitter (X)",
+      "domain": "x.com",
       "snippet": "Tweet content here..."
     }
   ],

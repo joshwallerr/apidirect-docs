@@ -17,7 +17,9 @@ When you hit a spending limit, the API returns a `429` error:
 ```json
 {
   "error": "Daily spending limit reached",
-  "code": "daily_limit_exceeded"
+  "code": "daily_limit_exceeded",
+  "limit": 5.00,
+  "current": 4.98
 }
 ```
 
@@ -26,7 +28,9 @@ Or for monthly limits:
 ```json
 {
   "error": "Monthly spending limit reached",
-  "code": "monthly_limit_exceeded"
+  "code": "monthly_limit_exceeded",
+  "limit": 50.00,
+  "current": 49.97
 }
 ```
 

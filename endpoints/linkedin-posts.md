@@ -29,6 +29,7 @@ GET /v1/linkedin/posts
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Author name |
 | `posts[].source` | string | `"LinkedIn"` |
+| `posts[].domain` | string | `"linkedin.com"` |
 | `posts[].snippet` | string | Post content text |
 | `page` | integer | Current page number |
 | `count` | integer | Number of results returned |
@@ -70,6 +71,7 @@ print(response.json())
       "date": "2024-01-15 14:30:00",
       "author": "John Doe",
       "source": "LinkedIn",
+      "domain": "linkedin.com",
       "snippet": "Exciting developments in artificial intelligence..."
     }
   ],

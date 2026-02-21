@@ -21,7 +21,7 @@ https://apidirect.io
 
 ## Key Features
 
-**Unified response format** - Every endpoint returns the same core fields: `title`, `url`, `date`, `author`, `source`, and `snippet`. This makes it easy to work with data from multiple platforms without writing platform-specific parsing logic.
+**Unified response format** - Every endpoint returns the same core fields: `title`, `url`, `date`, `author`, `source`, `domain`, and `snippet`. This makes it easy to work with data from multiple platforms without writing platform-specific parsing logic.
 
 **Pay per request** - No monthly subscriptions or commitments. You only pay for successful API calls, with prices starting at $0.003 per request.
 
