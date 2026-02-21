@@ -5,7 +5,9 @@ Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-g
 Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, and web forums through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
+
 **Auth:** `X-API-Key` header
+
 **Docs:** [apidirect.io/docs](https://apidirect.io/docs)
 
 ---
