@@ -1,6 +1,6 @@
 # ChatGPT
 
-Use API Direct as an MCP server in ChatGPT to search social media from your conversations.
+Use API Direct as an MCP server in ChatGPT to search social media and news from your conversations.
 
 Developer Mode is required (ChatGPT Pro, Team, Enterprise, or Edu).
 
@@ -39,6 +39,7 @@ ChatGPT will automatically use the API Direct tools and display the results.
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
 | `search_forums` | Search forum posts across the web |
+| `search_news` | Search news articles from thousands of sources |
 
 ## Troubleshooting
 

@@ -1,6 +1,6 @@
 # Claude Desktop
 
-Use API Direct as an MCP server in Claude Desktop to search social media from your conversations.
+Use API Direct as an MCP server in Claude Desktop to search social media and news from your conversations.
 
 ## Option 1: Connectors (Recommended)
 
@@ -58,6 +58,7 @@ Claude will ask for permission the first time it uses a tool, then return result
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
 | `search_forums` | Search forum posts across the web |
+| `search_news` | Search news articles from thousands of sources |
 
 ## Troubleshooting
 

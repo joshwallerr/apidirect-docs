@@ -1,6 +1,6 @@
 # Introduction
 
-API Direct is a pay-as-you-go social media API that lets you search real-time data across major platforms through a single, unified interface.
+API Direct is a pay-as-you-go API that lets you search real-time data across social media and news through a single, unified interface.
 
 ## Supported Platforms
 
@@ -10,6 +10,7 @@ API Direct is a pay-as-you-go social media API that lets you search real-time da
 - **YouTube** - Search videos with date filters
 - **Instagram** - Search posts by hashtag
 - **Forums** - Search discussion boards and Q&A sites across the web
+- **News** - Search news articles from thousands of sources worldwide
 
 ## Base URL
 

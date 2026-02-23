@@ -30,8 +30,8 @@ Most post objects contain these fields:
 |-------|------|-------------|
 | `title` | string | Post title or formatted heading |
 | `url` | string | Direct link to the original post |
-| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`). Not returned by Forum Posts. |
-| `author` | string | Author name or username. Not returned by Forum Posts. |
+| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`). Not returned by Forum Posts or News Articles. |
+| `author` | string | Author name or username. Not returned by Forum Posts or News Articles (News uses `authors` array). |
 | `source` | string | Platform name (e.g., "Reddit", "LinkedIn") |
 | `domain` | string | Platform domain (e.g., "reddit.com", "linkedin.com") |
 | `snippet` | string | Content text or preview |
@@ -44,6 +44,7 @@ Depending on the endpoint, responses include either `page` (current page number)
 |-------|------|-------------|
 | `page` | integer | Current page number (used by LinkedIn, Reddit Posts, Forum Posts) |
 | `pages` | integer | Number of pages fetched (used by Twitter, Reddit Comments, YouTube, Instagram) |
+| `limit` | integer | Requested result limit (used by News Articles) |
 | `count` | integer | Total number of results returned |
 
 ## Platform-Specific Fields
@@ -56,6 +57,13 @@ Some endpoints include additional fields:
 | `type` | Reddit Comments | Content type (`"comment"`) |
 | `position` | Forum Posts | Result ranking position |
 | `rank` | Forum Posts | Result rank value |
+| `authors` | News Articles | List of author names |
+| `photo_url` | News Articles | Article photo URL |
+| `thumbnail_url` | News Articles | Article thumbnail URL |
+| `published_datetime_utc` | News Articles | Publication date and time in UTC |
+| `source_name` | News Articles | News source name |
+| `source_url` | News Articles | News source URL |
+| `source_favicon_url` | News Articles | News source favicon URL |
 
 ## Full Example
 

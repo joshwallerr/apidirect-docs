@@ -17,6 +17,7 @@ Every account gets **50 free requests per endpoint per month**. No credit card r
 | YouTube Videos | $0.005 | per page |
 | Instagram Posts | $0.006 | per page |
 | Forum Posts | $0.008 | per request |
+| News Articles | $0.008 | per request |
 
 ## How Billing Works
 

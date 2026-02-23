@@ -1,6 +1,6 @@
 # Cursor
 
-Use API Direct as an MCP server in Cursor to search social media from your editor.
+Use API Direct as an MCP server in Cursor to search social media and news from your editor.
 
 ## Setup
 
@@ -41,6 +41,7 @@ Cursor will call the appropriate tool and return the results.
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
 | `search_forums` | Search forum posts across the web |
+| `search_news` | Search news articles from thousands of sources |
 
 ## Troubleshooting
 
