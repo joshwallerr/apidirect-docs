@@ -54,7 +54,7 @@ Some endpoints include additional fields:
 | Field | Endpoints | Description |
 |-------|-----------|-------------|
 | `subreddit` | Reddit Posts, Reddit Comments | The subreddit name |
-| `type` | Reddit Comments | Content type (`"comment"`) |
+| `type` | Reddit Comments, YouTube Videos | Content type (`"comment"`) or video type (`"NORMAL"`) |
 | `position` | Forum Posts | Result ranking position |
 | `rank` | Forum Posts | Result rank value |
 | `likes` | Twitter Posts | Number of likes |
@@ -62,7 +62,7 @@ Some endpoints include additional fields:
 | `replies` | Twitter Posts | Number of replies |
 | `quotes` | Twitter Posts | Number of quote tweets |
 | `bookmarks` | Twitter Posts | Number of bookmarks |
-| `views` | Twitter Posts | Number of views (`null` when unavailable) |
+| `views` | Twitter Posts, YouTube Videos | Number of views (`null` when unavailable) |
 | `author_followers` | Twitter Posts | Author's follower count |
 | `author_verified` | Twitter Posts | Whether the author is verified |
 | `lang` | Twitter Posts | Tweet language code |
@@ -70,6 +70,12 @@ Some endpoints include additional fields:
 | `is_quote` | Twitter Posts | Whether the tweet is a quote tweet |
 | `hashtags` | Twitter Posts | Hashtags used in the tweet |
 | `user_mentions` | Twitter Posts | Usernames mentioned in the tweet |
+| `video_length` | YouTube Videos | Video duration (e.g., `"14:45"`). `null` for Shorts. |
+| `video_id` | YouTube Videos | YouTube video ID |
+| `channel_id` | YouTube Videos | YouTube channel ID |
+| `is_live` | YouTube Videos | Whether the video is live content |
+| `keywords` | YouTube Videos | Video keywords/tags |
+| `thumbnail` | YouTube Videos | URL to the highest resolution thumbnail |
 | `authors` | News Articles | List of author names |
 | `photo_url` | News Articles | Article photo URL |
 | `thumbnail_url` | News Articles | Article thumbnail URL |
