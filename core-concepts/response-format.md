@@ -57,19 +57,26 @@ Some endpoints include additional fields:
 | `type` | Reddit Comments, YouTube Videos | Content type (`"comment"`) or video type (`"NORMAL"`) |
 | `position` | Forum Posts | Result ranking position |
 | `rank` | Forum Posts | Result rank value |
-| `likes` | Twitter Posts | Number of likes |
+| `likes` | Twitter Posts, Instagram Posts | Number of likes |
 | `retweets` | Twitter Posts | Number of retweets |
 | `replies` | Twitter Posts | Number of replies |
 | `quotes` | Twitter Posts | Number of quote tweets |
 | `bookmarks` | Twitter Posts | Number of bookmarks |
-| `views` | Twitter Posts, YouTube Videos | Number of views (`null` when unavailable) |
+| `views` | Twitter Posts, YouTube Videos, Instagram Posts | Number of views (`null` when unavailable) |
 | `author_followers` | Twitter Posts | Author's follower count |
-| `author_verified` | Twitter Posts | Whether the author is verified |
+| `author_verified` | Twitter Posts, Instagram Posts | Whether the author is verified |
 | `lang` | Twitter Posts | Tweet language code |
 | `is_reply` | Twitter Posts | Whether the tweet is a reply |
 | `is_quote` | Twitter Posts | Whether the tweet is a quote tweet |
-| `hashtags` | Twitter Posts | Hashtags used in the tweet |
+| `hashtags` | Twitter Posts, Instagram Posts | Hashtags used in the post |
 | `user_mentions` | Twitter Posts | Usernames mentioned in the tweet |
+| `comments` | Instagram Posts | Number of comments |
+| `shares` | Instagram Posts | Number of shares |
+| `reposts` | Instagram Posts | Number of reposts |
+| `is_video` | Instagram Posts | Whether the post is a video |
+| `media_type` | Instagram Posts | Post type (e.g., `"feed"`, `"clips"`) |
+| `author_name` | Instagram Posts | Author's display name |
+| `mentions` | Instagram Posts | Usernames mentioned in the caption |
 | `video_length` | YouTube Videos | Video duration (e.g., `"14:45"`). `null` for Shorts. |
 | `video_id` | YouTube Videos | YouTube video ID |
 | `channel_id` | YouTube Videos | YouTube channel ID |
