@@ -57,6 +57,19 @@ Some endpoints include additional fields:
 | `type` | Reddit Comments | Content type (`"comment"`) |
 | `position` | Forum Posts | Result ranking position |
 | `rank` | Forum Posts | Result rank value |
+| `likes` | Twitter Posts | Number of likes |
+| `retweets` | Twitter Posts | Number of retweets |
+| `replies` | Twitter Posts | Number of replies |
+| `quotes` | Twitter Posts | Number of quote tweets |
+| `bookmarks` | Twitter Posts | Number of bookmarks |
+| `views` | Twitter Posts | Number of views (`null` when unavailable) |
+| `author_followers` | Twitter Posts | Author's follower count |
+| `author_verified` | Twitter Posts | Whether the author is verified |
+| `lang` | Twitter Posts | Tweet language code |
+| `is_reply` | Twitter Posts | Whether the tweet is a reply |
+| `is_quote` | Twitter Posts | Whether the tweet is a quote tweet |
+| `hashtags` | Twitter Posts | Hashtags used in the tweet |
+| `user_mentions` | Twitter Posts | Usernames mentioned in the tweet |
 | `authors` | News Articles | List of author names |
 | `photo_url` | News Articles | Article photo URL |
 | `thumbnail_url` | News Articles | Article thumbnail URL |

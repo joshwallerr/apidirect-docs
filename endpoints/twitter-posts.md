@@ -1,6 +1,6 @@
 # Twitter Posts
 
-Search Twitter/X posts by keyword. Returns tweet content, author username, URL, and publication date. Supports fetching multiple pages in a single API call.
+Search Twitter/X posts by keyword. Returns tweet content, author username, URL, publication date, and engagement metrics (likes, retweets, replies, views, and more). Supports fetching multiple pages in a single API call.
 
 ## Endpoint
 
@@ -31,6 +31,19 @@ GET /v1/twitter/posts
 | `posts[].source` | string | `"Twitter (X)"` |
 | `posts[].domain` | string | `"x.com"` |
 | `posts[].snippet` | string | Tweet content text |
+| `posts[].likes` | integer | Number of likes |
+| `posts[].retweets` | integer | Number of retweets |
+| `posts[].replies` | integer | Number of replies |
+| `posts[].quotes` | integer | Number of quote tweets |
+| `posts[].bookmarks` | integer | Number of bookmarks |
+| `posts[].views` | integer/null | Number of views (`null` when unavailable) |
+| `posts[].author_followers` | integer | Author's follower count |
+| `posts[].author_verified` | boolean | Whether the author is verified (blue checkmark) |
+| `posts[].lang` | string | Tweet language code (e.g., `"en"`) |
+| `posts[].is_reply` | boolean | Whether the tweet is a reply |
+| `posts[].is_quote` | boolean | Whether the tweet is a quote tweet |
+| `posts[].hashtags` | string[] | Hashtags used in the tweet |
+| `posts[].user_mentions` | string[] | Usernames mentioned in the tweet |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -72,7 +85,20 @@ print(response.json())
       "author": "username",
       "source": "Twitter (X)",
       "domain": "x.com",
-      "snippet": "Tweet content here..."
+      "snippet": "Tweet content here...",
+      "likes": 142,
+      "retweets": 38,
+      "replies": 12,
+      "quotes": 5,
+      "bookmarks": 23,
+      "views": 18420,
+      "author_followers": 5243,
+      "author_verified": false,
+      "lang": "en",
+      "is_reply": false,
+      "is_quote": false,
+      "hashtags": ["AI", "MachineLearning"],
+      "user_mentions": ["OpenAI"]
     }
   ],
   "pages": 2,
