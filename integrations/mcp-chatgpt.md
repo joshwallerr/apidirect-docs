@@ -38,6 +38,7 @@ ChatGPT will automatically use the API Direct tools and display the results.
 | `search_reddit_comments` | Search Reddit comments |
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
+| `search_tiktok` | Search TikTok videos |
 | `search_forums` | Search forum posts across the web |
 | `search_news` | Search news articles from thousands of sources |
 

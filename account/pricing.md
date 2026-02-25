@@ -16,6 +16,7 @@ Every account gets **50 free requests per endpoint per month**. No credit card r
 | Reddit Comments | $0.003 | per page |
 | YouTube Videos | $0.005 | per page |
 | Instagram Posts | $0.006 | per page |
+| TikTok Videos | $0.006 | per page |
 | Forum Posts | $0.008 | per request |
 | News Articles | $0.008 | per request |
 
@@ -23,7 +24,7 @@ Every account gets **50 free requests per endpoint per month**. No credit card r
 
 - You are only charged for **successful requests** (2xx responses)
 - Failed requests (4xx, 5xx) are not billed
-- For multi-page endpoints (Twitter, Reddit Comments, YouTube, Instagram), you are billed per page fetched
+- For multi-page endpoints (Twitter, Reddit Comments, YouTube, Instagram, TikTok), you are billed per page fetched
 - Charges accumulate and are billed when your balance reaches a threshold
 
 ## Trust Levels

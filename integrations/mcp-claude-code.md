@@ -10,7 +10,7 @@ Run this command, replacing `YOUR_API_KEY` with your key from the [API Keys](htt
 claude mcp add --transport http apidirect https://apidirect.io/mcp?token=YOUR_API_KEY
 ```
 
-That's it. Claude Code can now search LinkedIn, Twitter/X, Reddit, YouTube, Instagram, forums, and news articles.
+That's it. Claude Code can now search LinkedIn, Twitter/X, Reddit, YouTube, Instagram, TikTok, forums, and news articles.
 
 ## Usage
 
@@ -34,6 +34,7 @@ Claude Code will automatically call the right tool and return results.
 | `search_reddit_comments` | Search Reddit comments |
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
+| `search_tiktok` | Search TikTok videos |
 | `search_forums` | Search forum posts across the web |
 | `search_news` | Search news articles from thousands of sources |
 

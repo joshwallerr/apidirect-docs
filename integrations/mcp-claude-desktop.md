@@ -57,6 +57,7 @@ Claude will ask for permission the first time it uses a tool, then return result
 | `search_reddit_comments` | Search Reddit comments |
 | `search_youtube` | Search YouTube videos |
 | `search_instagram` | Search Instagram posts by hashtag |
+| `search_tiktok` | Search TikTok videos |
 | `search_forums` | Search forum posts across the web |
 | `search_news` | Search news articles from thousands of sources |
 

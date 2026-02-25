@@ -30,7 +30,7 @@ If you exceed the concurrency limit, you'll receive a `429` status code:
 
 **Queue your requests** - If you need to make many requests, implement a queue that limits concurrency to 3 per endpoint.
 
-**Use the `pages` parameter** - Endpoints like Twitter, YouTube, and Instagram support fetching multiple pages in a single request, reducing the total number of API calls needed.
+**Use the `pages` parameter** - Endpoints like Twitter, YouTube, Instagram, and TikTok support fetching multiple pages in a single request, reducing the total number of API calls needed.
 
 **Spread across endpoints** - Concurrency limits are per-endpoint, so requests to different endpoints don't count against each other.
 

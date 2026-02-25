@@ -43,7 +43,7 @@ Depending on the endpoint, responses include either `page` (current page number)
 | Field | Type | Description |
 |-------|------|-------------|
 | `page` | integer | Current page number (used by LinkedIn, Reddit Posts, Forum Posts) |
-| `pages` | integer | Number of pages fetched (used by Twitter, Reddit Comments, YouTube, Instagram) |
+| `pages` | integer | Number of pages fetched (used by Twitter, Reddit Comments, YouTube, Instagram, TikTok) |
 | `limit` | integer | Requested result limit (used by News Articles) |
 | `count` | integer | Total number of results returned |
 
@@ -57,11 +57,12 @@ Some endpoints include additional fields:
 | `type` | Reddit Comments, YouTube Videos | Content type (`"comment"`) or video type (`"NORMAL"`) |
 | `position` | Forum Posts | Result ranking position |
 | `rank` | Forum Posts | Result rank value |
-| `likes` | Twitter Posts, Instagram Posts | Number of likes |
+| `likes` | Twitter Posts, Instagram Posts, TikTok Videos | Number of likes |
 | `retweets` | Twitter Posts | Number of retweets |
 | `replies` | Twitter Posts | Number of replies |
 | `quotes` | Twitter Posts | Number of quote tweets |
 | `bookmarks` | Twitter Posts | Number of bookmarks |
+| `play_count` | TikTok Videos | Number of plays/views |
 | `views` | Twitter Posts, YouTube Videos, Instagram Posts | Number of views (`null` when unavailable) |
 | `author_followers` | Twitter Posts | Author's follower count |
 | `author_verified` | Twitter Posts, Instagram Posts | Whether the author is verified |
@@ -70,12 +71,15 @@ Some endpoints include additional fields:
 | `is_quote` | Twitter Posts | Whether the tweet is a quote tweet |
 | `hashtags` | Twitter Posts, Instagram Posts | Hashtags used in the post |
 | `user_mentions` | Twitter Posts | Usernames mentioned in the tweet |
-| `comments` | Instagram Posts | Number of comments |
-| `shares` | Instagram Posts | Number of shares |
+| `comments` | Instagram Posts, TikTok Videos | Number of comments |
+| `shares` | Instagram Posts, TikTok Videos | Number of shares |
 | `reposts` | Instagram Posts | Number of reposts |
 | `is_video` | Instagram Posts | Whether the post is a video |
 | `media_type` | Instagram Posts | Post type (e.g., `"feed"`, `"clips"`) |
-| `author_name` | Instagram Posts | Author's display name |
+| `downloads` | TikTok Videos | Number of downloads |
+| `duration` | TikTok Videos | Video duration in seconds |
+| `is_ad` | TikTok Videos | Whether the video is an ad |
+| `author_name` | Instagram Posts, TikTok Videos | Author's display name |
 | `mentions` | Instagram Posts | Usernames mentioned in the caption |
 | `video_length` | YouTube Videos | Video duration (e.g., `"14:45"`). `null` for Shorts. |
 | `video_id` | YouTube Videos | YouTube video ID |
@@ -83,6 +87,10 @@ Some endpoints include additional fields:
 | `is_live` | YouTube Videos | Whether the video is live content |
 | `keywords` | YouTube Videos | Video keywords/tags |
 | `thumbnail` | YouTube Videos | URL to the highest resolution thumbnail |
+| `author_avatar` | TikTok Videos | Author's avatar URL |
+| `cover` | TikTok Videos | Video cover/thumbnail URL |
+| `music_title` | TikTok Videos | Title of the music used |
+| `music_author` | TikTok Videos | Author of the music used |
 | `authors` | News Articles | List of author names |
 | `photo_url` | News Articles | Article photo URL |
 | `thumbnail_url` | News Articles | Article thumbnail URL |

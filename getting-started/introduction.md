@@ -9,6 +9,7 @@ API Direct is a pay-as-you-go API that lets you search real-time data across soc
 - **Reddit** - Search posts and comments
 - **YouTube** - Search videos with date filters
 - **Instagram** - Search posts by hashtag
+- **TikTok** - Search videos with engagement metrics
 - **Forums** - Search discussion boards and Q&A sites across the web
 - **News** - Search news articles from thousands of sources worldwide
 
