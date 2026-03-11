@@ -2,7 +2,7 @@
 
 Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media API.
 
-Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, and web forums through a unified REST API.
+Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, and web forums through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
 
@@ -27,15 +27,72 @@ Search real-time data across LinkedIn, Twitter/X, Reddit, YouTube, Instagram, an
 
 ## Endpoints
 
+### LinkedIn
+
 | Endpoint | Price | Docs |
 |----------|-------|------|
-| LinkedIn Posts | $0.006/request | [linkedin-posts.md](endpoints/linkedin-posts.md) |
-| Twitter Posts | $0.006/page | [twitter-posts.md](endpoints/twitter-posts.md) |
-| Reddit Posts | $0.003/request | [reddit-posts.md](endpoints/reddit-posts.md) |
-| Reddit Comments | $0.003/page | [reddit-comments.md](endpoints/reddit-comments.md) |
+| Search Posts | $0.006/request | [linkedin-posts.md](endpoints/linkedin-posts.md) |
+| Post Details | $0.006/request | [linkedin-post.md](endpoints/linkedin-post.md) |
+| Company Details | $0.006/request | [linkedin-company.md](endpoints/linkedin-company.md) |
+| Company Posts | $0.006/request | [linkedin-company-posts.md](endpoints/linkedin-company-posts.md) |
+
+### Twitter/X
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.006/page | [twitter-posts.md](endpoints/twitter-posts.md) |
+| User Profile | $0.006/request | [twitter-user.md](endpoints/twitter-user.md) |
+| User Tweets | $0.006/page | [twitter-user-tweets.md](endpoints/twitter-user-tweets.md) |
+| User Followers | $0.006/page | [twitter-user-followers.md](endpoints/twitter-user-followers.md) |
+| User Following | $0.006/page | [twitter-user-following.md](endpoints/twitter-user-following.md) |
+| Verified Followers | $0.006/page | [twitter-user-verified-followers.md](endpoints/twitter-user-verified-followers.md) |
+| User Replies | $0.006/page | [twitter-user-replies.md](endpoints/twitter-user-replies.md) |
+| Tweet Details | $0.006/request | [twitter-tweet.md](endpoints/twitter-tweet.md) |
+| Tweet Retweets | $0.006/page | [twitter-tweet-retweets.md](endpoints/twitter-tweet-retweets.md) |
+| Tweet Quotes | $0.006/page | [twitter-tweet-quotes.md](endpoints/twitter-tweet-quotes.md) |
+| Tweet Comments | $0.006/page | [twitter-tweet-comments.md](endpoints/twitter-tweet-comments.md) |
+| Trends | $0.006/request | [twitter-trends.md](endpoints/twitter-trends.md) |
+
+### Facebook
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Page Details | $0.008/request | [facebook-page-details.md](endpoints/facebook-page-details.md) |
+| Page Posts | $0.008/page | [facebook-page-posts.md](endpoints/facebook-page-posts.md) |
+| Page Photos | $0.008/page | [facebook-page-photos.md](endpoints/facebook-page-photos.md) |
+| Page Videos | $0.008/page | [facebook-page-videos.md](endpoints/facebook-page-videos.md) |
+| Page Reels | $0.008/page | [facebook-page-reels.md](endpoints/facebook-page-reels.md) |
+| Page Reviews | $0.008/page | [facebook-page-reviews.md](endpoints/facebook-page-reviews.md) |
+| Group Details | $0.008/request | [facebook-group-details.md](endpoints/facebook-group-details.md) |
+| Group Posts | $0.008/page | [facebook-group-posts.md](endpoints/facebook-group-posts.md) |
+| Search Group Posts | $0.008/page | [facebook-group-search.md](endpoints/facebook-group-search.md) |
+| Search Posts | $0.008/page | [facebook-search-posts.md](endpoints/facebook-search-posts.md) |
+| Search Pages | $0.008/page | [facebook-search-pages.md](endpoints/facebook-search-pages.md) |
+| Search Videos | $0.008/page | [facebook-search-videos.md](endpoints/facebook-search-videos.md) |
+
+### Reddit
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.003/request | [reddit-posts.md](endpoints/reddit-posts.md) |
+| Search Comments | $0.003/page | [reddit-comments.md](endpoints/reddit-comments.md) |
+
+### Other Platforms
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
 | YouTube Videos | $0.005/page | [youtube-videos.md](endpoints/youtube-videos.md) |
 | Instagram Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
+| TikTok Videos | $0.006/page | [tiktok-videos.md](endpoints/tiktok-videos.md) |
 | Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
+| News Articles | $0.008/request | [news-articles.md](endpoints/news-articles.md) |
+
+## Integrations (MCP)
+
+- [Claude Code](integrations/mcp-claude-code.md) — Terminal setup via `claude mcp add`
+- [Claude Desktop](integrations/mcp-claude-desktop.md) — Connectors or config file setup
+- [ChatGPT](integrations/mcp-chatgpt.md) — Developer Mode setup
+- [Cursor](integrations/mcp-cursor.md) — `.cursor/mcp.json` setup
 
 ## Account
 

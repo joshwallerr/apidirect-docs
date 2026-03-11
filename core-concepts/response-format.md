@@ -49,55 +49,21 @@ Depending on the endpoint, responses include either `page` (current page number)
 
 ## Platform-Specific Fields
 
-Some endpoints include additional fields:
+Many endpoints include additional fields beyond the core set above. Common examples:
 
-| Field | Endpoints | Description |
-|-------|-----------|-------------|
-| `subreddit` | Reddit Posts, Reddit Comments | The subreddit name |
-| `type` | Reddit Comments, YouTube Videos | Content type (`"comment"`) or video type (`"NORMAL"`) |
-| `position` | Forum Posts | Result ranking position |
-| `rank` | Forum Posts | Result rank value |
-| `likes` | Twitter Posts, Instagram Posts, TikTok Videos | Number of likes |
-| `retweets` | Twitter Posts | Number of retweets |
-| `replies` | Twitter Posts | Number of replies |
-| `quotes` | Twitter Posts | Number of quote tweets |
-| `bookmarks` | Twitter Posts | Number of bookmarks |
-| `play_count` | TikTok Videos | Number of plays/views |
-| `views` | Twitter Posts, YouTube Videos, Instagram Posts | Number of views (`null` when unavailable) |
-| `author_followers` | Twitter Posts | Author's follower count |
-| `author_verified` | Twitter Posts, Instagram Posts | Whether the author is verified |
-| `lang` | Twitter Posts | Tweet language code |
-| `is_reply` | Twitter Posts | Whether the tweet is a reply |
-| `is_quote` | Twitter Posts | Whether the tweet is a quote tweet |
-| `hashtags` | Twitter Posts, Instagram Posts | Hashtags used in the post |
-| `user_mentions` | Twitter Posts | Usernames mentioned in the tweet |
-| `comments` | Instagram Posts, TikTok Videos | Number of comments |
-| `shares` | Instagram Posts, TikTok Videos | Number of shares |
-| `reposts` | Instagram Posts | Number of reposts |
-| `is_video` | Instagram Posts | Whether the post is a video |
-| `media_type` | Instagram Posts | Post type (e.g., `"feed"`, `"clips"`) |
-| `downloads` | TikTok Videos | Number of downloads |
-| `duration` | TikTok Videos | Video duration in seconds |
-| `is_ad` | TikTok Videos | Whether the video is an ad |
-| `author_name` | Instagram Posts, TikTok Videos | Author's display name |
-| `mentions` | Instagram Posts | Usernames mentioned in the caption |
-| `video_length` | YouTube Videos | Video duration (e.g., `"14:45"`). `null` for Shorts. |
-| `video_id` | YouTube Videos | YouTube video ID |
-| `channel_id` | YouTube Videos | YouTube channel ID |
-| `is_live` | YouTube Videos | Whether the video is live content |
-| `keywords` | YouTube Videos | Video keywords/tags |
-| `thumbnail` | YouTube Videos | URL to the highest resolution thumbnail |
-| `author_avatar` | TikTok Videos | Author's avatar URL |
-| `cover` | TikTok Videos | Video cover/thumbnail URL |
-| `music_title` | TikTok Videos | Title of the music used |
-| `music_author` | TikTok Videos | Author of the music used |
-| `authors` | News Articles | List of author names |
-| `photo_url` | News Articles | Article photo URL |
-| `thumbnail_url` | News Articles | Article thumbnail URL |
-| `published_datetime_utc` | News Articles | Publication date and time in UTC |
-| `source_name` | News Articles | News source name |
-| `source_url` | News Articles | News source URL |
-| `source_favicon_url` | News Articles | News source favicon URL |
+| Field | Description |
+|-------|-------------|
+| `likes` | Number of likes (Twitter, Instagram, TikTok) |
+| `views` | Number of views (Twitter, YouTube, Instagram) |
+| `comments` | Number of comments (Instagram, TikTok) |
+| `shares` | Number of shares (Instagram, TikTok) |
+| `hashtags` | Hashtags used in the post (Twitter, Instagram) |
+| `subreddit` | Subreddit name (Reddit) |
+| `thumbnail` | Thumbnail URL (YouTube, TikTok) |
+| `reactions_count` | Number of reactions (Facebook) |
+| `cursor` | Pagination cursor for next page (Facebook, Twitter) |
+
+Each endpoint's documentation page includes the full list of fields returned. See the [endpoint docs](/docs/linkedin-posts) for complete response schemas.
 
 ## Full Example
 

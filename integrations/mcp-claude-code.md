@@ -10,7 +10,7 @@ Run this command, replacing `YOUR_API_KEY` with your key from the [API Keys](htt
 claude mcp add --transport http apidirect https://apidirect.io/mcp?token=YOUR_API_KEY
 ```
 
-That's it. Claude Code can now search LinkedIn, Twitter/X, Reddit, YouTube, Instagram, TikTok, forums, and news articles.
+That's it. Claude Code can now search LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, forums, and news articles.
 
 ## Usage
 
@@ -19,6 +19,9 @@ Ask Claude Code to search any supported platform. For example:
 - "Search LinkedIn for posts about AI agents"
 - "Find recent Reddit discussions about React Server Components"
 - "Search Twitter for posts about the latest OpenAI release"
+- "Get @elonmusk's Twitter profile"
+- "Show me the latest tweets from @OpenAI"
+- "What's trending on Twitter right now?"
 - "Find YouTube videos about MCP servers"
 - "Search news for articles about climate policy"
 
@@ -26,17 +29,7 @@ Claude Code will automatically call the right tool and return results.
 
 ## Available Tools
 
-| Tool | Description |
-|------|------------|
-| `search_linkedin` | Search LinkedIn posts |
-| `search_twitter` | Search Twitter/X posts |
-| `search_reddit` | Search Reddit posts |
-| `search_reddit_comments` | Search Reddit comments |
-| `search_youtube` | Search YouTube videos |
-| `search_instagram` | Search Instagram posts by hashtag |
-| `search_tiktok` | Search TikTok videos |
-| `search_forums` | Search forum posts across the web |
-| `search_news` | Search news articles from thousands of sources |
+All API Direct endpoints are available as MCP tools. This includes search across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, forums, and news — as well as platform-specific tools for Twitter user profiles, Facebook pages/groups, and more. See the [endpoint documentation](/docs/linkedin-posts) for the full list.
 
 ## Removing the Server
 

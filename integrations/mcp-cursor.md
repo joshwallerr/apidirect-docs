@@ -32,17 +32,7 @@ Cursor will call the appropriate tool and return the results.
 
 ## Available Tools
 
-| Tool | Description |
-|------|------------|
-| `search_linkedin` | Search LinkedIn posts |
-| `search_twitter` | Search Twitter/X posts |
-| `search_reddit` | Search Reddit posts |
-| `search_reddit_comments` | Search Reddit comments |
-| `search_youtube` | Search YouTube videos |
-| `search_instagram` | Search Instagram posts by hashtag |
-| `search_tiktok` | Search TikTok videos |
-| `search_forums` | Search forum posts across the web |
-| `search_news` | Search news articles from thousands of sources |
+All API Direct endpoints are available as MCP tools. This includes search across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, forums, and news — as well as platform-specific tools for Twitter user profiles, Facebook pages/groups, and more. See the [endpoint documentation](/docs/linkedin-posts) for the full list.
 
 ## Troubleshooting
 

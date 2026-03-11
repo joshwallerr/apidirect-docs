@@ -6,6 +6,7 @@ API Direct is a pay-as-you-go API that lets you search real-time data across soc
 
 - **LinkedIn** - Search posts and articles
 - **Twitter / X** - Search tweets and threads
+- **Facebook** - Pages, groups, posts, photos, videos, reels, and reviews
 - **Reddit** - Search posts and comments
 - **YouTube** - Search videos with date filters
 - **Instagram** - Search posts by hashtag
@@ -35,6 +36,6 @@ https://apidirect.io
 
 ## Next Steps
 
-- Follow the [Quickstart](quickstart.md) guide to make your first API call
-- Learn about [Authentication](authentication.md)
-- Browse the [endpoint documentation](../endpoints/linkedin-posts.md) for detailed parameter and response references
+- Follow the [Quickstart](/docs/quickstart) guide to make your first API call
+- Learn about [Authentication](/docs/authentication)
+- Browse the [endpoint documentation](/docs/linkedin-posts) for detailed parameter and response references

@@ -1,0 +1,3271 @@
+[
+  {
+    "name": "Worldwide",
+    "woeid": 1,
+    "country": "",
+    "countryCode": null,
+    "placeType": "Supername"
+  },
+  {
+    "name": "Algeria",
+    "woeid": 23424740,
+    "country": "Algeria",
+    "countryCode": "DZ",
+    "placeType": "Country"
+  },
+  {
+    "name": "Algiers",
+    "woeid": 1253079,
+    "country": "Algeria",
+    "countryCode": "DZ",
+    "placeType": "Town"
+  },
+  {
+    "name": "Argentina",
+    "woeid": 23424747,
+    "country": "Argentina",
+    "countryCode": "AR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Buenos Aires",
+    "woeid": 468739,
+    "country": "Argentina",
+    "countryCode": "AR",
+    "placeType": "Town"
+  },
+  {
+    "name": "C\u00f3rdoba",
+    "woeid": 466861,
+    "country": "Argentina",
+    "countryCode": "AR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mendoza",
+    "woeid": 332471,
+    "country": "Argentina",
+    "countryCode": "AR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rosario",
+    "woeid": 466862,
+    "country": "Argentina",
+    "countryCode": "AR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Adelaide",
+    "woeid": 1099805,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Australia",
+    "woeid": 23424748,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Country"
+  },
+  {
+    "name": "Brisbane",
+    "woeid": 1100661,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Canberra",
+    "woeid": 1100968,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Darwin",
+    "woeid": 1101597,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Melbourne",
+    "woeid": 1103816,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Perth",
+    "woeid": 1098081,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sydney",
+    "woeid": 1105779,
+    "country": "Australia",
+    "countryCode": "AU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Austria",
+    "woeid": 23424750,
+    "country": "Austria",
+    "countryCode": "AT",
+    "placeType": "Country"
+  },
+  {
+    "name": "Vienna",
+    "woeid": 551801,
+    "country": "Austria",
+    "countryCode": "AT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bahrain",
+    "woeid": 23424753,
+    "country": "Bahrain",
+    "countryCode": "BH",
+    "placeType": "Country"
+  },
+  {
+    "name": "Belarus",
+    "woeid": 23424765,
+    "country": "Belarus",
+    "countryCode": "BY",
+    "placeType": "Country"
+  },
+  {
+    "name": "Brest",
+    "woeid": 824382,
+    "country": "Belarus",
+    "countryCode": "BY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Gomel",
+    "woeid": 825978,
+    "country": "Belarus",
+    "countryCode": "BY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Grodno",
+    "woeid": 825848,
+    "country": "Belarus",
+    "countryCode": "BY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Minsk",
+    "woeid": 834463,
+    "country": "Belarus",
+    "countryCode": "BY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Belgium",
+    "woeid": 23424757,
+    "country": "Belgium",
+    "countryCode": "BE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Belo Horizonte",
+    "woeid": 455821,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bel\u00e9m",
+    "woeid": 455820,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bras\u00edlia",
+    "woeid": 455819,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Brazil",
+    "woeid": 23424768,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Campinas",
+    "woeid": 455828,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Curitiba",
+    "woeid": 455822,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Fortaleza",
+    "woeid": 455830,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Goi\u00e2nia",
+    "woeid": 455831,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Guarulhos",
+    "woeid": 455867,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Manaus",
+    "woeid": 455833,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Porto Alegre",
+    "woeid": 455823,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Recife",
+    "woeid": 455824,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "woeid": 455825,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Salvador",
+    "woeid": 455826,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "S\u00e3o Lu\u00eds",
+    "woeid": 455834,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "S\u00e3o Paulo",
+    "woeid": 455827,
+    "country": "Brazil",
+    "countryCode": "BR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Calgary",
+    "woeid": 8775,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Canada",
+    "woeid": 23424775,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Edmonton",
+    "woeid": 8676,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Montreal",
+    "woeid": 3534,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ottawa",
+    "woeid": 3369,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Quebec",
+    "woeid": 3444,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Toronto",
+    "woeid": 4118,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Vancouver",
+    "woeid": 9807,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Winnipeg",
+    "woeid": 2972,
+    "country": "Canada",
+    "countryCode": "CA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Chile",
+    "woeid": 23424782,
+    "country": "Chile",
+    "countryCode": "CL",
+    "placeType": "Country"
+  },
+  {
+    "name": "Concepcion",
+    "woeid": 349860,
+    "country": "Chile",
+    "countryCode": "CL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Santiago",
+    "woeid": 349859,
+    "country": "Chile",
+    "countryCode": "CL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Valparaiso",
+    "woeid": 349861,
+    "country": "Chile",
+    "countryCode": "CL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Barranquilla",
+    "woeid": 368151,
+    "country": "Colombia",
+    "countryCode": "CO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bogot\u00e1",
+    "woeid": 368148,
+    "country": "Colombia",
+    "countryCode": "CO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cali",
+    "woeid": 368149,
+    "country": "Colombia",
+    "countryCode": "CO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Colombia",
+    "woeid": 23424787,
+    "country": "Colombia",
+    "countryCode": "CO",
+    "placeType": "Country"
+  },
+  {
+    "name": "Medell\u00edn",
+    "woeid": 368150,
+    "country": "Colombia",
+    "countryCode": "CO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Denmark",
+    "woeid": 23424796,
+    "country": "Denmark",
+    "countryCode": "DK",
+    "placeType": "Country"
+  },
+  {
+    "name": "Dominican Republic",
+    "woeid": 23424800,
+    "country": "Dominican Republic",
+    "countryCode": "DO",
+    "placeType": "Country"
+  },
+  {
+    "name": "Santo Domingo",
+    "woeid": 76456,
+    "country": "Dominican Republic",
+    "countryCode": "DO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ecuador",
+    "woeid": 23424801,
+    "country": "Ecuador",
+    "countryCode": "EC",
+    "placeType": "Country"
+  },
+  {
+    "name": "Guayaquil",
+    "woeid": 375733,
+    "country": "Ecuador",
+    "countryCode": "EC",
+    "placeType": "Town"
+  },
+  {
+    "name": "Quito",
+    "woeid": 375732,
+    "country": "Ecuador",
+    "countryCode": "EC",
+    "placeType": "Town"
+  },
+  {
+    "name": "Alexandria",
+    "woeid": 1522006,
+    "country": "Egypt",
+    "countryCode": "EG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cairo",
+    "woeid": 1521894,
+    "country": "Egypt",
+    "countryCode": "EG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Egypt",
+    "woeid": 23424802,
+    "country": "Egypt",
+    "countryCode": "EG",
+    "placeType": "Country"
+  },
+  {
+    "name": "Giza",
+    "woeid": 1521643,
+    "country": "Egypt",
+    "countryCode": "EG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bordeaux",
+    "woeid": 580778,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "France",
+    "woeid": 23424819,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Lille",
+    "woeid": 608105,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lyon",
+    "woeid": 609125,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Marseille",
+    "woeid": 610264,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Montpellier",
+    "woeid": 612977,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nantes",
+    "woeid": 613858,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Paris",
+    "woeid": 615702,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rennes",
+    "woeid": 619163,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Strasbourg",
+    "woeid": 627791,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Toulouse",
+    "woeid": 628886,
+    "country": "France",
+    "countryCode": "FR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Berlin",
+    "woeid": 638242,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bremen",
+    "woeid": 641142,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cologne",
+    "woeid": 667931,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dortmund",
+    "woeid": 645458,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dresden",
+    "woeid": 645686,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dusseldorf",
+    "woeid": 646099,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Essen",
+    "woeid": 648820,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Frankfurt",
+    "woeid": 650272,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Germany",
+    "woeid": 23424829,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Hamburg",
+    "woeid": 656958,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Leipzig",
+    "woeid": 671072,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Munich",
+    "woeid": 676757,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Stuttgart",
+    "woeid": 698064,
+    "country": "Germany",
+    "countryCode": "DE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Accra",
+    "woeid": 1326075,
+    "country": "Ghana",
+    "countryCode": "GH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ghana",
+    "woeid": 23424824,
+    "country": "Ghana",
+    "countryCode": "GH",
+    "placeType": "Country"
+  },
+  {
+    "name": "Kumasi",
+    "woeid": 1330595,
+    "country": "Ghana",
+    "countryCode": "GH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Athens",
+    "woeid": 946738,
+    "country": "Greece",
+    "countryCode": "GR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Greece",
+    "woeid": 23424833,
+    "country": "Greece",
+    "countryCode": "GR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Thessaloniki",
+    "woeid": 963291,
+    "country": "Greece",
+    "countryCode": "GR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Guatemala",
+    "woeid": 23424834,
+    "country": "Guatemala",
+    "countryCode": "GT",
+    "placeType": "Country"
+  },
+  {
+    "name": "Guatemala City",
+    "woeid": 83123,
+    "country": "Guatemala",
+    "countryCode": "GT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ahmedabad",
+    "woeid": 2295402,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Amritsar",
+    "woeid": 2295388,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bangalore",
+    "woeid": 2295420,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bhopal",
+    "woeid": 2295407,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Chennai",
+    "woeid": 2295424,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Delhi",
+    "woeid": 20070458,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hyderabad",
+    "woeid": 2295414,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "India",
+    "woeid": 23424848,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Country"
+  },
+  {
+    "name": "Indore",
+    "woeid": 2295408,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Jaipur",
+    "woeid": 2295401,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kanpur",
+    "woeid": 2295378,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kolkata",
+    "woeid": 2295386,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lucknow",
+    "woeid": 2295377,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mumbai",
+    "woeid": 2295411,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nagpur",
+    "woeid": 2282863,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Patna",
+    "woeid": 2295381,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pune",
+    "woeid": 2295412,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rajkot",
+    "woeid": 2295404,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ranchi",
+    "woeid": 2295383,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Srinagar",
+    "woeid": 2295387,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Surat",
+    "woeid": 2295405,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Thane",
+    "woeid": 2295410,
+    "country": "India",
+    "countryCode": "IN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bandung",
+    "woeid": 1047180,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bekasi",
+    "woeid": 1030077,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Depok",
+    "woeid": 1032539,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Indonesia",
+    "woeid": 23424846,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Country"
+  },
+  {
+    "name": "Jakarta",
+    "woeid": 1047378,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Makassar",
+    "woeid": 1046138,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Medan",
+    "woeid": 1047908,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Palembang",
+    "woeid": 1048059,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pekanbaru",
+    "woeid": 1040779,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Semarang",
+    "woeid": 1048324,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Surabaya",
+    "woeid": 1044316,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tangerang",
+    "woeid": 1048536,
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cork",
+    "woeid": 560472,
+    "country": "Ireland",
+    "countryCode": "IE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dublin",
+    "woeid": 560743,
+    "country": "Ireland",
+    "countryCode": "IE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Galway",
+    "woeid": 560912,
+    "country": "Ireland",
+    "countryCode": "IE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ireland",
+    "woeid": 23424803,
+    "country": "Ireland",
+    "countryCode": "IE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Haifa",
+    "woeid": 1967449,
+    "country": "Israel",
+    "countryCode": "IL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Israel",
+    "woeid": 23424852,
+    "country": "Israel",
+    "countryCode": "IL",
+    "placeType": "Country"
+  },
+  {
+    "name": "Jerusalem",
+    "woeid": 1968222,
+    "country": "Israel",
+    "countryCode": "IL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tel Aviv",
+    "woeid": 1968212,
+    "country": "Israel",
+    "countryCode": "IL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bologna",
+    "woeid": 711080,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Genoa",
+    "woeid": 716085,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Italy",
+    "woeid": 23424853,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Country"
+  },
+  {
+    "name": "Milan",
+    "woeid": 718345,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Naples",
+    "woeid": 719258,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Palermo",
+    "woeid": 719846,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rome",
+    "woeid": 721943,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Turin",
+    "woeid": 725003,
+    "country": "Italy",
+    "countryCode": "IT",
+    "placeType": "Town"
+  },
+  {
+    "name": "Chiba",
+    "woeid": 1117034,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Fukuoka",
+    "woeid": 1117099,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hamamatsu",
+    "woeid": 1117155,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hiroshima",
+    "woeid": 1117227,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Japan",
+    "woeid": 23424856,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Country"
+  },
+  {
+    "name": "Kawasaki",
+    "woeid": 1117502,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kitakyushu",
+    "woeid": 1110809,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kobe",
+    "woeid": 1117545,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kumamoto",
+    "woeid": 1117605,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kyoto",
+    "woeid": 15015372,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nagoya",
+    "woeid": 1117817,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Niigata",
+    "woeid": 1117881,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Okayama",
+    "woeid": 90036018,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Okinawa",
+    "woeid": 2345896,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Osaka",
+    "woeid": 15015370,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sagamihara",
+    "woeid": 1118072,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Saitama",
+    "woeid": 1116753,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sapporo",
+    "woeid": 1118108,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sendai",
+    "woeid": 1118129,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Takamatsu",
+    "woeid": 1118285,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tokyo",
+    "woeid": 1118370,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Yokohama",
+    "woeid": 1118550,
+    "country": "Japan",
+    "countryCode": "JP",
+    "placeType": "Town"
+  },
+  {
+    "name": "Amman",
+    "woeid": 1968902,
+    "country": "Jordan",
+    "countryCode": "JO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Jordan",
+    "woeid": 23424860,
+    "country": "Jordan",
+    "countryCode": "JO",
+    "placeType": "Country"
+  },
+  {
+    "name": "Kenya",
+    "woeid": 23424863,
+    "country": "Kenya",
+    "countryCode": "KE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Mombasa",
+    "woeid": 1528335,
+    "country": "Kenya",
+    "countryCode": "KE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nairobi",
+    "woeid": 1528488,
+    "country": "Kenya",
+    "countryCode": "KE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ansan",
+    "woeid": 1132444,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bucheon",
+    "woeid": 1132445,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Busan",
+    "woeid": 1132447,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Changwon",
+    "woeid": 1132449,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Daegu",
+    "woeid": 1132466,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Daejeon",
+    "woeid": 2345975,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Goyang",
+    "woeid": 1130853,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Gwangju",
+    "woeid": 1132481,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Incheon",
+    "woeid": 1132496,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Korea",
+    "woeid": 23424868,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Seongnam",
+    "woeid": 1132559,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Seoul",
+    "woeid": 1132599,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Suwon",
+    "woeid": 1132567,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ulsan",
+    "woeid": 1132578,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Yongin",
+    "woeid": 1132094,
+    "country": "Korea",
+    "countryCode": "KR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kuwait",
+    "woeid": 23424870,
+    "country": "Kuwait",
+    "countryCode": "KW",
+    "placeType": "Country"
+  },
+  {
+    "name": "Latvia",
+    "woeid": 23424874,
+    "country": "Latvia",
+    "countryCode": "LV",
+    "placeType": "Country"
+  },
+  {
+    "name": "Riga",
+    "woeid": 854823,
+    "country": "Latvia",
+    "countryCode": "LV",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lebanon",
+    "woeid": 23424873,
+    "country": "Lebanon",
+    "countryCode": "LB",
+    "placeType": "Country"
+  },
+  {
+    "name": "Hulu Langat",
+    "woeid": 56013645,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ipoh",
+    "woeid": 1154679,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Johor Bahru",
+    "woeid": 1154698,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kajang",
+    "woeid": 1141268,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Klang",
+    "woeid": 1154726,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kuala Lumpur",
+    "woeid": 1154781,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Malaysia",
+    "woeid": 23424901,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Country"
+  },
+  {
+    "name": "Petaling",
+    "woeid": 56013632,
+    "country": "Malaysia",
+    "countryCode": "MY",
+    "placeType": "Town"
+  },
+  {
+    "name": "Acapulco",
+    "woeid": 110978,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Aguascalientes",
+    "woeid": 111579,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Chihuahua",
+    "woeid": 115958,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ciudad Juarez",
+    "woeid": 116556,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Culiac\u00e1n",
+    "woeid": 117994,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ecatepec de Morelos",
+    "woeid": 118466,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Guadalajara",
+    "woeid": 124162,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hermosillo",
+    "woeid": 124785,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Le\u00f3n",
+    "woeid": 131068,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mexicali",
+    "woeid": 133475,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mexico",
+    "woeid": 23424900,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Country"
+  },
+  {
+    "name": "Mexico City",
+    "woeid": 116545,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Monterrey",
+    "woeid": 134047,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Morelia",
+    "woeid": 134091,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "M\u00e9rida",
+    "woeid": 133327,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Naucalpan de Ju\u00e1rez",
+    "woeid": 134395,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nezahualc\u00f3yotl",
+    "woeid": 116564,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Puebla",
+    "woeid": 137612,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Quer\u00e9taro",
+    "woeid": 138045,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Saltillo",
+    "woeid": 141272,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "San Luis Potos\u00ed",
+    "woeid": 144265,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tijuana",
+    "woeid": 149361,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Toluca",
+    "woeid": 149769,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Zapopan",
+    "woeid": 151582,
+    "country": "Mexico",
+    "countryCode": "MX",
+    "placeType": "Town"
+  },
+  {
+    "name": "Amsterdam",
+    "woeid": 727232,
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Den Haag",
+    "woeid": 726874,
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Netherlands",
+    "woeid": 23424909,
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "placeType": "Country"
+  },
+  {
+    "name": "Rotterdam",
+    "woeid": 733075,
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Utrecht",
+    "woeid": 734047,
+    "country": "Netherlands",
+    "countryCode": "NL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Auckland",
+    "woeid": 2348079,
+    "country": "New Zealand",
+    "countryCode": "NZ",
+    "placeType": "Town"
+  },
+  {
+    "name": "New Zealand",
+    "woeid": 23424916,
+    "country": "New Zealand",
+    "countryCode": "NZ",
+    "placeType": "Country"
+  },
+  {
+    "name": "Benin City",
+    "woeid": 1387660,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ibadan",
+    "woeid": 1393672,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kaduna",
+    "woeid": 1396439,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kano",
+    "woeid": 1396803,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lagos",
+    "woeid": 1398823,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nigeria",
+    "woeid": 23424908,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Country"
+  },
+  {
+    "name": "Port Harcourt",
+    "woeid": 1404447,
+    "country": "Nigeria",
+    "countryCode": "NG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bergen",
+    "woeid": 857105,
+    "country": "Norway",
+    "countryCode": "NO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Norway",
+    "woeid": 23424910,
+    "country": "Norway",
+    "countryCode": "NO",
+    "placeType": "Country"
+  },
+  {
+    "name": "Oslo",
+    "woeid": 862592,
+    "country": "Norway",
+    "countryCode": "NO",
+    "placeType": "Town"
+  },
+  {
+    "name": "Muscat",
+    "woeid": 2268284,
+    "country": "Oman",
+    "countryCode": "OM",
+    "placeType": "Town"
+  },
+  {
+    "name": "Oman",
+    "woeid": 23424898,
+    "country": "Oman",
+    "countryCode": "OM",
+    "placeType": "Country"
+  },
+  {
+    "name": "Faisalabad",
+    "woeid": 2211574,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Town"
+  },
+  {
+    "name": "Karachi",
+    "woeid": 2211096,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lahore",
+    "woeid": 2211177,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Town"
+  },
+  {
+    "name": "Multan",
+    "woeid": 2211269,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pakistan",
+    "woeid": 23424922,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Country"
+  },
+  {
+    "name": "Rawalpindi",
+    "woeid": 2211387,
+    "country": "Pakistan",
+    "countryCode": "PK",
+    "placeType": "Town"
+  },
+  {
+    "name": "Panama",
+    "woeid": 23424924,
+    "country": "Panama",
+    "countryCode": "PA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Lima",
+    "woeid": 418440,
+    "country": "Peru",
+    "countryCode": "PE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Peru",
+    "woeid": 23424919,
+    "country": "Peru",
+    "countryCode": "PE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Antipolo",
+    "woeid": 1198785,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cagayan de Oro",
+    "woeid": 1199002,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Calocan",
+    "woeid": 1167715,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cebu City",
+    "woeid": 1199079,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Davao City",
+    "woeid": 1199136,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Makati",
+    "woeid": 1180689,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Manila",
+    "woeid": 1199477,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pasig",
+    "woeid": 1187115,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Philippines",
+    "woeid": 23424934,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Country"
+  },
+  {
+    "name": "Quezon City",
+    "woeid": 1199682,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Taguig",
+    "woeid": 1195098,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Zamboanga City",
+    "woeid": 1199980,
+    "country": "Philippines",
+    "countryCode": "PH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Gda\u0144sk",
+    "woeid": 493417,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Krak\u00f3w",
+    "woeid": 502075,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lodz",
+    "woeid": 505120,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Poland",
+    "woeid": 23424923,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Country"
+  },
+  {
+    "name": "Pozna\u0144",
+    "woeid": 514048,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Warsaw",
+    "woeid": 523920,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Wroclaw",
+    "woeid": 526363,
+    "country": "Poland",
+    "countryCode": "PL",
+    "placeType": "Town"
+  },
+  {
+    "name": "Portugal",
+    "woeid": 23424925,
+    "country": "Portugal",
+    "countryCode": "PT",
+    "placeType": "Country"
+  },
+  {
+    "name": "Puerto Rico",
+    "woeid": 23424935,
+    "country": "Puerto Rico",
+    "countryCode": "PR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Qatar",
+    "woeid": 23424930,
+    "country": "Qatar",
+    "countryCode": "QA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Chelyabinsk",
+    "woeid": 1997422,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Irkutsk",
+    "woeid": 2121040,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kazan",
+    "woeid": 2121267,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Khabarovsk",
+    "woeid": 2018708,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Krasnodar",
+    "woeid": 2028717,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Krasnoyarsk",
+    "woeid": 2029043,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Moscow",
+    "woeid": 2122265,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nizhny Novgorod",
+    "woeid": 2122471,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Novosibirsk",
+    "woeid": 2122541,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Omsk",
+    "woeid": 2122641,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Perm",
+    "woeid": 2122814,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Rostov-on-Don",
+    "woeid": 2123177,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Russia",
+    "woeid": 23424936,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Country"
+  },
+  {
+    "name": "Saint Petersburg",
+    "woeid": 2123260,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Samara",
+    "woeid": 2077746,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ufa",
+    "woeid": 2124045,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Vladivostok",
+    "woeid": 2124288,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Volgograd",
+    "woeid": 2124298,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Voronezh",
+    "woeid": 2108210,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Yekaterinburg",
+    "woeid": 2112237,
+    "country": "Russia",
+    "countryCode": "RU",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ahsa",
+    "woeid": 56120136,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Unknown"
+  },
+  {
+    "name": "Dammam",
+    "woeid": 1939574,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Jeddah",
+    "woeid": 1939873,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mecca",
+    "woeid": 1939897,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Medina",
+    "woeid": 1937801,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Riyadh",
+    "woeid": 1939753,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Saudi Arabia",
+    "woeid": 23424938,
+    "country": "Saudi Arabia",
+    "countryCode": "SA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Singapore",
+    "woeid": 1062617,
+    "country": "Singapore",
+    "countryCode": "SG",
+    "placeType": "Town"
+  },
+  {
+    "name": "Singapore",
+    "woeid": 23424948,
+    "country": "Singapore",
+    "countryCode": "SG",
+    "placeType": "Country"
+  },
+  {
+    "name": "Cape Town",
+    "woeid": 1591691,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Durban",
+    "woeid": 1580913,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Johannesburg",
+    "woeid": 1582504,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Port Elizabeth",
+    "woeid": 1586614,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pretoria",
+    "woeid": 1586638,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Town"
+  },
+  {
+    "name": "South Africa",
+    "woeid": 23424942,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Soweto",
+    "woeid": 1587677,
+    "country": "South Africa",
+    "countryCode": "ZA",
+    "placeType": "Unknown"
+  },
+  {
+    "name": "Barcelona",
+    "woeid": 753692,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bilbao",
+    "woeid": 754542,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Las Palmas",
+    "woeid": 764814,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Madrid",
+    "woeid": 766273,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Malaga",
+    "woeid": 766356,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Murcia",
+    "woeid": 768026,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Palma",
+    "woeid": 769293,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Seville",
+    "woeid": 774508,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Spain",
+    "woeid": 23424950,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Country"
+  },
+  {
+    "name": "Valencia",
+    "woeid": 776688,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Zaragoza",
+    "woeid": 779063,
+    "country": "Spain",
+    "countryCode": "ES",
+    "placeType": "Town"
+  },
+  {
+    "name": "Gothenburg",
+    "woeid": 890869,
+    "country": "Sweden",
+    "countryCode": "SE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Stockholm",
+    "woeid": 906057,
+    "country": "Sweden",
+    "countryCode": "SE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sweden",
+    "woeid": 23424954,
+    "country": "Sweden",
+    "countryCode": "SE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Geneva",
+    "woeid": 782538,
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lausanne",
+    "woeid": 783058,
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Switzerland",
+    "woeid": 23424957,
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "placeType": "Country"
+  },
+  {
+    "name": "Zurich",
+    "woeid": 784794,
+    "country": "Switzerland",
+    "countryCode": "CH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bangkok",
+    "woeid": 1225448,
+    "country": "Thailand",
+    "countryCode": "TH",
+    "placeType": "Town"
+  },
+  {
+    "name": "Thailand",
+    "woeid": 23424960,
+    "country": "Thailand",
+    "countryCode": "TH",
+    "placeType": "Country"
+  },
+  {
+    "name": "Adana",
+    "woeid": 2343678,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ankara",
+    "woeid": 2343732,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Antalya",
+    "woeid": 2343733,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bursa",
+    "woeid": 2343843,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Diyarbak\u0131r",
+    "woeid": 2343932,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Eski\u015fehir",
+    "woeid": 2343980,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Gaziantep",
+    "woeid": 2343999,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Istanbul",
+    "woeid": 2344116,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Izmir",
+    "woeid": 2344117,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kayseri",
+    "woeid": 2344174,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Konya",
+    "woeid": 2344210,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mersin",
+    "woeid": 2323778,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Town"
+  },
+  {
+    "name": "Turkey",
+    "woeid": 23424969,
+    "country": "Turkey",
+    "countryCode": "TR",
+    "placeType": "Country"
+  },
+  {
+    "name": "Dnipropetrovsk",
+    "woeid": 918981,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Donetsk",
+    "woeid": 919163,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kharkiv",
+    "woeid": 922137,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kyiv",
+    "woeid": 924938,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Lviv",
+    "woeid": 924943,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Odesa",
+    "woeid": 929398,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ukraine",
+    "woeid": 23424976,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Country"
+  },
+  {
+    "name": "Zaporozhye",
+    "woeid": 939628,
+    "country": "Ukraine",
+    "countryCode": "UA",
+    "placeType": "Town"
+  },
+  {
+    "name": "Abu Dhabi",
+    "woeid": 1940330,
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dubai",
+    "woeid": 1940345,
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sharjah",
+    "woeid": 1940119,
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "placeType": "Town"
+  },
+  {
+    "name": "United Arab Emirates",
+    "woeid": 23424738,
+    "country": "United Arab Emirates",
+    "countryCode": "AE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Belfast",
+    "woeid": 44544,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Birmingham",
+    "woeid": 12723,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Blackpool",
+    "woeid": 12903,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bournemouth",
+    "woeid": 13383,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Brighton",
+    "woeid": 13911,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Bristol",
+    "woeid": 13963,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cardiff",
+    "woeid": 15127,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Coventry",
+    "woeid": 17044,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Derby",
+    "woeid": 18114,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Edinburgh",
+    "woeid": 19344,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Glasgow",
+    "woeid": 21125,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hull",
+    "woeid": 25211,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Leeds",
+    "woeid": 26042,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Leicester",
+    "woeid": 26062,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Liverpool",
+    "woeid": 26734,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "London",
+    "woeid": 44418,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Manchester",
+    "woeid": 28218,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Middlesbrough",
+    "woeid": 28869,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Newcastle",
+    "woeid": 30079,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nottingham",
+    "woeid": 30720,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Plymouth",
+    "woeid": 32185,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Portsmouth",
+    "woeid": 32452,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Preston",
+    "woeid": 32566,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sheffield",
+    "woeid": 34503,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Stoke-on-Trent",
+    "woeid": 36240,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "Swansea",
+    "woeid": 36758,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Town"
+  },
+  {
+    "name": "United Kingdom",
+    "woeid": 23424975,
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "placeType": "Country"
+  },
+  {
+    "name": "Albuquerque",
+    "woeid": 2352824,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Atlanta",
+    "woeid": 2357024,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Austin",
+    "woeid": 2357536,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Baltimore",
+    "woeid": 2358820,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Baton Rouge",
+    "woeid": 2359991,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Birmingham",
+    "woeid": 2364559,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Boston",
+    "woeid": 2367105,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Charlotte",
+    "woeid": 2378426,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Chicago",
+    "woeid": 2379574,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cincinnati",
+    "woeid": 2380358,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Cleveland",
+    "woeid": 2381475,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Colorado Springs",
+    "woeid": 2383489,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Columbus",
+    "woeid": 2383660,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Dallas-Ft. Worth",
+    "woeid": 2388929,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Denver",
+    "woeid": 2391279,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Detroit",
+    "woeid": 2391585,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "El Paso",
+    "woeid": 2397816,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Fresno",
+    "woeid": 2407517,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Greensboro",
+    "woeid": 2414469,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Harrisburg",
+    "woeid": 2418046,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Honolulu",
+    "woeid": 2423945,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Houston",
+    "woeid": 2424766,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Indianapolis",
+    "woeid": 2427032,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Jackson",
+    "woeid": 2428184,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Jacksonville",
+    "woeid": 2428344,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Kansas City",
+    "woeid": 2430683,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Las Vegas",
+    "woeid": 2436704,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Long Beach",
+    "woeid": 2441472,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Los Angeles",
+    "woeid": 2442047,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Louisville",
+    "woeid": 2442327,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Memphis",
+    "woeid": 2449323,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Mesa",
+    "woeid": 2449808,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Miami",
+    "woeid": 2450022,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Milwaukee",
+    "woeid": 2451822,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Minneapolis",
+    "woeid": 2452078,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Nashville",
+    "woeid": 2457170,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "New Haven",
+    "woeid": 2458410,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "New Orleans",
+    "woeid": 2458833,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "New York",
+    "woeid": 2459115,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Norfolk",
+    "woeid": 2460389,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Oklahoma City",
+    "woeid": 2464592,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Omaha",
+    "woeid": 2465512,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Orlando",
+    "woeid": 2466256,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Philadelphia",
+    "woeid": 2471217,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Phoenix",
+    "woeid": 2471390,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Pittsburgh",
+    "woeid": 2473224,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Portland",
+    "woeid": 2475687,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Providence",
+    "woeid": 2477058,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Raleigh",
+    "woeid": 2478307,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Richmond",
+    "woeid": 2480894,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Sacramento",
+    "woeid": 2486340,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Salt Lake City",
+    "woeid": 2487610,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "San Antonio",
+    "woeid": 2487796,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "San Diego",
+    "woeid": 2487889,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "San Francisco",
+    "woeid": 2487956,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "San Jose",
+    "woeid": 2488042,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Seattle",
+    "woeid": 2490383,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "St. Louis",
+    "woeid": 2486982,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tallahassee",
+    "woeid": 2503713,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tampa",
+    "woeid": 2503863,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Tucson",
+    "woeid": 2508428,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "United States",
+    "woeid": 23424977,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Country"
+  },
+  {
+    "name": "Virginia Beach",
+    "woeid": 2512636,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Washington",
+    "woeid": 2514815,
+    "country": "United States",
+    "countryCode": "US",
+    "placeType": "Town"
+  },
+  {
+    "name": "Barcelona",
+    "woeid": 395273,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Barquisimeto",
+    "woeid": 468382,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Caracas",
+    "woeid": 395269,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ciudad Guayana",
+    "woeid": 395275,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Maracaibo",
+    "woeid": 395270,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Maracay",
+    "woeid": 395271,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Matur\u00edn",
+    "woeid": 468384,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Turmero",
+    "woeid": 395277,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Valencia",
+    "woeid": 395272,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Town"
+  },
+  {
+    "name": "Venezuela",
+    "woeid": 23424982,
+    "country": "Venezuela",
+    "countryCode": "VE",
+    "placeType": "Country"
+  },
+  {
+    "name": "Can Tho",
+    "woeid": 1252351,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Da Nang",
+    "woeid": 1252376,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hai Phong",
+    "woeid": 1236690,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Hanoi",
+    "woeid": 1236594,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "woeid": 1252431,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Town"
+  },
+  {
+    "name": "Vietnam",
+    "woeid": 23424984,
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "placeType": "Country"
+  }
+]
