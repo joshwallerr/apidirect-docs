@@ -35,12 +35,14 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Post Details | $0.006/request | [linkedin-post.md](endpoints/linkedin-post.md) |
 | Company Details | $0.006/request | [linkedin-company.md](endpoints/linkedin-company.md) |
 | Company Posts | $0.006/request | [linkedin-company-posts.md](endpoints/linkedin-company-posts.md) |
+| Search Companies | $0.006/request | [linkedin-companies.md](endpoints/linkedin-companies.md) |
 
 ### Twitter/X
 
 | Endpoint | Price | Docs |
 |----------|-------|------|
 | Search Posts | $0.006/page | [twitter-posts.md](endpoints/twitter-posts.md) |
+| Search Users | $0.006/page | [twitter-users.md](endpoints/twitter-users.md) |
 | User Profile | $0.006/request | [twitter-user.md](endpoints/twitter-user.md) |
 | User Tweets | $0.006/page | [twitter-user-tweets.md](endpoints/twitter-user-tweets.md) |
 | User Followers | $0.006/page | [twitter-user-followers.md](endpoints/twitter-user-followers.md) |
@@ -76,14 +78,33 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 |----------|-------|------|
 | Search Posts | $0.003/request | [reddit-posts.md](endpoints/reddit-posts.md) |
 | Search Comments | $0.003/page | [reddit-comments.md](endpoints/reddit-comments.md) |
+| Search Users | $0.003/request | [reddit-users.md](endpoints/reddit-users.md) |
 
-### Other Platforms
+### YouTube
 
 | Endpoint | Price | Docs |
 |----------|-------|------|
-| YouTube Videos | $0.005/page | [youtube-videos.md](endpoints/youtube-videos.md) |
-| Instagram Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
-| TikTok Videos | $0.006/page | [tiktok-videos.md](endpoints/tiktok-videos.md) |
+| Search Videos | $0.005/page | [youtube-videos.md](endpoints/youtube-videos.md) |
+| Search Channels | $0.005/page | [youtube-channels.md](endpoints/youtube-channels.md) |
+
+### Instagram
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
+| Search Users | $0.006/request | [instagram-users.md](endpoints/instagram-users.md) |
+
+### TikTok
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Videos | $0.006/page | [tiktok-videos.md](endpoints/tiktok-videos.md) |
+| Search Users | $0.006/page | [tiktok-users.md](endpoints/tiktok-users.md) |
+
+### Forums & News
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
 | Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
 | News Articles | $0.008/request | [news-articles.md](endpoints/news-articles.md) |
 

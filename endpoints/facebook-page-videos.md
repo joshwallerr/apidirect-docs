@@ -17,6 +17,7 @@ GET /v1/facebook/page/videos
 |-----------|----------|-------------|
 | `delegate_page_id` | Yes | Delegate page ID (get from the page details endpoint `delegate_page_id` field) |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -30,6 +31,7 @@ GET /v1/facebook/page/videos
 | `videos[].play_count` | integer | Number of video plays |
 | `videos[].date` | string | Formatted date (YYYY-MM-DD HH:MM:SS) |
 | `videos[].timestamp` | integer | Unix timestamp |
+| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of videos returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -67,7 +69,8 @@ print(response.json())
       "thumbnail": "https://scontent.xx.fbcdn.net/v/t15.5256-10/646502_..._n.jpg",
       "play_count": 1096104,
       "date": "2026-03-07 17:21:49",
-      "timestamp": 1772904109
+      "timestamp": 1772904109,
+      "sentiment": "positive"
     },
     {
       "video_id": "1610049803578776",

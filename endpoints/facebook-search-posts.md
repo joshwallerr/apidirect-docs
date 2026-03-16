@@ -20,6 +20,7 @@ GET /v1/facebook/posts
 | `start_date` | No | Filter posts from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter posts up to this date (format: `YYYY-MM-DD`) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -42,6 +43,7 @@ GET /v1/facebook/posts
 | `posts[].image_url` | string/null | URL of attached image, if any |
 | `posts[].video` | string/null | URL to attached video, if any |
 | `posts[].external_url` | string/null | External link shared in the post, if any |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of posts returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -98,7 +100,8 @@ print(response.json())
       },
       "image_url": "https://scontent.fxxx.fbcdn.net/v/t39.30808-6/ai_diagnostics.jpg",
       "video": null,
-      "external_url": "https://technewsdaily.com/ai-cancer-detection-study"
+      "external_url": "https://technewsdaily.com/ai-cancer-detection-study",
+      "sentiment": "positive"
     }
   ],
   "count": 20,

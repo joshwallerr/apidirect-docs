@@ -18,6 +18,7 @@ GET /v1/facebook/group/posts
 | `group_id` | Yes | Facebook group numeric ID |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -40,6 +41,7 @@ GET /v1/facebook/group/posts
 | `posts[].image_url` | string/null | URL of attached image, if any |
 | `posts[].video` | string/null | URL to attached video, if any |
 | `posts[].external_url` | string/null | External link shared in the post, if any |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of posts returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -97,7 +99,8 @@ print(response.json())
       },
       "image_url": "https://scontent.fxxx.fbcdn.net/v/t39.30808-6/post_image.jpg",
       "video": null,
-      "external_url": "https://plotly.com/python/plotly-express/"
+      "external_url": "https://plotly.com/python/plotly-express/",
+      "sentiment": "positive"
     }
   ],
   "count": 20,

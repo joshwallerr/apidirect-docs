@@ -20,6 +20,7 @@ GET /v1/facebook/videos
 | `start_date` | No | Filter videos from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter videos up to this date (format: `YYYY-MM-DD`) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -35,6 +36,7 @@ GET /v1/facebook/videos
 | `videos[].author_verified` | boolean | Whether the author is verified |
 | `videos[].thumbnail` | string | URL of the video thumbnail image |
 | `videos[].time_and_views` | string/null | Display string showing upload time and view count |
+| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of videos returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -76,7 +78,8 @@ print(response.json())
       "author_url": "https://www.facebook.com/buzzfeedtasty",
       "author_verified": true,
       "thumbnail": "https://scontent.fxxx.fbcdn.net/v/t15.5256-10/pasta_thumbnail.jpg",
-      "time_and_views": "2 days ago · 1.2M views"
+      "time_and_views": "2 days ago · 1.2M views",
+      "sentiment": "positive"
     },
     {
       "video_id": "8374920183746251",

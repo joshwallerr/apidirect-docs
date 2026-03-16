@@ -17,6 +17,7 @@ GET /v1/linkedin/company/posts
 |-----------|----------|-------------|
 | `url` | Yes | LinkedIn company page URL (max 500 characters) |
 | `page` | No | Page number for pagination (default: 1) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -39,6 +40,7 @@ GET /v1/linkedin/company/posts
 | `posts[].video` | object | Video data (thumbnail, duration) or null |
 | `posts[].links` | array | Links embedded in the post |
 | `posts[].urn` | string | LinkedIn URN identifier |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `page` | integer | Current page number |
 | `count` | integer | Number of posts returned |
 | `total` | integer | Total number of posts available |
@@ -95,7 +97,8 @@ print(response.json())
         "duration": 102166
       },
       "links": ["https://www.linkedin.com/company/sportsshoes-com/"],
-      "urn": "urn:li:activity:7437505720176144385"
+      "urn": "urn:li:activity:7437505720176144385",
+      "sentiment": "positive"
     }
   ],
   "page": 1,

@@ -19,6 +19,7 @@ GET /v1/facebook/page/posts
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
 | `start_date` | No | Filter posts from this date (YYYY-MM-DD) |
 | `end_date` | No | Filter posts up to this date (YYYY-MM-DD) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -48,6 +49,7 @@ GET /v1/facebook/page/posts
 | `posts[].image_url` | string/null | URL to attached image, if any |
 | `posts[].video` | string/null | URL to attached video, if any |
 | `posts[].external_url` | string/null | External link shared in the post, if any |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of posts returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -102,7 +104,8 @@ print(response.json())
       },
       "image_url": "https://scontent.xx.fbcdn.net/v/t39.30808-6/472918_..._n.jpg",
       "video": null,
-      "external_url": null
+      "external_url": null,
+      "sentiment": "positive"
     }
   ],
   "count": 1,

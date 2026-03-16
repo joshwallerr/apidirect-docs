@@ -24,6 +24,14 @@ Prices range from **$0.003 to $0.008 per request** depending on the endpoint. Ea
 - For multi-page endpoints (Twitter Search/Tweets/Followers/etc., Reddit Comments, YouTube, Instagram, TikTok), you are billed per page fetched
 - Charges accumulate and are billed when your balance reaches a threshold
 
+## Add-ons
+
+### Sentiment Analysis
+
+Add `get_sentiment=true` to any endpoint that returns posts, videos, comments, or reviews to include AI-powered sentiment classification (`positive`, `negative`, or `neutral`) for each result.
+
+**Cost:** +$0.001 per request on top of the base endpoint price. For multi-page endpoints, this applies per page.
+
 ## Trust Levels
 
 Your account has a trust level that determines your billing threshold:

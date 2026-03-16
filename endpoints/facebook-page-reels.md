@@ -17,6 +17,7 @@ GET /v1/facebook/page/reels
 |-----------|----------|-------------|
 | `reels_page_id` | Yes | Reels page ID (get from the page details endpoint `reels_page_id` field) |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -37,6 +38,7 @@ GET /v1/facebook/page/reels
 | `reels[].author_name` | string | Name of the reel author |
 | `reels[].author_url` | string | URL to the author's profile |
 | `reels[].thumbnail` | string | URL to the reel thumbnail image |
+| `reels[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of reels returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -52,6 +54,8 @@ curl "https://apidirect.io/v1/facebook/page/reels?reels_page_id=YXBwX2NvbGxlY3Rp
 ### Python
 
 ```python
+import requests
+
 # First, get the reels_page_id from the page details endpoint
 details = requests.get(
     "https://apidirect.io/v1/facebook/page",
@@ -88,7 +92,8 @@ print(response.json())
       "reshare_count": 12094,
       "author_name": "Facebook",
       "author_url": "https://www.facebook.com/facebook",
-      "thumbnail": "https://scontent.xx.fbcdn.net/v/t15.5256-10/894523_..._n.jpg"
+      "thumbnail": "https://scontent.xx.fbcdn.net/v/t15.5256-10/894523_..._n.jpg",
+      "sentiment": "positive"
     },
     {
       "video_id": "851749203847192",

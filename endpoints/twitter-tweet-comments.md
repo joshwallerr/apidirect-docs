@@ -17,6 +17,7 @@ GET /v1/twitter/tweet/comments
 |-----------|----------|-------------|
 | `tweet_id` | Yes | Numeric tweet ID |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -43,6 +44,7 @@ GET /v1/twitter/tweet/comments
 | `comments[].is_quote` | boolean | Whether the reply is also a quote |
 | `comments[].hashtags` | string[] | Hashtags used |
 | `comments[].user_mentions` | string[] | Usernames mentioned |
+| `comments[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `tweet_id` | string | Requested tweet ID |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -94,7 +96,8 @@ print(response.json())
       "is_reply": true,
       "is_quote": false,
       "hashtags": [],
-      "user_mentions": ["username"]
+      "user_mentions": ["username"],
+      "sentiment": "positive"
     }
   ],
   "tweet_id": "1631781099415257088",

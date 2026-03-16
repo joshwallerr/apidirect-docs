@@ -16,6 +16,7 @@ GET /v1/twitter/tweet
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `tweet_id` | Yes | Numeric tweet ID |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -42,6 +43,7 @@ GET /v1/twitter/tweet
 | `tweet.is_quote` | boolean | Whether the tweet is a quote tweet |
 | `tweet.hashtags` | string[] | Hashtags used |
 | `tweet.user_mentions` | string[] | Usernames mentioned |
+| `tweet.sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 
 ## Example Request
 
@@ -89,7 +91,8 @@ print(response.json())
     "is_reply": false,
     "is_quote": false,
     "hashtags": ["tech"],
-    "user_mentions": []
+    "user_mentions": [],
+    "sentiment": "positive"
   }
 }
 ```

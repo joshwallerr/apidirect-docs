@@ -18,6 +18,7 @@ GET /v1/reddit/comments
 | `query` | Yes | Search keyword (max 500 characters) |
 | `pages` | No | Number of pages to fetch, 1-5 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent`, `relevance`, or `top` (default: `most_recent`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -33,6 +34,7 @@ GET /v1/reddit/comments
 | `posts[].subreddit` | string | Subreddit name |
 | `posts[].snippet` | string | Comment content text |
 | `posts[].type` | string | `"comment"` |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -76,7 +78,8 @@ print(response.json())
       "domain": "reddit.com",
       "subreddit": "python",
       "snippet": "Comment content...",
-      "type": "comment"
+      "type": "comment",
+      "sentiment": "positive"
     }
   ],
   "pages": 2,

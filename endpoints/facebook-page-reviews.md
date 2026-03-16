@@ -17,6 +17,7 @@ GET /v1/facebook/page/reviews
 |-----------|----------|-------------|
 | `page_id` | Yes | Facebook page ID (get from page details or page ID endpoint) |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -28,6 +29,7 @@ GET /v1/facebook/page/reviews
 | `reviews[].author_name` | string | Name of the reviewer |
 | `reviews[].author_url` | string | URL to the reviewer's profile |
 | `reviews[].reactions_count` | integer | Number of reactions on the review |
+| `reviews[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `count` | integer | Number of reviews returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -63,7 +65,8 @@ print(response.json())
       "recommend": true,
       "author_name": "Sarah Johnson",
       "author_url": "https://www.facebook.com/profile.php?id=100048392017456",
-      "reactions_count": 12
+      "reactions_count": 12,
+      "sentiment": "positive"
     },
     {
       "review_text": "Decent product but shipping took longer than expected.",

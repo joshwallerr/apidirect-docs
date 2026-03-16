@@ -18,6 +18,7 @@ GET /v1/youtube/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
 | `upload_date` | No | Filter by upload date: `last_hour`, `today`, `this_week`, `this_month`, `this_year` |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -39,6 +40,7 @@ GET /v1/youtube/posts
 | `posts[].type` | string | Video type (e.g., `"NORMAL"`) |
 | `posts[].keywords` | string[] | Video keywords/tags |
 | `posts[].thumbnail` | string | URL to the highest resolution thumbnail |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -88,7 +90,8 @@ print(response.json())
       "is_live": null,
       "type": "NORMAL",
       "keywords": [],
-      "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg"
+      "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg",
+      "sentiment": "positive"
     }
   ],
   "pages": 2,

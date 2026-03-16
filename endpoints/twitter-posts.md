@@ -18,6 +18,7 @@ GET /v1/twitter/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -44,6 +45,7 @@ GET /v1/twitter/posts
 | `posts[].is_quote` | boolean | Whether the tweet is a quote tweet |
 | `posts[].hashtags` | string[] | Hashtags used in the tweet |
 | `posts[].user_mentions` | string[] | Usernames mentioned in the tweet |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -98,7 +100,8 @@ print(response.json())
       "is_reply": false,
       "is_quote": false,
       "hashtags": ["AI", "MachineLearning"],
-      "user_mentions": ["OpenAI"]
+      "user_mentions": ["OpenAI"],
+      "sentiment": "positive"
     }
   ],
   "pages": 2,

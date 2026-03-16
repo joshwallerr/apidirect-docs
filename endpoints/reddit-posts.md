@@ -18,6 +18,7 @@ GET /v1/reddit/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `page` | No | Page number, 1-5 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent`, `relevance`, `hot`, or `top` (default: `most_recent`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -32,6 +33,7 @@ GET /v1/reddit/posts
 | `posts[].domain` | string | `"reddit.com"` |
 | `posts[].subreddit` | string | Subreddit name |
 | `posts[].snippet` | string | Post content text |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `page` | integer | Current page number |
 | `count` | integer | Number of results returned |
 
@@ -74,7 +76,8 @@ print(response.json())
       "source": "Reddit",
       "domain": "reddit.com",
       "subreddit": "programming",
-      "snippet": "Post content..."
+      "snippet": "Post content...",
+      "sentiment": "positive"
     }
   ],
   "page": 1,

@@ -17,6 +17,7 @@ GET /v1/twitter/user/tweets
 |-----------|----------|-------------|
 | `username` | Yes | Twitter username (without @, max 50 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -43,6 +44,7 @@ GET /v1/twitter/user/tweets
 | `tweets[].is_quote` | boolean | Whether the tweet is a quote tweet |
 | `tweets[].hashtags` | string[] | Hashtags used in the tweet |
 | `tweets[].user_mentions` | string[] | Usernames mentioned |
+| `tweets[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `username` | string | Requested username |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -94,7 +96,8 @@ print(response.json())
       "is_reply": false,
       "is_quote": false,
       "hashtags": [],
-      "user_mentions": []
+      "user_mentions": [],
+      "sentiment": "positive"
     }
   ],
   "username": "elonmusk",

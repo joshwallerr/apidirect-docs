@@ -19,6 +19,7 @@ GET /v1/forums/posts
 | `page` | No | Page number for pagination (default: 1) |
 | `time` | No | Time filter: `any`, `hour`, `day`, `week`, `month`, `year` (default: `any`) |
 | `country` | No | ISO 3166-1 alpha-2 country code (e.g., `US`, `GB`, `DE`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -32,6 +33,7 @@ GET /v1/forums/posts
 | `posts[].source` | string | Source name or forum domain |
 | `posts[].domain` | string | Forum domain name |
 | `posts[].snippet` | string | Post content preview |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `page` | integer | Current page number |
 | `count` | integer | Number of results returned |
 
@@ -73,7 +75,8 @@ print(response.json())
       "url": "https://forum.example.com/thread/...",
       "source": "forum.example.com",
       "domain": "forum.example.com",
-      "snippet": "Forum post content..."
+      "snippet": "Forum post content...",
+      "sentiment": "positive"
     }
   ],
   "page": 1,

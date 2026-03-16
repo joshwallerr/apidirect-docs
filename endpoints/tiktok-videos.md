@@ -20,6 +20,7 @@ GET /v1/tiktok/videos
 | `region` | No | 2-letter region code (e.g. `us`, `gb`, `jp`) |
 | `publish_time` | No | Time filter: `0`=ALL, `1`=24h, `7`=week, `30`=month, `90`=3months, `180`=6months (default: 0) |
 | `sort_by` | No | Sort order: `relevance`, `most_recent`, `most_liked` (default: relevance) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -45,6 +46,7 @@ GET /v1/tiktok/videos
 | `videos[].cover` | string | Video cover/thumbnail URL |
 | `videos[].music_title` | string | Title of the music used |
 | `videos[].music_author` | string | Author of the music used |
+| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -99,7 +101,8 @@ print(response.json())
       "author_avatar": "https://p16-sign.tiktokcdn.com/...",
       "cover": "https://p16-sign.tiktokcdn.com/...",
       "music_title": "original sound",
-      "music_author": "chefmike"
+      "music_author": "chefmike",
+      "sentiment": "positive"
     }
   ],
   "pages": 2,

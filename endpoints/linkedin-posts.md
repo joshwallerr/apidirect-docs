@@ -18,6 +18,7 @@ GET /v1/linkedin/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `page` | No | Page number for pagination (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -31,6 +32,7 @@ GET /v1/linkedin/posts
 | `posts[].source` | string | `"LinkedIn"` |
 | `posts[].domain` | string | `"linkedin.com"` |
 | `posts[].snippet` | string | Post content text |
+| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `page` | integer | Current page number |
 | `count` | integer | Number of results returned |
 
@@ -72,7 +74,8 @@ print(response.json())
       "author": "John Doe",
       "source": "LinkedIn",
       "domain": "linkedin.com",
-      "snippet": "Exciting developments in artificial intelligence..."
+      "snippet": "Exciting developments in artificial intelligence...",
+      "sentiment": "positive"
     }
   ],
   "page": 1,

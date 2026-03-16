@@ -16,6 +16,7 @@ GET /v1/linkedin/post
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | Yes | LinkedIn post URL (max 500 characters) |
+| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -38,6 +39,7 @@ GET /v1/linkedin/post
 | `urn` | string | LinkedIn URN identifier |
 | `source` | string | `"LinkedIn"` |
 | `domain` | string | `"linkedin.com"` |
+| `sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 
 ## Example Request
 
@@ -89,6 +91,7 @@ print(response.json())
   "links": [],
   "urn": "urn:li:activity:7219434359085252608",
   "source": "LinkedIn",
-  "domain": "linkedin.com"
+  "domain": "linkedin.com",
+  "sentiment": "positive"
 }
 ```
