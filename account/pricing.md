@@ -14,7 +14,8 @@ Prices range from **$0.003 to $0.008 per request** depending on the endpoint. Ea
 |----------|------------------|
 | Reddit | $0.003 |
 | YouTube | $0.005 |
-| LinkedIn, Twitter/X, Instagram, TikTok | $0.006 |
+| LinkedIn Post Details | $0.002 |
+| LinkedIn (other), Twitter/X, Instagram, TikTok | $0.006 |
 | Facebook, Forums, News | $0.008 |
 
 ## How Billing Works
@@ -26,9 +27,9 @@ Prices range from **$0.003 to $0.008 per request** depending on the endpoint. Ea
 
 ## Add-ons
 
-### Sentiment Analysis
+### Emotion Analysis
 
-Add `get_sentiment=true` to any endpoint that returns posts, videos, comments, or reviews to include AI-powered sentiment classification (`positive`, `negative`, or `neutral`) for each result.
+Add `get_sentiment=true` to any endpoint that returns posts, videos, comments, or reviews to include AI-powered emotion analysis using Plutchik's Wheel of Emotions. Each result receives scores (0-100) for 8 basic emotions (joy, trust, fear, surprise, sadness, disgust, anger, anticipation), a dominant emotion, emotional intensity (0-10), and overall polarity (`positive`, `negative`, or `neutral`).
 
 **Cost:** +$0.001 per request on top of the base endpoint price. For multi-page endpoints, this applies per page.
 

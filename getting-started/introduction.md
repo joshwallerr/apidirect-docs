@@ -11,6 +11,8 @@ API Direct is a pay-as-you-go API that lets you search real-time data across soc
 - **YouTube** - Search videos with date filters
 - **Instagram** - Search posts by hashtag
 - **TikTok** - Search videos with engagement metrics
+- **Web Search** - Real-time Google organic search results with country, language, and geo targeting
+- **Google AI Mode** - Send a prompt to Google's AI Mode and get a Markdown-formatted answer with citations
 - **Forums** - Search discussion boards and Q&A sites across the web
 - **News** - Search news articles from thousands of sources worldwide
 

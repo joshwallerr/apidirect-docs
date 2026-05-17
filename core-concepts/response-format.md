@@ -30,8 +30,8 @@ Most post objects contain these fields:
 |-------|------|-------------|
 | `title` | string | Post title or formatted heading |
 | `url` | string | Direct link to the original post |
-| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`). Not returned by Forum Posts or News Articles. |
-| `author` | string | Author name or username. Not returned by Forum Posts or News Articles (News uses `authors` array). |
+| `date` | string | Publication date (`YYYY-MM-DD HH:MM:SS`). Not returned by Forum Posts, News Articles, or Web Search. |
+| `author` | string | Author name or username. Not returned by Forum Posts, News Articles, or Web Search (News uses `authors` array). |
 | `source` | string | Platform name (e.g., "Reddit", "LinkedIn") |
 | `domain` | string | Platform domain (e.g., "reddit.com", "linkedin.com") |
 | `snippet` | string | Content text or preview |
@@ -43,7 +43,7 @@ Depending on the endpoint, responses include either `page` (current page number)
 | Field | Type | Description |
 |-------|------|-------------|
 | `page` | integer | Current page number (used by LinkedIn, Reddit Posts, Forum Posts) |
-| `pages` | integer | Number of pages fetched (used by Twitter, Reddit Comments, YouTube, Instagram, TikTok) |
+| `pages` | integer | Number of pages fetched (used by Twitter, Reddit Comments, YouTube, Instagram, TikTok, Web Search) |
 | `limit` | integer | Requested result limit (used by News Articles) |
 | `count` | integer | Total number of results returned |
 
@@ -53,10 +53,10 @@ Many endpoints include additional fields beyond the core set above. Common examp
 
 | Field | Description |
 |-------|-------------|
-| `likes` | Number of likes (Twitter, Instagram, TikTok) |
+| `likes` | Number of likes (LinkedIn, Twitter, Instagram, TikTok) |
 | `views` | Number of views (Twitter, YouTube, Instagram) |
-| `comments` | Number of comments (Instagram, TikTok) |
-| `shares` | Number of shares (Instagram, TikTok) |
+| `comments` | Number of comments (LinkedIn, Instagram, TikTok) |
+| `shares` | Number of shares (LinkedIn, Instagram, TikTok) |
 | `hashtags` | Hashtags used in the post (Twitter, Instagram) |
 | `subreddit` | Subreddit name (Reddit) |
 | `thumbnail` | Thumbnail URL (YouTube, TikTok) |

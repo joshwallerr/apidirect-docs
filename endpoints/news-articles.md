@@ -21,7 +21,6 @@ GET /v1/news/articles
 | `source` | No | Filter by news source (e.g., `bbc.com`) |
 | `country` | No | 2-letter country code (default: `us`) |
 | `language` | No | 2-letter language code (default: `en`) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
 
 ## Response Fields
 
@@ -39,7 +38,6 @@ GET /v1/news/articles
 | `articles[].source_name` | string | News source name |
 | `articles[].source_favicon_url` | string | News source favicon URL |
 | `articles[].domain` | string | Article domain name |
-| `articles[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `limit` | integer | Requested result limit |
 | `count` | integer | Number of results returned |
 
@@ -87,8 +85,7 @@ print(response.json())
       "source_url": "https://example.com",
       "source_name": "Example News",
       "source_favicon_url": "https://example.com/favicon.ico",
-      "domain": "example.com",
-      "sentiment": "positive"
+      "domain": "example.com"
     }
   ],
   "limit": 10,

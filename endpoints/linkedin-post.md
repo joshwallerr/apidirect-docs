@@ -8,7 +8,7 @@ Get detailed information about a specific LinkedIn post including engagement met
 GET /v1/linkedin/post
 ```
 
-**Price:** $0.006 per request
+**Price:** $0.002 per request
 **Free tier:** 50 requests/month
 
 ## Parameters
@@ -16,7 +16,7 @@ GET /v1/linkedin/post
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | Yes | LinkedIn post URL (max 500 characters) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -39,7 +39,11 @@ GET /v1/linkedin/post
 | `urn` | string | LinkedIn URN identifier |
 | `source` | string | `"LinkedIn"` |
 | `domain` | string | `"linkedin.com"` |
-| `sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 
 ## Example Request
 
@@ -92,6 +96,20 @@ print(response.json())
   "urn": "urn:li:activity:7219434359085252608",
   "source": "LinkedIn",
   "domain": "linkedin.com",
-  "sentiment": "positive"
+  "sentiment": {
+    "emotions": {
+      "joy": 40,
+      "trust": 55,
+      "fear": 0,
+      "surprise": 10,
+      "sadness": 0,
+      "disgust": 0,
+      "anger": 0,
+      "anticipation": 30
+    },
+    "dominant_emotion": "trust",
+    "emotional_intensity": 5,
+    "polarity": "positive"
+  }
 }
 ```

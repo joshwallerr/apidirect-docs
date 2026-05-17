@@ -17,7 +17,7 @@ GET /v1/facebook/page/videos
 |-----------|----------|-------------|
 | `delegate_page_id` | Yes | Delegate page ID (get from the page details endpoint `delegate_page_id` field) |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -31,7 +31,11 @@ GET /v1/facebook/page/videos
 | `videos[].play_count` | integer | Number of video plays |
 | `videos[].date` | string | Formatted date (YYYY-MM-DD HH:MM:SS) |
 | `videos[].timestamp` | integer | Unix timestamp |
-| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `videos[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `videos[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `videos[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `count` | integer | Number of videos returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -70,7 +74,21 @@ print(response.json())
       "play_count": 1096104,
       "date": "2026-03-07 17:21:49",
       "timestamp": 1772904109,
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     },
     {
       "video_id": "1610049803578776",

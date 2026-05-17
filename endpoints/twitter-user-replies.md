@@ -17,7 +17,7 @@ GET /v1/twitter/user/replies
 |-----------|----------|-------------|
 | `username` | Yes | Twitter username (without @, max 50 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -44,7 +44,11 @@ GET /v1/twitter/user/replies
 | `replies[].is_quote` | boolean | Whether the reply is also a quote tweet |
 | `replies[].hashtags` | string[] | Hashtags used |
 | `replies[].user_mentions` | string[] | Usernames mentioned |
-| `replies[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `replies[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `replies[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `replies[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `replies[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `replies[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `username` | string | Requested username |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -97,7 +101,21 @@ print(response.json())
       "is_quote": false,
       "hashtags": [],
       "user_mentions": ["user"],
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "username": "elonmusk",

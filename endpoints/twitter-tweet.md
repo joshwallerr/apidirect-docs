@@ -16,7 +16,7 @@ GET /v1/twitter/tweet
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `tweet_id` | Yes | Numeric tweet ID |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -43,7 +43,11 @@ GET /v1/twitter/tweet
 | `tweet.is_quote` | boolean | Whether the tweet is a quote tweet |
 | `tweet.hashtags` | string[] | Hashtags used |
 | `tweet.user_mentions` | string[] | Usernames mentioned |
-| `tweet.sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `tweet.sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `tweet.sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `tweet.sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `tweet.sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `tweet.sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 
 ## Example Request
 
@@ -92,7 +96,21 @@ print(response.json())
     "is_quote": false,
     "hashtags": ["tech"],
     "user_mentions": [],
-    "sentiment": "positive"
+    "sentiment": {
+      "emotions": {
+        "joy": 40,
+        "trust": 55,
+        "fear": 0,
+        "surprise": 10,
+        "sadness": 0,
+        "disgust": 0,
+        "anger": 0,
+        "anticipation": 30
+      },
+      "dominant_emotion": "trust",
+      "emotional_intensity": 5,
+      "polarity": "positive"
+    }
   }
 }
 ```

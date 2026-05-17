@@ -7,7 +7,7 @@ Use API Direct as an MCP server in Claude Code to search social media and news d
 Run this command, replacing `YOUR_API_KEY` with your key from the [API Keys](https://apidirect.io/dashboard/keys) page:
 
 ```bash
-claude mcp add --transport http apidirect https://apidirect.io/mcp?token=YOUR_API_KEY
+claude mcp add --transport http apidirect "https://apidirect.io/mcp?token=YOUR_API_KEY"
 ```
 
 That's it. Claude Code can now search LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, forums, and news articles.

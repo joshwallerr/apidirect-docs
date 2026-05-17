@@ -2,7 +2,7 @@
 
 Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media API.
 
-Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, and web forums through a unified REST API.
+Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, web forums, news, and Google through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
 
@@ -32,7 +32,7 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Endpoint | Price | Docs |
 |----------|-------|------|
 | Search Posts | $0.006/request | [linkedin-posts.md](endpoints/linkedin-posts.md) |
-| Post Details | $0.006/request | [linkedin-post.md](endpoints/linkedin-post.md) |
+| Post Details | $0.002/request | [linkedin-post.md](endpoints/linkedin-post.md) |
 | Company Details | $0.006/request | [linkedin-company.md](endpoints/linkedin-company.md) |
 | Company Posts | $0.006/request | [linkedin-company-posts.md](endpoints/linkedin-company-posts.md) |
 | Search Companies | $0.006/request | [linkedin-companies.md](endpoints/linkedin-companies.md) |
@@ -93,6 +93,7 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 |----------|-------|------|
 | Search Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
 | Search Users | $0.006/request | [instagram-users.md](endpoints/instagram-users.md) |
+| User Profile | $0.006/request | [instagram-user.md](endpoints/instagram-user.md) |
 
 ### TikTok
 
@@ -108,12 +109,20 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
 | News Articles | $0.008/request | [news-articles.md](endpoints/news-articles.md) |
 
+### Web & AI Search
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Web Search | $0.004/page (+$0.002 with AI overview) | [web-search.md](endpoints/web-search.md) |
+| Google AI Mode | $0.005/request | [google-ai-mode.md](endpoints/google-ai-mode.md) |
+
 ## Integrations (MCP)
 
 - [Claude Code](integrations/mcp-claude-code.md) — Terminal setup via `claude mcp add`
 - [Claude Desktop](integrations/mcp-claude-desktop.md) — Connectors or config file setup
 - [ChatGPT](integrations/mcp-chatgpt.md) — Developer Mode setup
 - [Cursor](integrations/mcp-cursor.md) — `.cursor/mcp.json` setup
+- [OpenClaw](integrations/mcp-openclaw.md) — OpenClaw setup
 
 ## Account
 

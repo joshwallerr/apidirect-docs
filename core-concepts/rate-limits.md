@@ -17,7 +17,7 @@ If you exceed the concurrency limit, you'll receive a `429` status code:
 
 ```json
 {
-  "error": "Too many concurrent requests for this endpoint",
+  "error": "Too many concurrent requests for this endpoint. If you need higher concurrency limits, contact support@apidirect.io",
   "code": "concurrency_limit_exceeded",
   "limit": 3,
   "current": 3

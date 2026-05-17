@@ -20,7 +20,7 @@ GET /v1/facebook/videos
 | `start_date` | No | Filter videos from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter videos up to this date (format: `YYYY-MM-DD`) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -36,7 +36,11 @@ GET /v1/facebook/videos
 | `videos[].author_verified` | boolean | Whether the author is verified |
 | `videos[].thumbnail` | string | URL of the video thumbnail image |
 | `videos[].time_and_views` | string/null | Display string showing upload time and view count |
-| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `videos[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `videos[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `videos[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `count` | integer | Number of videos returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -79,7 +83,21 @@ print(response.json())
       "author_verified": true,
       "thumbnail": "https://scontent.fxxx.fbcdn.net/v/t15.5256-10/pasta_thumbnail.jpg",
       "time_and_views": "2 days ago · 1.2M views",
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     },
     {
       "video_id": "8374920183746251",

@@ -20,7 +20,7 @@ GET /v1/facebook/group/search
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
 | `start_date` | No | Filter posts from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter posts up to this date (format: `YYYY-MM-DD`) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -43,7 +43,11 @@ GET /v1/facebook/group/search
 | `posts[].image_url` | string/null | URL of attached image, if any |
 | `posts[].video` | string/null | URL to attached video, if any |
 | `posts[].external_url` | string/null | External link shared in the post, if any |
-| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `count` | integer | Number of posts returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -102,7 +106,21 @@ print(response.json())
       "image_url": null,
       "video": null,
       "external_url": null,
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "count": 15,

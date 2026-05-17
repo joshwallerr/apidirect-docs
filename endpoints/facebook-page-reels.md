@@ -17,7 +17,7 @@ GET /v1/facebook/page/reels
 |-----------|----------|-------------|
 | `reels_page_id` | Yes | Reels page ID (get from the page details endpoint `reels_page_id` field) |
 | `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -38,7 +38,11 @@ GET /v1/facebook/page/reels
 | `reels[].author_name` | string | Name of the reel author |
 | `reels[].author_url` | string | URL to the author's profile |
 | `reels[].thumbnail` | string | URL to the reel thumbnail image |
-| `reels[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `reels[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `reels[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `reels[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `reels[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `reels[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `count` | integer | Number of reels returned |
 | `pages` | integer | Number of pages fetched |
 
@@ -93,7 +97,21 @@ print(response.json())
       "author_name": "Facebook",
       "author_url": "https://www.facebook.com/facebook",
       "thumbnail": "https://scontent.xx.fbcdn.net/v/t15.5256-10/894523_..._n.jpg",
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     },
     {
       "video_id": "851749203847192",

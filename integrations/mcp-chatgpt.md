@@ -2,21 +2,20 @@
 
 Use API Direct as an MCP server in ChatGPT to search social media and news from your conversations.
 
-Developer Mode is required (ChatGPT Pro, Team, Enterprise, or Edu).
-
 ## Setup
 
-1. Open ChatGPT and go to **Settings** > **Apps**
-2. Under **Advanced**, toggle **Developer Mode** on
+1. Open ChatGPT and go to **Settings** > **Connectors**
+2. Under **Advanced settings**, toggle **Developer Mode** on
 3. Click **Create** and fill in:
    - **Name:** API Direct
+   - **Description:** Search social media and news across LinkedIn, Twitter, Reddit, YouTube, Instagram, TikTok, Facebook, forums, and news articles.
    - **Server URL:** the URL below, with your API key from the [API Keys](https://apidirect.io/dashboard/keys) page:
 
 ```
 https://apidirect.io/mcp?token=YOUR_API_KEY
 ```
 
-4. Check **"I trust this provider"** and click **Create**
+4. Click **Create**
 
 ## Usage
 
@@ -38,4 +37,4 @@ All API Direct endpoints are available as MCP tools. This includes search across
 
 **"Invalid API key"** — Double-check your API key in the [dashboard](https://apidirect.io/dashboard/keys). Keys start with `ak_live_`.
 
-**Developer Mode not available** — Requires a ChatGPT Pro, Team, Enterprise, or Edu plan.
+**Developer Mode not available** — Check that your plan supports Developer Mode under **Settings** > **Connectors** > **Advanced settings**.

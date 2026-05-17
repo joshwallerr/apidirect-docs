@@ -20,7 +20,7 @@ GET /v1/tiktok/videos
 | `region` | No | 2-letter region code (e.g. `us`, `gb`, `jp`) |
 | `publish_time` | No | Time filter: `0`=ALL, `1`=24h, `7`=week, `30`=month, `90`=3months, `180`=6months (default: 0) |
 | `sort_by` | No | Sort order: `relevance`, `most_recent`, `most_liked` (default: relevance) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -46,7 +46,11 @@ GET /v1/tiktok/videos
 | `videos[].cover` | string | Video cover/thumbnail URL |
 | `videos[].music_title` | string | Title of the music used |
 | `videos[].music_author` | string | Author of the music used |
-| `videos[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `videos[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `videos[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `videos[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `videos[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -102,7 +106,21 @@ print(response.json())
       "cover": "https://p16-sign.tiktokcdn.com/...",
       "music_title": "original sound",
       "music_author": "chefmike",
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "pages": 2,

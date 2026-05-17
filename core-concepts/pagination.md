@@ -32,7 +32,7 @@ The response includes the current `page` number:
 
 Other endpoints use a `pages` parameter that fetches multiple pages in a single API call. This is useful for retrieving larger result sets without making multiple requests.
 
-**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram Posts, TikTok Videos
+**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram Posts, TikTok Videos, Web Search
 
 ```bash
 # Fetch 3 pages of results in one call
@@ -63,6 +63,7 @@ The response includes the number of `pages` fetched:
 | YouTube Videos | `pages` | 10 |
 | Instagram Posts | `pages` | 10 |
 | TikTok Videos | `pages` | 10 |
+| Web Search | `pages` | 10 |
 
 ## Pattern 3: `limit` Parameter
 

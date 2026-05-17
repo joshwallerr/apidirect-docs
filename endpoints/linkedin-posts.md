@@ -1,6 +1,6 @@
 # LinkedIn Posts
 
-Search LinkedIn posts and articles by keyword. Returns post content, author, publication date, and direct URL for each result.
+Search LinkedIn posts and articles by keyword. Returns post content, author, publication date, engagement metrics (likes, comments, shares, reactions), and attached content (images, articles, videos, job listings) for each result.
 
 ## Endpoint
 
@@ -18,7 +18,7 @@ GET /v1/linkedin/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `page` | No | Page number for pagination (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per request to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -32,7 +32,21 @@ GET /v1/linkedin/posts
 | `posts[].source` | string | `"LinkedIn"` |
 | `posts[].domain` | string | `"linkedin.com"` |
 | `posts[].snippet` | string | Post content text |
-| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].urn` | string | LinkedIn post URN identifier |
+| `posts[].likes` | integer | Number of likes |
+| `posts[].comments` | integer | Number of comments |
+| `posts[].shares` | integer | Number of shares |
+| `posts[].reactions` | object | Reaction type breakdown (e.g. `{"like": 2, "appreciation": 1}`) |
+| `posts[].images` | array | Image URLs attached to the post |
+| `posts[].article` | object/null | Shared article with `title`, `subtitle`, `url`, `description` |
+| `posts[].video` | object/null | Video content with `thumbnail` and `duration` (ms) |
+| `posts[].job` | object/null | Job listing with `title`, `subtitle`, `url`, `description` |
+| `posts[].has_content_entities` | boolean | `true` if the post has attached content (image, article, video, or job). Posts with `has_content_entities: false` may be reposts — use the Post Details endpoint to check. |
+| `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `page` | integer | Current page number |
 | `count` | integer | Number of results returned |
 
@@ -75,7 +89,36 @@ print(response.json())
       "source": "LinkedIn",
       "domain": "linkedin.com",
       "snippet": "Exciting developments in artificial intelligence...",
-      "sentiment": "positive"
+      "urn": "urn:li:activity:7444854690124652545",
+      "likes": 12,
+      "comments": 3,
+      "shares": 1,
+      "reactions": {
+        "like": 10,
+        "appreciation": 2
+      },
+      "images": [
+        "https://media.licdn.com/dms/image/..."
+      ],
+      "article": null,
+      "video": null,
+      "job": null,
+      "has_content_entities": true,
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "page": 1,

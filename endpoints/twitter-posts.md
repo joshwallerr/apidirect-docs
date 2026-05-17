@@ -18,7 +18,7 @@ GET /v1/twitter/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -45,7 +45,11 @@ GET /v1/twitter/posts
 | `posts[].is_quote` | boolean | Whether the tweet is a quote tweet |
 | `posts[].hashtags` | string[] | Hashtags used in the tweet |
 | `posts[].user_mentions` | string[] | Usernames mentioned in the tweet |
-| `posts[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 
@@ -101,7 +105,21 @@ print(response.json())
       "is_quote": false,
       "hashtags": ["AI", "MachineLearning"],
       "user_mentions": ["OpenAI"],
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "pages": 2,

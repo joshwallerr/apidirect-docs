@@ -17,7 +17,7 @@ GET /v1/twitter/tweet/comments
 |-----------|----------|-------------|
 | `tweet_id` | Yes | Numeric tweet ID |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
-| `get_sentiment` | No | Set to `true` to add AI sentiment analysis to each result. Adds +$0.001 per page to the cost. Returns `positive`, `negative`, or `neutral`. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -44,7 +44,11 @@ GET /v1/twitter/tweet/comments
 | `comments[].is_quote` | boolean | Whether the reply is also a quote |
 | `comments[].hashtags` | string[] | Hashtags used |
 | `comments[].user_mentions` | string[] | Usernames mentioned |
-| `comments[].sentiment` | string/null | Sentiment classification: `positive`, `negative`, or `neutral`. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `comments[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
+| `comments[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
+| `comments[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
+| `comments[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
+| `comments[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `tweet_id` | string | Requested tweet ID |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
@@ -97,7 +101,21 @@ print(response.json())
       "is_quote": false,
       "hashtags": [],
       "user_mentions": ["username"],
-      "sentiment": "positive"
+      "sentiment": {
+        "emotions": {
+          "joy": 40,
+          "trust": 55,
+          "fear": 0,
+          "surprise": 10,
+          "sadness": 0,
+          "disgust": 0,
+          "anger": 0,
+          "anticipation": 30
+        },
+        "dominant_emotion": "trust",
+        "emotional_intensity": 5,
+        "polarity": "positive"
+      }
     }
   ],
   "tweet_id": "1631781099415257088",
