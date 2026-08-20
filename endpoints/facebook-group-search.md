@@ -1,4 +1,6 @@
-# Facebook Group Search
+# Facebook Group Posts Search
+
+> **Temporarily unavailable:** This endpoint is temporarily unavailable while we upgrade it. Every request currently returns `503` with `"code": "endpoint_suspended"`, and is not billed. See the [status page](https://apidirect.io/status) for updates. The reference below describes the endpoint as it behaves when available.
 
 Search posts within a specific Facebook group by keyword. Returns matching posts with content, author details, and engagement metrics.
 

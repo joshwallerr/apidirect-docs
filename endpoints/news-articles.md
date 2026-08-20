@@ -17,7 +17,7 @@ GET /v1/news/articles
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
 | `limit` | No | Number of results to return, 1-100 (default: 10) |
-| `time_published` | No | Time filter: `anytime`, `1h`, `1d`, `7d`, `1m`, `1y` (default: `anytime`) |
+| `time_published` | No | Time filter: `anytime`, `1h`, `1d`, `7d`, `1y` (default: `anytime`) |
 | `source` | No | Filter by news source (e.g., `bbc.com`) |
 | `country` | No | 2-letter country code (default: `us`) |
 | `language` | No | 2-letter language code (default: `en`) |

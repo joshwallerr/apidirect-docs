@@ -1,11 +1,11 @@
-# Instagram Posts
+# Instagram User Posts
 
-Search Instagram posts by keyword. Returns post content, engagement metrics (likes, comments, shares, views), author metadata, and publication date. Supports fetching multiple pages in a single API call.
+Get a user's recent posts and reels (their feed) by profile URL or username. Returns post captions, engagement metrics (likes, comments, shares, views), author metadata, hashtags, and mentions. Supports fetching multiple pages in a single API call.
 
 ## Endpoint
 
 ```
-GET /v1/instagram/posts
+GET /v1/instagram/user/posts
 ```
 
 **Price:** $0.006 per page
@@ -15,15 +15,18 @@ GET /v1/instagram/posts
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `url` | No | Instagram profile URL, e.g. `https://instagram.com/natgeo` (max 500 characters). Provide either `url` or `username`. |
+| `username` | No | Instagram username, with or without leading `@` (max 100 characters). Provide either `url` or `username`. |
+| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to 12 posts. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
+
+Provide exactly one of `url` or `username`.
 
 ## Response Fields
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `posts` | array | Array of matching posts |
+| `posts` | array | Array of the user's recent posts and reels |
 | `posts[].title` | string | Post title (format: `@username on Instagram`) |
 | `posts[].url` | string | Direct link to the post |
 | `posts[].date` | string | Publication date and time |
@@ -37,7 +40,7 @@ GET /v1/instagram/posts
 | `posts[].reposts` | integer | Number of reposts |
 | `posts[].views` | integer/null | Number of views/plays (`null` for image posts) |
 | `posts[].is_video` | boolean | Whether the post is a video |
-| `posts[].media_type` | string | Post type (e.g., `"feed"`, `"clips"`) |
+| `posts[].media_type` | string | Post type (e.g., `"feed"`, `"clips"`, `"carousel_container"`) |
 | `posts[].author_verified` | boolean | Whether the author is verified |
 | `posts[].author_name` | string | Author's display name |
 | `posts[].hashtags` | string[] | Hashtags used in the caption |
@@ -55,6 +58,7 @@ GET /v1/instagram/posts
 | `posts[].coauthors` | array | Collaborators on the post (`username`, `full_name`, `user_id`, `is_verified`) |
 | `posts[].carousel_media` | array | For carousel/album posts: each slide as `media_id`, `is_video`, `image_url`, `video_url`, `width`, `height` (empty for single-media posts) |
 | `posts[].audio` | object/null | Audio track for reels/videos: `type` (`music` or `original`), `title`, `artist`, `audio_id`, `duration_ms` (`null` when no audio) |
+| `posts[].is_pinned` | boolean | Whether the post is pinned to the top of the user's profile |
 | `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
@@ -68,7 +72,7 @@ GET /v1/instagram/posts
 ### cURL
 
 ```bash
-curl "https://apidirect.io/v1/instagram/posts?query=technology&pages=2" \
+curl "https://apidirect.io/v1/instagram/user/posts?url=https://instagram.com/natgeo&pages=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -78,10 +82,10 @@ curl "https://apidirect.io/v1/instagram/posts?query=technology&pages=2" \
 import requests
 
 response = requests.get(
-    "https://apidirect.io/v1/instagram/posts",
+    "https://apidirect.io/v1/instagram/user/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
-        "query": "technology",
+        "url": "https://instagram.com/natgeo",
         "pages": 2
     }
 )
@@ -94,63 +98,59 @@ print(response.json())
 {
   "posts": [
     {
-      "title": "@mrbeast on Instagram",
-      "url": "https://instagram.com/p/DSDh2qaEVmQ",
-      "date": "2025-12-09 20:16:58",
-      "author": "mrbeast",
+      "title": "@natgeo on Instagram",
+      "url": "https://instagram.com/p/DZkn1f0Flsc",
+      "date": "2026-06-14 16:00:06",
+      "author": "natgeo",
       "source": "Instagram",
       "domain": "instagram.com",
-      "snippet": "How Many People Does it Take to Pull a Plane w/ @saudi_airlines",
+      "snippet": "Photograph by @petelas | A curious fox in the snow...",
       "likes": 530176,
       "comments": 5608,
       "shares": 9536,
       "reposts": 4353,
-      "views": 29667777,
-      "is_video": true,
-      "media_type": "clips",
+      "views": null,
+      "is_video": false,
+      "media_type": "carousel_container",
       "author_verified": true,
-      "author_name": "MrBeast",
+      "author_name": "National Geographic",
       "hashtags": [],
-      "mentions": ["saudi_airlines"],
-      "media_id": "3512345678901234567",
+      "mentions": ["petelas"],
+      "media_id": "3520497851234567890",
       "thumbnail_url": "https://scontent.cdninstagram.com/v/t51.82787-15/cover.jpg",
-      "video_url": "https://scontent.cdninstagram.com/o1/v/t2/clip.mp4",
-      "video_duration": 41.2,
+      "video_url": "",
+      "video_duration": null,
       "width": 1080,
-      "height": 1920,
-      "carousel_media_count": 0,
+      "height": 1350,
+      "carousel_media_count": 3,
       "is_paid_partnership": false,
-      "location": null,
+      "location": {
+        "name": "Serengeti National Park",
+        "city": "Arusha",
+        "lat": -2.3333,
+        "lng": 34.8333
+      },
       "tagged_users": [
-        {"username": "saudi_airlines", "full_name": "Saudia", "user_id": "12345678"}
+        {"username": "natgeotv", "full_name": "National Geographic TV", "user_id": "18091046"}
       ],
       "coauthors": [],
-      "carousel_media": [],
-      "audio": {
-        "type": "original",
-        "title": "Original audio",
-        "artist": "mrbeast",
-        "audio_id": "1234567890123456",
-        "duration_ms": 41200
-      },
-      "sentiment": {
-        "emotions": {
-          "joy": 40,
-          "trust": 55,
-          "fear": 0,
-          "surprise": 10,
-          "sadness": 0,
-          "disgust": 0,
-          "anger": 0,
-          "anticipation": 30
-        },
-        "dominant_emotion": "trust",
-        "emotional_intensity": 5,
-        "polarity": "positive"
-      }
+      "carousel_media": [
+        {"media_id": "3520497851234567891", "is_video": false, "image_url": "https://scontent.cdninstagram.com/v/t51.82787-15/slide1.jpg", "video_url": "", "width": 1080, "height": 1350},
+        {"media_id": "3520497851234567892", "is_video": false, "image_url": "https://scontent.cdninstagram.com/v/t51.82787-15/slide2.jpg", "video_url": "", "width": 1080, "height": 1350},
+        {"media_id": "3520497851234567893", "is_video": true, "image_url": "https://scontent.cdninstagram.com/v/t51.82787-15/slide3.jpg", "video_url": "https://scontent.cdninstagram.com/o1/v/t2/slide3.mp4", "width": 1080, "height": 1920}
+      ],
+      "audio": null,
+      "is_pinned": false
     }
   ],
   "pages": 2,
-  "count": 20
+  "count": 24
 }
 ```
+
+## Notes
+
+- Posts are returned newest first, up to 12 per page. Use `pages` (1-10) to fetch more in a single call; you are billed per page requested.
+- Both regular posts and Reels are returned. Use `media_type` to distinguish them (`clips` for Reels).
+- If the account does not exist, the endpoint returns `404` with code `not_found`. You are not charged for `not_found` responses.
+- Private accounts return no posts.

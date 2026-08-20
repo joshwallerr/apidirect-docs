@@ -1,6 +1,6 @@
 # Instagram User Profile
 
-Get the full profile for a single Instagram user by username or profile URL. Returns biography, follower / following counts, media count, category, external link, contact info, and verification status.
+Get the full profile for a single Instagram user by username or profile URL. Returns biography, follower / following counts, media count, category, external link, contact info, verification status, and "About this account" info (country the account is based in, join date, verification date, former usernames).
 
 ## Endpoint
 
@@ -42,7 +42,15 @@ Provide exactly one of `username` or `url`.
 | `user.profile_pic_url_hd` | string | URL to high-resolution profile picture |
 | `user.public_email` | string | Public contact email, or empty string |
 | `user.public_phone_number` | string | Public contact phone number, or empty string |
+| `user.account_based_in` | string | Country the account is based in, or empty string |
+| `user.date_joined` | string | Month and year the account joined Instagram (e.g. `November 2010`), or empty string |
+| `user.date_joined_timestamp` | integer/null | Unix timestamp of the join date |
+| `user.date_verified` | string | Month and year the account was verified, or empty string |
+| `user.date_verified_timestamp` | integer/null | Unix timestamp of the verification date |
+| `user.former_usernames` | integer/null | Number of former usernames the account has used |
 | `user.url` | string | Link to the profile |
+
+The "About this account" fields come from Instagram's public transparency info. Instagram does not expose it for every account, so the string fields can be empty and the `integer/null` fields `null`.
 
 If the username does not exist, the endpoint returns a `404` with `code: "not_found"`.
 
@@ -102,6 +110,12 @@ curl "https://apidirect.io/v1/instagram/user?url=https://www.instagram.com/natge
     "profile_pic_url_hd": "https://scontent.cdninstagram.com/.../photo_hd.jpg",
     "public_email": "",
     "public_phone_number": "",
+    "account_based_in": "United States",
+    "date_joined": "November 2010",
+    "date_joined_timestamp": 1288569600,
+    "date_verified": "",
+    "date_verified_timestamp": null,
+    "former_usernames": 0,
     "url": "https://instagram.com/natgeo"
   }
 }

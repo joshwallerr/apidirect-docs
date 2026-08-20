@@ -34,6 +34,9 @@ GET /v1/reddit/comments
 | `posts[].subreddit` | string | Subreddit name |
 | `posts[].snippet` | string | Comment content text |
 | `posts[].type` | string | `"comment"` |
+| `posts[].upvotes` | integer/null | Net upvotes on the comment. `null` if the score is hidden by the subreddit or unavailable from the fallback source. |
+| `posts[].post_upvotes` | integer/null | Net upvotes on the parent post. `null` if unavailable from the fallback source. |
+| `posts[].post_comments` | integer/null | Total comments on the parent post. `null` if unavailable from the fallback source. |
 | `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
@@ -83,6 +86,9 @@ print(response.json())
       "subreddit": "python",
       "snippet": "Comment content...",
       "type": "comment",
+      "upvotes": 42,
+      "post_upvotes": 1850,
+      "post_comments": 274,
       "sentiment": {
         "emotions": {
           "joy": 40,

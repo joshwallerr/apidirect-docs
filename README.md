@@ -1,8 +1,8 @@
 # API Direct Documentation
 
-Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media API.
+Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media, web and news API.
 
-Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Instagram, TikTok, web forums, news, and Google through a unified REST API.
+Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, Truth Social, TikTok, Reddit, YouTube, web forums, news, Google Search and Google Maps through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
 
@@ -10,20 +10,24 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 
 **Docs:** [apidirect.io/docs](https://apidirect.io/docs)
 
+> This repository mirrors the documentation published at [apidirect.io/docs](https://apidirect.io/docs). Every page here is a verbatim copy of its live counterpart.
+
 ---
 
 ## Getting Started
 
-- [Introduction](getting-started/introduction.md) — What is API Direct, supported platforms, key features
-- [Quickstart](getting-started/quickstart.md) — Sign up, create a key, make your first request
-- [Authentication](getting-started/authentication.md) — X-API-Key header, key format, error responses
+- [Introduction](getting-started/introduction.md) — API Direct is a pay-as-you-go API that lets you search real-time data across social media and news through a single, unified interface.
+- [Quickstart](getting-started/quickstart.md) — Get up and running with API Direct in three steps.
+- [Authentication](getting-started/authentication.md) — All API requests require authentication using an API key passed in the `X-API-Key` header.
 
 ## Core Concepts
 
-- [Response Format](core-concepts/response-format.md) — Unified response shape, fields, platform-specific extras
-- [Pagination](core-concepts/pagination.md) — `page` vs `pages` parameter patterns
-- [Error Handling](core-concepts/error-handling.md) — Error codes, status codes, retry guidance
-- [Rate Limits](core-concepts/rate-limits.md) — Concurrency limits, 429 responses, best practices
+- [Response Format](core-concepts/response-format.md) — All endpoints return a consistent JSON structure, making it easy to work with data from multiple platforms using the same code.
+- [Boolean Search](core-concepts/boolean-search.md) — Your `query` is passed straight through to each platform's own search engine, so on supported endpoints you can use that platform's boolean operators — exact phrases (`"..."`), `OR`, exclusion (`-term`), and grouping `( )` — to build precise queries.
+- [Pagination](core-concepts/pagination.md) — API Direct endpoints support pagination to retrieve multiple pages of results.
+- [Batch Requests](core-concepts/batch.md) — Send up to 100 requests in a single call instead of looping an endpoint over a list of IDs, URLs or usernames.
+- [Error Handling](core-concepts/error-handling.md) — When a request fails, API Direct returns a JSON error response with an HTTP status code, an `error` message, and a `code` identifier.
+- [Rate Limits](core-concepts/rate-limits.md) — API Direct enforces concurrency limits to ensure fair usage and reliable performance for all users.
 
 ## Endpoints
 
@@ -32,12 +36,16 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Endpoint | Price | Docs |
 |----------|-------|------|
 | Search Posts | $0.006/request | [linkedin-posts.md](endpoints/linkedin-posts.md) |
+| Person Posts | $0.006/request | [linkedin-person-posts.md](endpoints/linkedin-person-posts.md) |
 | Post Details | $0.002/request | [linkedin-post.md](endpoints/linkedin-post.md) |
 | Company Details | $0.006/request | [linkedin-company.md](endpoints/linkedin-company.md) |
 | Company Posts | $0.006/request | [linkedin-company-posts.md](endpoints/linkedin-company-posts.md) |
 | Search Companies | $0.006/request | [linkedin-companies.md](endpoints/linkedin-companies.md) |
+| Search Jobs | $0.006/request | [linkedin-jobs.md](endpoints/linkedin-jobs.md) |
+| Job Details | $0.002/request | [linkedin-job.md](endpoints/linkedin-job.md) |
+| Job Location IDs | Reference — free | [linkedin-job-locations.md](endpoints/linkedin-job-locations.md) |
 
-### Twitter/X
+### Twitter / X
 
 | Endpoint | Price | Docs |
 |----------|-------|------|
@@ -67,10 +75,13 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Page Reviews | $0.008/page | [facebook-page-reviews.md](endpoints/facebook-page-reviews.md) |
 | Group Details | $0.008/request | [facebook-group-details.md](endpoints/facebook-group-details.md) |
 | Group Posts | $0.008/page | [facebook-group-posts.md](endpoints/facebook-group-posts.md) |
-| Search Group Posts | $0.008/page | [facebook-group-search.md](endpoints/facebook-group-search.md) |
+| Group Posts Search | $0.008/page | [facebook-group-search.md](endpoints/facebook-group-search.md) |
+| Post Comments | $0.008/page | [facebook-post-comments.md](endpoints/facebook-post-comments.md) |
 | Search Posts | $0.008/page | [facebook-search-posts.md](endpoints/facebook-search-posts.md) |
 | Search Pages | $0.008/page | [facebook-search-pages.md](endpoints/facebook-search-pages.md) |
 | Search Videos | $0.008/page | [facebook-search-videos.md](endpoints/facebook-search-videos.md) |
+| Search Events | $0.008/page | [facebook-search-events.md](endpoints/facebook-search-events.md) |
+| Search Locations | $0.004/request | [facebook-search-locations.md](endpoints/facebook-search-locations.md) |
 
 ### Reddit
 
@@ -86,6 +97,9 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 |----------|-------|------|
 | Search Videos | $0.005/page | [youtube-videos.md](endpoints/youtube-videos.md) |
 | Search Channels | $0.005/page | [youtube-channels.md](endpoints/youtube-channels.md) |
+| Channel Details | $0.005/request | [youtube-channel-details.md](endpoints/youtube-channel-details.md) |
+| Video Details | $0.005/request | [youtube-video-details.md](endpoints/youtube-video-details.md) |
+| Video Comments | $0.005/page | [youtube-comments.md](endpoints/youtube-comments.md) |
 
 ### Instagram
 
@@ -94,6 +108,23 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 | Search Posts | $0.006/page | [instagram-posts.md](endpoints/instagram-posts.md) |
 | Search Users | $0.006/request | [instagram-users.md](endpoints/instagram-users.md) |
 | User Profile | $0.006/request | [instagram-user.md](endpoints/instagram-user.md) |
+| User Posts | $0.006/page | [instagram-user-posts.md](endpoints/instagram-user-posts.md) |
+| Post Details | $0.006/request | [instagram-post.md](endpoints/instagram-post.md) |
+
+### Threads
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.006/request | [threads-posts.md](endpoints/threads-posts.md) |
+| Search Users | $0.006/request | [threads-users.md](endpoints/threads-users.md) |
+| User Profile | $0.006/request | [threads-user.md](endpoints/threads-user.md) |
+| User Posts | $0.006/request | [threads-user-posts.md](endpoints/threads-user-posts.md) |
+
+### Truth Social
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| User Posts | $0.006/page | [truthsocial-user-posts.md](endpoints/truthsocial-user-posts.md) |
 
 ### TikTok
 
@@ -101,34 +132,44 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Reddit, YouTube, Ins
 |----------|-------|------|
 | Search Videos | $0.006/page | [tiktok-videos.md](endpoints/tiktok-videos.md) |
 | Search Users | $0.006/page | [tiktok-users.md](endpoints/tiktok-users.md) |
+| User Profile | $0.006/request | [tiktok-user.md](endpoints/tiktok-user.md) |
+| Video Details | $0.006/request | [tiktok-video.md](endpoints/tiktok-video.md) |
 
-### Forums & News
+### Google, Web & Places
 
 | Endpoint | Price | Docs |
 |----------|-------|------|
-| Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
+| Web Search | $0.004/page (+$0.002 flat/request when `include_ai_overview=true`) | [web-search.md](endpoints/web-search.md) |
 | News Articles | $0.008/request | [news-articles.md](endpoints/news-articles.md) |
+| Forum Posts | $0.008/request | [forum-posts.md](endpoints/forum-posts.md) |
+| AI Mode | $0.005/request | [google-ai-mode.md](endpoints/google-ai-mode.md) |
+| Places Search | $0.01/page | [places-search.md](endpoints/places-search.md) |
+| Place Details | $0.003/request | [places-details.md](endpoints/places-details.md) |
+| Place Reviews | $0.01/page | [places-reviews.md](endpoints/places-reviews.md) |
+| Place Photos | $0.01/page | [places-photos.md](endpoints/places-photos.md) |
 
-### Web & AI Search
+## Integrations
 
-| Endpoint | Price | Docs |
-|----------|-------|------|
-| Web Search | $0.004/page (+$0.002 with AI overview) | [web-search.md](endpoints/web-search.md) |
-| Google AI Mode | $0.005/request | [google-ai-mode.md](endpoints/google-ai-mode.md) |
-
-## Integrations (MCP)
-
-- [Claude Code](integrations/mcp-claude-code.md) — Terminal setup via `claude mcp add`
-- [Claude Desktop](integrations/mcp-claude-desktop.md) — Connectors or config file setup
-- [ChatGPT](integrations/mcp-chatgpt.md) — Developer Mode setup
-- [Cursor](integrations/mcp-cursor.md) — `.cursor/mcp.json` setup
-- [OpenClaw](integrations/mcp-openclaw.md) — OpenClaw setup
+- [Build with AI](integrations/build-with-ai.md) — Connect your AI coding assistant to the API Direct MCP server and let it wire up endpoints for you.
+- [n8n](integrations/n8n.md) — Use API Direct in your n8n workflows with our community node — search social media, news, and the web as a native workflow step, no code required.
+- [Claude Code](integrations/mcp-claude-code.md) — Use API Direct as an MCP server in Claude Code to search social media and news directly from your terminal.
+- [Claude Desktop](integrations/mcp-claude-desktop.md) — Use API Direct as an MCP server in Claude Desktop to search social media and news from your conversations.
+- [ChatGPT](integrations/mcp-chatgpt.md) — Use API Direct as an MCP server in ChatGPT to search social media and news from your conversations.
+- [Cursor](integrations/mcp-cursor.md) — Use API Direct as an MCP server in Cursor to search social media and news from your editor.
+- [OpenClaw](integrations/mcp-openclaw.md) — Use API Direct as an MCP server in OpenClaw to search social media and news from your AI agent.
 
 ## Account
 
-- [Pricing](account/pricing.md) — Pay-per-request model, free tier, trust levels
-- [Spending Limits](account/spending-limits.md) — Daily and monthly caps
-- [API Keys](account/api-keys.md) — Creating, revoking, and managing keys
+- [Pricing](account/pricing.md) — API Direct uses a pay-per-request pricing model.
+- [Spending Limits](account/spending-limits.md) — Spending limits let you cap your API costs on a daily and monthly basis.
+- [API Keys](account/api-keys.md) — API keys are used to authenticate your requests.
+
+---
+
+## Reference Data
+
+- [`linkedin-job-locations.json`](linkedin-job-locations.json) — LinkedIn location IDs for the `location_id` filter on [Search Jobs](endpoints/linkedin-jobs.md)
+- [`twitter-trends-locations.json`](twitter-trends-locations.json) — WOEIDs for the `woeid` parameter on [Trends](endpoints/twitter-trends.md)
 
 ---
 
@@ -156,4 +197,5 @@ print(response.json())
 - [Dashboard](https://apidirect.io/dashboard) — Manage keys, view usage, set limits
 - [Live docs](https://apidirect.io/docs) — Full documentation with navigation
 - [LLM-friendly docs](https://apidirect.io/llms-full.txt) — All docs as a single text file
+- [Status](https://apidirect.io/status) — Live endpoint health and uptime
 - [Support](mailto:support@apidirect.io)

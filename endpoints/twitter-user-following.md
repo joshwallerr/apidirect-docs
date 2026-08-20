@@ -16,7 +16,11 @@ GET /v1/twitter/user/following
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `username` | Yes | Twitter username (without @, max 50 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-175 (default: 1). Each page returns ~50 accounts. Billed per page requested. |
+
+## Deep Pagination
+
+This endpoint supports up to **175 pages** in a single call — roughly 7,500 accounts. Pagination stops early when the account has no more accounts to return, or when the response approaches the maximum size, so `count` may be lower than `pages` × 50.
 
 ## Response Fields
 
@@ -81,6 +85,6 @@ print(response.json())
   ],
   "username": "elonmusk",
   "pages": 1,
-  "count": 20
+  "count": 56
 }
 ```

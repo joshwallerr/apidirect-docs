@@ -20,6 +20,7 @@ GET /v1/facebook/posts
 | `start_date` | No | Filter posts from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter posts up to this date (format: `YYYY-MM-DD`) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |
+| `location_id` | No | Facebook location ID to scope results to a place. Resolve one from a place name with the [Search Locations](/docs/facebook-search-locations) endpoint. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields

@@ -58,6 +58,7 @@ The response includes the number of `pages` fetched:
 | Reddit Posts | `page` | 5 |
 | Forum Posts | `page` | Not specified |
 | Twitter Posts | `pages` | 10 |
+| Twitter User Following | `pages` | 175 |
 | Facebook (paginated) | `pages` | 10 |
 | Reddit Comments | `pages` | 5 |
 | YouTube Videos | `pages` | 10 |

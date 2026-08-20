@@ -6,7 +6,10 @@ Send a prompt to Google's AI Mode and get a structured conversational reply with
 
 ```
 GET /v1/web/ai-mode
+POST /v1/web/ai-mode
 ```
+
+Both methods accept the same parameters. `GET` takes them as query parameters; `POST` takes them as a JSON body. Use `POST` for long prompts that don't fit comfortably in a URL.
 
 **Price:** $0.005 per request
 **Free tier:** 50 requests/month
@@ -15,7 +18,7 @@ GET /v1/web/ai-mode
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `prompt` | Yes | The AI Mode prompt (max 2000 characters) |
+| `prompt` | Yes | The AI Mode prompt (max 12000 characters) |
 | `country` | No | 2-letter ISO 3166-1 alpha-2 country code (default: `us`) |
 | `language` | No | 2-letter ISO 639-1 language code (default: `en`) |
 | `session_token` | No | Token from a previous response to continue the conversation in context |
@@ -46,6 +49,15 @@ GET /v1/web/ai-mode
 ```bash
 curl "https://apidirect.io/v1/web/ai-mode?prompt=How%20do%20I%20make%20pizza%3F" \
   -H "X-API-Key: YOUR_API_KEY"
+```
+
+Or with POST (recommended for long prompts):
+
+```bash
+curl -X POST "https://apidirect.io/v1/web/ai-mode" \
+  -H "X-API-Key: YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "How do I make pizza?"}'
 ```
 
 ### Python

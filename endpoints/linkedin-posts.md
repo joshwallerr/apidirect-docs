@@ -15,9 +15,16 @@ GET /v1/linkedin/posts
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `query` | Yes | Search keyword (max 500 characters) |
+| `query` | Conditional | Search keyword (max 500 characters). Required unless at least one filter (e.g. `author`) is provided. |
 | `page` | No | Page number for pagination (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `author` | No | Filter to posts authored by a specific person. Accepts a profile URL, public slug (e.g. `williamhgates`), or member URN — resolved automatically. Comma-separate for multiple. |
+| `mentions_member` | No | Filter to posts that mention a specific person (profile URL, slug, or member URN). |
+| `from_company` | No | Filter to posts authored by a company page. Numeric LinkedIn company ID (get it from the [Company Details](/docs/linkedin-company) endpoint). Comma-separate for multiple. |
+| `author_company` | No | Filter to posts written by people who work at a company. Numeric company ID. |
+| `mentions_company` | No | Filter to posts that mention a company. Numeric company ID. |
+| `author_title` | No | Filter by the author's job title as free text (e.g. `CEO`). |
+| `author_industry` | No | Filter by the author's industry. Numeric LinkedIn industry ID(s), comma-separated. Advanced. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
