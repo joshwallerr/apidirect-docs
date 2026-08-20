@@ -24,7 +24,7 @@ n8n tests the connection automatically — you should see **"Connection tested s
 
 ## Usage
 
-Pick a **Resource** (the platform) and an **Operation**, fill in the required fields, and execute. Optional parameters — page counts, sort order, date filters, [sentiment analysis](/docs/sentiment) — live under **Additional Fields → Add Field**.
+Pick a **Resource** (the platform) and an **Operation**, fill in the required fields, and execute. Optional parameters — page counts, sort order, date filters, [sentiment analysis](/docs/pricing#emotion-analysis) — live under **Additional Fields → Add Field**.
 
 List operations return one n8n item per result (20 tweets become 20 items), so you can feed results straight into filters, spreadsheets, Slack messages, or any other node. Detail operations return a single item.
 

@@ -17,6 +17,7 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 | Endpoint | Price |
 |----------|-------|
 | Search Posts | $0.006/request |
+| Person Posts | $0.006/request |
 | Post Details | $0.002/request |
 | Company Details | $0.006/request |
 | Company Posts | $0.006/request |
