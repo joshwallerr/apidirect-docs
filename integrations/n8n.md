@@ -31,7 +31,7 @@ List operations return one n8n item per result (20 tweets become 20 items), so y
 A few things worth knowing:
 
 - **Pagination** uses `Page` or `Pages` fields rather than cursors. Where the API fetches multiple pages server-side in one call, each page is billed as one request — the field description tells you when that applies. See [Pagination](/docs/pagination).
-- **Pricing** is pay-as-you-go, $0.001–$0.01 per request — each operation's description shows its price. No subscriptions. See [Pricing](/docs/pricing).
+- **Pricing** is pay-as-you-go, $0.002–$0.01 per request — each operation's description shows its price. No subscriptions. See [Pricing](/docs/pricing).
 - **Search operations** support [boolean search syntax](/docs/boolean-search).
 
 ## Use with AI Agents

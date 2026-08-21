@@ -28,7 +28,7 @@ https://apidirect.io
 
 **Unified response format** - Every endpoint returns the same core fields: `title`, `url`, `date`, `author`, `source`, `domain`, and `snippet`. This makes it easy to work with data from multiple platforms without writing platform-specific parsing logic.
 
-**Pay per request** - No monthly subscriptions or commitments. You only pay for successful API calls, with prices starting at $0.003 per request.
+**Pay per request** - No monthly subscriptions or commitments. You only pay for successful API calls, with prices starting at $0.002 per request.
 
 **Free tier** - Every account gets 50 free requests per endpoint per month. No credit card required to get started.
 
