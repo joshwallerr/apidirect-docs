@@ -151,7 +151,7 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 ## Integrations
 
 - [Build with AI](integrations/build-with-ai.md) — Connect your AI coding assistant to the API Direct MCP server and let it wire up endpoints for you.
-- [n8n](integrations/n8n.md) — Use API Direct in your n8n workflows with our community node — search social media, news, and the web as a native workflow step, no code required.
+- [n8n](integrations/n8n.md) — Use API Direct in your n8n workflows with our verified community node — search social media, news, and the web as a native workflow step, no code required.
 - [Claude Code](integrations/mcp-claude-code.md) — Use API Direct as an MCP server in Claude Code to search social media and news directly from your terminal.
 - [Claude Desktop](integrations/mcp-claude-desktop.md) — Use API Direct as an MCP server in Claude Desktop to search social media and news from your conversations.
 - [ChatGPT](integrations/mcp-chatgpt.md) — Use API Direct as an MCP server in ChatGPT to search social media and news from your conversations.

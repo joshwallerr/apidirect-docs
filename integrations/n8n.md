@@ -1,18 +1,19 @@
 # n8n
 
-Use API Direct in your [n8n](https://n8n.io) workflows with our community node — search social media, news, and the web as a native workflow step, no code required.
+Use API Direct in your [n8n](https://n8n.io) workflows with our verified community node — search social media, news, and the web as a native workflow step, no code required.
 
 The node is published on npm as [`n8n-nodes-apidirect`](https://www.npmjs.com/package/n8n-nodes-apidirect) and covers 58 operations across Twitter/X, Facebook, Instagram, TikTok, YouTube, Reddit, Threads, Truth Social, and Google (web search, AI Mode, news, forums, and Maps/Places).
 
 ## Install
 
-On self-hosted n8n (version 1.94 or later):
+API Direct is a [verified community node](https://docs.n8n.io/integrations/community-nodes/installation/verified-install/), so on n8n Cloud and current self-hosted versions there is nothing to install separately:
 
-1. Open **Settings → Community nodes**.
-2. Click **Install a community node**.
-3. Enter `n8n-nodes-apidirect`, tick the acknowledgement, and click **Install**.
+1. Open the nodes panel and search for **API Direct**.
+2. Click it (or drag it onto the canvas) — n8n installs the node automatically.
 
-The **API Direct** node then appears in the nodes panel like any built-in node.
+If it doesn't appear in search, make sure **Verified Community Nodes** is enabled (Cloud: **Admin Panel**; self-hosted: **Settings → Community nodes**) and restart your instance.
+
+On older self-hosted versions (1.94+) you can install it manually instead: open **Settings → Community nodes**, click **Install a community node**, enter `n8n-nodes-apidirect`, tick the acknowledgement, and click **Install**.
 
 ## Set up credentials
 
