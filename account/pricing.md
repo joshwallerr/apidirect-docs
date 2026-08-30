@@ -137,7 +137,7 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 
 ## How Billing Works
 
-- You are only charged for **successful requests** (2xx responses)
+- You are only charged for **successful requests** (2xx responses and 404s)
 - Failed requests (4xx, 5xx) are not billed
 - For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Truth Social User Posts, TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos), you are billed per page requested
 - [Batch requests](/docs/batch) are free — each item inside a batch bills under its own endpoint at the rates above, exactly as a direct call (skipped or failed items are not billed)
