@@ -32,7 +32,7 @@ The response includes the current `page` number:
 
 Other endpoints use a `pages` parameter that fetches multiple pages in a single API call. This is useful for retrieving larger result sets without making multiple requests.
 
-**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram Posts, TikTok Videos, Web Search
+**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search
 
 ```bash
 # Fetch 3 pages of results in one call
@@ -63,6 +63,12 @@ The response includes the number of `pages` fetched:
 | Reddit Comments | `pages` | 5 |
 | YouTube Videos | `pages` | 10 |
 | Instagram Posts | `pages` | 10 |
+| Instagram User Posts | `pages` | 10 |
+| Instagram User Followers | `pages` | 20 |
+| Instagram User Following | `pages` | 20 |
+| Instagram Post Comments | `pages` | 10 |
+| Instagram Comment Replies | `pages` | 10 |
+| Instagram Hashtag Posts | `pages` | 10 |
 | TikTok Videos | `pages` | 10 |
 | Web Search | `pages` | 10 |
 
@@ -93,3 +99,7 @@ The response includes the requested `limit` and actual `count`:
 For endpoints using the `pages` parameter, you are billed per page fetched. For example, requesting `pages=3` on the Twitter endpoint costs 3x the per-page price.
 
 The News Articles endpoint is billed as a single request regardless of the `limit` value.
+
+## Endpoints Without Pagination
+
+Some endpoints return everything the platform exposes in a single billed request, so they take no pagination parameter at all: Instagram User Stories, Instagram User Highlights, Instagram Highlight Stories, and Instagram Post Likes.

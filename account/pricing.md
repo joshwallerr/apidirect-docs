@@ -74,6 +74,15 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 | User Profile | $0.006/request |
 | User Posts | $0.006/page |
 | Post Details | $0.006/request |
+| User Followers | $0.006/page |
+| User Following | $0.006/page |
+| User Stories | $0.006/request |
+| User Highlights | $0.006/request |
+| Highlight Stories | $0.006/request |
+| Post Comments | $0.006/page |
+| Comment Replies | $0.006/page |
+| Post Likes | $0.006/request |
+| Hashtag Posts | $0.006/page |
 
 <h3 class="flex gap-x-2 items-center"><img src="https://www.google.com/s2/favicons?domain=threads.com&sz=32" alt="Threads" width="16" height="16"> Threads</h3>
 
@@ -135,11 +144,22 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 | Place Reviews | $0.01/page |
 | Place Photos | $0.01/page |
 
+<h3 class="flex gap-x-2 items-center"><img src="https://www.google.com/s2/favicons?domain=amazon.com&sz=32" alt="Amazon" width="16" height="16"> Amazon</h3>
+
+| Endpoint | Price |
+|----------|-------|
+| Product Search | $0.005/request |
+| Product Details | $0.005/request |
+| Seller Profile | $0.005/request |
+| Seller Reviews | $0.005/request |
+| Seller Products | $0.005/request |
+| Best Sellers | $0.005/request |
+
 ## How Billing Works
 
 - You are only charged for **successful requests** (2xx responses and 404s)
 - Failed requests (4xx, 5xx) are not billed
-- For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Truth Social User Posts, TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos), you are billed per page requested
+- For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Instagram User Followers, Instagram User Following, Instagram Post Comments, Instagram Comment Replies, Instagram Hashtag Posts, Truth Social User Posts, TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos), you are billed per page requested
 - [Batch requests](/docs/batch) are free — each item inside a batch bills under its own endpoint at the rates above, exactly as a direct call (skipped or failed items are not billed)
 - Charges accumulate and are billed when your balance reaches a threshold
 

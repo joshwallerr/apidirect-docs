@@ -110,6 +110,15 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 | User Profile | $0.006/request | [instagram-user.md](endpoints/instagram-user.md) |
 | User Posts | $0.006/page | [instagram-user-posts.md](endpoints/instagram-user-posts.md) |
 | Post Details | $0.006/request | [instagram-post.md](endpoints/instagram-post.md) |
+| User Followers | $0.006/page | [instagram-user-followers.md](endpoints/instagram-user-followers.md) |
+| User Following | $0.006/page | [instagram-user-following.md](endpoints/instagram-user-following.md) |
+| User Stories | $0.006/request | [instagram-user-stories.md](endpoints/instagram-user-stories.md) |
+| User Highlights | $0.006/request | [instagram-user-highlights.md](endpoints/instagram-user-highlights.md) |
+| Highlight Stories | $0.006/request | [instagram-highlight-stories.md](endpoints/instagram-highlight-stories.md) |
+| Post Comments | $0.006/page | [instagram-post-comments.md](endpoints/instagram-post-comments.md) |
+| Comment Replies | $0.006/page | [instagram-comment-replies.md](endpoints/instagram-comment-replies.md) |
+| Post Likes | $0.006/request | [instagram-post-likes.md](endpoints/instagram-post-likes.md) |
+| Hashtag Posts | $0.006/page | [instagram-hashtag-posts.md](endpoints/instagram-hashtag-posts.md) |
 
 ### Threads
 
@@ -134,6 +143,18 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 | Search Users | $0.006/page | [tiktok-users.md](endpoints/tiktok-users.md) |
 | User Profile | $0.006/request | [tiktok-user.md](endpoints/tiktok-user.md) |
 | Video Details | $0.006/request | [tiktok-video.md](endpoints/tiktok-video.md) |
+
+### Amazon
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Product Search | $0.005/request | [amazon-products.md](endpoints/amazon-products.md) |
+| Product Details | $0.005/request | [amazon-product-details.md](endpoints/amazon-product-details.md) |
+| Seller Profile | $0.005/request | [amazon-seller-profile.md](endpoints/amazon-seller-profile.md) |
+| Seller Reviews | $0.005/request | [amazon-seller-reviews.md](endpoints/amazon-seller-reviews.md) |
+| Seller Products | $0.005/request | [amazon-seller-products.md](endpoints/amazon-seller-products.md) |
+| Best Sellers | $0.005/request | [amazon-best-sellers.md](endpoints/amazon-best-sellers.md) |
+| Category IDs | Reference — free | [amazon-categories.md](endpoints/amazon-categories.md) |
 
 ### Google, Web & Places
 
