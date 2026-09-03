@@ -2,7 +2,7 @@
 
 Use API Direct in your [n8n](https://n8n.io) workflows with our verified community node — search social media, news, and the web as a native workflow step, no code required.
 
-The node is published on npm as [`n8n-nodes-apidirect`](https://www.npmjs.com/package/n8n-nodes-apidirect) and covers 58 operations across Twitter/X, Facebook, Instagram, TikTok, YouTube, Reddit, Threads, Truth Social, and Google (web search, AI Mode, news, forums, and Maps/Places).
+The node is published on npm as [`n8n-nodes-apidirect`](https://www.npmjs.com/package/n8n-nodes-apidirect) and covers 73 operations across Twitter/X, Facebook, Instagram, TikTok, YouTube, Reddit, Threads, Truth Social, Amazon, and Google (web search, AI Mode, news, forums, and Maps/Places).
 
 ## Install
 
