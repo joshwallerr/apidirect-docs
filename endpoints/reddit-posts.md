@@ -16,7 +16,7 @@ GET /v1/reddit/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `page` | No | Page number, 1-5 (default: 1) |
+| `page` | No | Page number, 1-12 (default: 1). 20 posts per page |
 | `sort_by` | No | Sort order: `most_recent`, `relevance`, `hot`, or `top` (default: `most_recent`) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 

@@ -16,7 +16,7 @@ GET /v1/amazon/seller/reviews
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `seller_id` | Yes | Amazon seller ID |
-| `page` | No | Page number, 1-20 (default: 1) |
+| `page` | No | Page number, 1-50 (default: 1) |
 | `star_rating` | No | `all` (default), `5_stars`, `4_stars`, `3_stars`, `2_stars`, `1_stars`, `positive`, `critical` |
 | `country` | No | Marketplace country code (default: `us`) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (+$0.001/request) |

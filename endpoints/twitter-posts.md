@@ -16,7 +16,7 @@ GET /v1/twitter/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 

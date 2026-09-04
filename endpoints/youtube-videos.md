@@ -16,7 +16,7 @@ GET /v1/youtube/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 | `upload_date` | No | Filter by upload date: `last_hour`, `today`, `this_week`, `this_month`, `this_year` |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 

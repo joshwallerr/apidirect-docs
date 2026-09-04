@@ -16,7 +16,7 @@ GET /v1/facebook/page/photos
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `page_id` | Yes | Facebook page ID (get from page details or page ID endpoint) |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-15, default 1). Billed per page. |
 
 ## Response Fields
 

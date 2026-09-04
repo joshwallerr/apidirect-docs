@@ -16,7 +16,7 @@ GET /v1/linkedin/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Conditional | Search keyword (max 500 characters). Required unless at least one filter (e.g. `author`) is provided. |
-| `page` | No | Page number for pagination (default: 1) |
+| `page` | No | Page number, 1-25 (default: 1). 20 posts per page |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
 | `author` | No | Filter to posts authored by a specific person. Accepts a profile URL, public slug (e.g. `williamhgates`), or member URN — resolved automatically. Comma-separate for multiple. |
 | `mentions_member` | No | Filter to posts that mention a specific person (profile URL, slug, or member URN). |

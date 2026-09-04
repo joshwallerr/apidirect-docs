@@ -16,7 +16,7 @@ GET /v1/facebook/post/comments
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `post_id` | Yes | Facebook post ID (get from Page Posts, Group Posts, or Search Posts). Accepts both `pfbid` and numeric IDs. |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-20, default 1). Billed per page. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields

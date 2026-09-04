@@ -17,7 +17,7 @@ GET /v1/instagram/user/posts
 |-----------|----------|-------------|
 | `url` | No | Instagram profile URL, e.g. `https://instagram.com/natgeo` (max 500 characters). Provide either `url` or `username`. |
 | `username` | No | Instagram username, with or without leading `@` (max 100 characters). Provide either `url` or `username`. |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to 12 posts. |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1). Each page returns up to 12 posts. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 Provide exactly one of `url` or `username`.
@@ -150,7 +150,7 @@ print(response.json())
 
 ## Notes
 
-- Posts are returned newest first, up to 12 per page. Use `pages` (1-10) to fetch more in a single call; you are billed per page requested.
+- Posts are returned newest first, up to 12 per page. Use `pages` (1-20) to fetch more in a single call; you are billed per page requested.
 - Both regular posts and Reels are returned. Use `media_type` to distinguish them (`clips` for Reels).
 - If the account does not exist, the endpoint returns `404` with code `not_found`. You are not charged for `not_found` responses.
 - Private accounts return no posts.

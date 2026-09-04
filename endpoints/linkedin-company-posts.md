@@ -16,7 +16,7 @@ GET /v1/linkedin/company/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | Yes | LinkedIn company page URL (max 500 characters) |
-| `page` | No | Page number for pagination (default: 1) |
+| `page` | No | Page number, 1-50 (default: 1). 10 posts per page |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields

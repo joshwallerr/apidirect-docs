@@ -17,7 +17,7 @@ GET /v1/instagram/user/followers
 |-----------|----------|-------------|
 | `username` | One required | Instagram username, with or without leading `@` (max 100 characters). Provide either `username` or `url`. |
 | `url` | One required | Instagram profile URL, e.g. `https://instagram.com/natgeo` (max 500 characters). Provide either `username` or `url`. |
-| `pages` | No | Number of pages to fetch, 1-20 (default: 1). Each page returns up to 50 accounts. |
+| `pages` | No | Number of pages to fetch, 1-40 (default: 1). Each page returns up to 50 accounts. |
 | `query` | No | Search the followers list by username or name (max 100 characters). Returns up to 50 matches in a single request; `pages` is ignored. |
 
 ## Response Fields
@@ -85,6 +85,6 @@ print(response.json())
 
 ## Notes
 
-- Each page returns up to 50 accounts; you are billed per page requested. Instagram serves at most 1,000 accounts per call.
+- Each page returns up to 50 accounts; you are billed per page requested. Up to 2,000 accounts (40 pages) per call.
 - With `query`, the endpoint returns up to 50 matching accounts in one request and bills one page.
 - A private account returns `403` with code `private_account`. A username that does not exist returns `404` with code `not_found`.

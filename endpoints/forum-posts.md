@@ -16,7 +16,7 @@ GET /v1/forums/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `page` | No | Page number for pagination (default: 1) |
+| `page` | No | Page number, 1-10 (default: 1). 10 posts per page |
 | `time` | No | Time filter: `any`, `hour`, `day`, `week`, `month`, `year` (default: `any`) |
 | `country` | No | ISO 3166-1 alpha-2 country code (e.g., `US`, `GB`, `DE`) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |

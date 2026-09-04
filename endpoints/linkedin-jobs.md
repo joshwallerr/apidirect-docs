@@ -16,7 +16,7 @@ GET /v1/linkedin/jobs
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `page` | No | Page number for pagination (default: 1) |
+| `page` | No | Page number, 1-40 (default: 1). 25 jobs per page |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |
 | `posted_ago` | No | Maximum job age: `1h`, `24h`, `7d`, or `30d` (default: all time) |
 | `job_type` | No | Job type filter: `full_time`, `part_time`, `contract`, `temporary`, `volunteer`, `internship`, `other`. Comma-separated for multiple. |

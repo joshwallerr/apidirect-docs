@@ -17,7 +17,7 @@ GET /v1/instagram/post/comments
 |-----------|----------|-------------|
 | `url` | One required | Instagram post or reel URL, e.g. `https://www.instagram.com/p/CxYQJO8xuC6/` (max 500 characters). Provide either `url` or `code`. |
 | `code` | One required | The post's shortcode, e.g. `CxYQJO8xuC6`, or numeric media ID (max 50 characters). Provide either `url` or `code`. |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to 15 comments. |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1). Each page returns up to 15 comments. |
 | `sort_by` | No | Sort order: `popular` or `recent` (default: `popular`) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 

@@ -16,7 +16,7 @@ GET /v1/truthsocial/user/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `username` | Yes | Truth Social username, with or without leading `@` (max 100 characters). |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to 20 posts. |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1). Each page returns up to 20 posts. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
@@ -123,6 +123,6 @@ print(response.json())
 
 ## Notes
 
-- Posts are returned newest first, up to 20 per page. Use `pages` (1-10) to fetch more in a single call; you are billed per page requested.
+- Posts are returned newest first, up to 20 per page. Use `pages` (1-20) to fetch more in a single call; you are billed per page requested.
 - A user's feed can include their original posts and their replies. Use `is_reply` to distinguish them.
 - `snippet` is the post text with formatting stripped. Use `content_html` when you need the original links and mentions.

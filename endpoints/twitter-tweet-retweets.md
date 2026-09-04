@@ -16,7 +16,7 @@ GET /v1/twitter/tweet/retweets
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `tweet_id` | Yes | Numeric tweet ID |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 
 ## Response Fields
 

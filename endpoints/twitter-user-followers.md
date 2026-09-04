@@ -16,7 +16,7 @@ GET /v1/twitter/user/followers
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `username` | Yes | Twitter username (without @, max 50 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 
 ## Response Fields
 

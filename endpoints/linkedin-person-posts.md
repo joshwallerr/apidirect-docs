@@ -16,7 +16,7 @@ GET /v1/linkedin/person/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | Yes | LinkedIn profile URL or public slug — e.g. `https://www.linkedin.com/in/williamhgates` or just `williamhgates` (max 500 characters) |
-| `page` | No | Page number, 1-5 (default: 1). 20 posts per page — returns up to ~100 of the person's most recent posts. |
+| `page` | No | Page number, 1-30 (default: 1). 20 posts per page — returns up to ~600 of the person's most recent posts. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields

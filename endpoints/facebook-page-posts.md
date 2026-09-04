@@ -16,7 +16,7 @@ GET /v1/facebook/page/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `page_id` | Yes | Facebook page ID (get from page details or page ID endpoint) |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-15, default 1). Billed per page. |
 | `start_date` | No | Filter posts from this date (YYYY-MM-DD) |
 | `end_date` | No | Filter posts up to this date (YYYY-MM-DD) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |

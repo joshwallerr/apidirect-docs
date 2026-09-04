@@ -16,7 +16,7 @@ GET /v1/twitter/users
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 
 ## Response Fields
 

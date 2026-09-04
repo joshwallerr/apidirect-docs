@@ -16,7 +16,7 @@ GET /v1/facebook/events
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-15, default 1). Billed per page. |
 | `start_date` | No | Filter events from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter events up to this date (format: `YYYY-MM-DD`) |
 | `location_id` | No | Facebook location ID to scope results to a place. Resolve one from a place name with the [Search Locations](/docs/facebook-search-locations) endpoint. |

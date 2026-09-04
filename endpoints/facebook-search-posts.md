@@ -16,7 +16,7 @@ GET /v1/facebook/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-15, default 1). Billed per page. |
 | `start_date` | No | Filter posts from this date onward (format: `YYYY-MM-DD`) |
 | `end_date` | No | Filter posts up to this date (format: `YYYY-MM-DD`) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `relevance`) |

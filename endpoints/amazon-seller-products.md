@@ -16,7 +16,7 @@ GET /v1/amazon/seller/products
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `seller_id` | Yes | Amazon seller ID |
-| `page` | No | Page number, 1-20 (default: 1). Each page returns ~16 results |
+| `page` | No | Page number, 1-50 (default: 1). Each page returns ~16 results |
 | `sort_by` | No | `relevance` (default), `lowest_price`, `highest_price`, `reviews`, `newest`, `best_sellers` |
 | `country` | No | Marketplace country code (default: `us`) |
 

@@ -16,7 +16,7 @@ GET /v1/youtube/comments
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | Yes | YouTube video URL or 11-character video ID. Accepts `watch`, `youtu.be`, `shorts`, `embed`, and `live` URL forms. |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to ~100 comments. |
+| `pages` | No | Number of pages to fetch, 1-20 (default: 1). Each page returns up to ~100 comments. |
 | `sort_by` | No | Sort order: `most_recent` (newest first) or `relevance` (default: `relevance`). |
 
 ## Response Fields

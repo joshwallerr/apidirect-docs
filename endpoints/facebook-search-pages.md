@@ -16,7 +16,7 @@ GET /v1/facebook/pages
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `pages` | No | Number of pages to fetch (1-10, default 1). Billed per page. |
+| `pages` | No | Number of pages to fetch (1-15, default 1). Billed per page. |
 
 ## Response Fields
 

@@ -54,19 +54,28 @@ The response includes the number of `pages` fetched:
 
 | Endpoint | Param | Max Pages |
 |----------|-------|-----------|
-| LinkedIn Posts | `page` | Not specified |
-| Reddit Posts | `page` | 5 |
-| Forum Posts | `page` | Not specified |
-| Twitter Posts | `pages` | 10 |
+| LinkedIn Posts | `page` | 25 |
+| LinkedIn Person Posts | `page` | 30 |
+| LinkedIn Company Posts | `page` | 50 |
+| LinkedIn Companies | `page` | 100 |
+| LinkedIn Jobs | `page` | 40 |
+| Reddit Posts | `page` | 12 |
+| Forum Posts | `page` | 10 |
+| Twitter (all paginated endpoints except following) | `pages` | 20 |
 | Twitter User Following | `pages` | 175 |
-| Facebook (paginated) | `pages` | 10 |
-| Reddit Comments | `pages` | 5 |
-| YouTube Videos | `pages` | 10 |
-| Instagram Posts | `pages` | 10 |
-| Instagram User Posts | `pages` | 10 |
-| Instagram User Followers | `pages` | 20 |
-| Instagram User Following | `pages` | 20 |
-| Instagram Post Comments | `pages` | 10 |
+| Facebook (page posts/photos/videos/reviews, group posts, search posts/pages/videos/events) | `pages` | 15 |
+| Facebook Post Comments | `pages` | 20 |
+| Facebook Page Reels, Group Search | `pages` | 10 |
+| Reddit Comments | `pages` | 10 |
+| YouTube Videos | `pages` | 20 |
+| YouTube Channels | `pages` | 20 |
+| YouTube Comments | `pages` | 20 |
+| Truth Social User Posts | `pages` | 20 |
+| Instagram Posts | `pages` | 20 |
+| Instagram User Posts | `pages` | 20 |
+| Instagram User Followers | `pages` | 40 |
+| Instagram User Following | `pages` | 40 |
+| Instagram Post Comments | `pages` | 20 |
 | Instagram Comment Replies | `pages` | 10 |
 | Instagram Hashtag Posts | `pages` | 10 |
 | TikTok Videos | `pages` | 10 |
