@@ -28,6 +28,7 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 - [Batch Requests](core-concepts/batch.md) — Send up to 100 requests in a single call instead of looping an endpoint over a list of IDs, URLs or usernames.
 - [Error Handling](core-concepts/error-handling.md) — When a request fails, API Direct returns a JSON error response with an HTTP status code, an `error` message, and a `code` identifier.
 - [Rate Limits](core-concepts/rate-limits.md) — API Direct enforces concurrency limits to ensure fair usage and reliable performance for all users.
+- [Team Accounts](core-concepts/team-accounts.md) — Share one API Direct account with your team.
 
 ## Endpoints
 
