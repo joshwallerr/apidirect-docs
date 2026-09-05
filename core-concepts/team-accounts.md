@@ -24,7 +24,7 @@ Each member has one of three roles in an account.
 | Add or remove owners | | | ✓ |
 | Rename the account | | | ✓ |
 
-**Member** is read-only. Members can see how the account is being used and which keys exist, but cannot create keys or run Playground requests, because both spend the account's money.
+**Member** is read-only. Members can see how the account is being used and which keys exist, but cannot create keys or run Playground requests, because both spend the account's money. The Billing page is not available to members.
 
 **Admin** runs the team day to day: keys, the Playground and the member list. Admins cannot change billing and cannot promote, demote or remove an owner.
 
