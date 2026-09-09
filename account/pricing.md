@@ -155,11 +155,23 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 | Seller Products | $0.005/request |
 | Best Sellers | $0.005/request |
 
+<h3 class="flex gap-x-2 items-center"><img src="https://www.google.com/s2/favicons?domain=trustpilot.com&sz=32" alt="Trustpilot" width="16" height="16"> Trustpilot</h3>
+
+| Endpoint | Price |
+|----------|-------|
+| Company Reviews | $0.005/page |
+| Company Search | $0.005/request |
+| Category Companies | $0.005/request |
+| Category Newest | $0.005/request |
+| Category Details | $0.005/request |
+| Category Search | $0.005/request |
+| User Profile | $0.005/request |
+
 ## How Billing Works
 
 - You are only charged for **successful requests** (2xx responses and 404s)
 - Failed requests (4xx, 5xx) are not billed
-- For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Instagram User Followers, Instagram User Following, Instagram Post Comments, Instagram Comment Replies, Instagram Hashtag Posts, Truth Social User Posts, TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos), you are billed per page requested
+- For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Instagram User Followers, Instagram User Following, Instagram Post Comments, Instagram Comment Replies, Instagram Hashtag Posts, Truth Social User Posts, TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos, Trustpilot Company Reviews), you are billed per page requested
 - [Batch requests](/docs/batch) are free — each item inside a batch bills under its own endpoint at the rates above, exactly as a direct call (skipped or failed items are not billed)
 - Charges accumulate and are billed when your balance reaches a threshold
 

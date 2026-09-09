@@ -6,7 +6,7 @@ API Direct endpoints support pagination to retrieve multiple pages of results. T
 
 Some endpoints use a `page` parameter where you request one page at a time. Each request returns a single page of results.
 
-**Endpoints using `page`:** LinkedIn Posts, Reddit Posts, Forum Posts
+**Endpoints using `page`:** LinkedIn Posts, Reddit Posts, Forum Posts, Amazon, Trustpilot Company Search, Category Companies and User Profile
 
 ```bash
 # Get page 1
@@ -32,7 +32,7 @@ The response includes the current `page` number:
 
 Other endpoints use a `pages` parameter that fetches multiple pages in a single API call. This is useful for retrieving larger result sets without making multiple requests.
 
-**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search
+**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search, Places, Trustpilot Company Reviews
 
 ```bash
 # Fetch 3 pages of results in one call
@@ -80,6 +80,8 @@ The response includes the number of `pages` fetched:
 | Instagram Hashtag Posts | `pages` | 10 |
 | TikTok Videos | `pages` | 10 |
 | Web Search | `pages` | 10 |
+| Trustpilot Company Reviews | `pages` | 10 |
+| Trustpilot Company Search, Category Companies, User Profile | `page` | 500 |
 
 ## Pattern 3: `limit` Parameter
 

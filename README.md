@@ -157,6 +157,19 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 | Best Sellers | $0.005/request | [amazon-best-sellers.md](endpoints/amazon-best-sellers.md) |
 | Category IDs | Reference — free | [amazon-categories.md](endpoints/amazon-categories.md) |
 
+### Trustpilot
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Company Reviews | $0.005/page | [trustpilot-company-reviews.md](endpoints/trustpilot-company-reviews.md) |
+| Company Search | $0.005/request | [trustpilot-companies.md](endpoints/trustpilot-companies.md) |
+| Category Companies | $0.005/request | [trustpilot-category-companies.md](endpoints/trustpilot-category-companies.md) |
+| Category Newest | $0.005/request | [trustpilot-category-newest.md](endpoints/trustpilot-category-newest.md) |
+| Category Details | $0.005/request | [trustpilot-category.md](endpoints/trustpilot-category.md) |
+| Category Search | $0.005/request | [trustpilot-categories.md](endpoints/trustpilot-categories.md) |
+| User Profile | $0.005/request | [trustpilot-user.md](endpoints/trustpilot-user.md) |
+| Category IDs | Reference — free | [trustpilot-category-ids.md](endpoints/trustpilot-category-ids.md) |
+
 ### Google, Web & Places
 
 | Endpoint | Price | Docs |
