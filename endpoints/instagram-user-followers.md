@@ -85,7 +85,7 @@ print(response.json())
 
 ## Notes
 
-- Each page returns up to 50 accounts; you are billed per page requested. Up to 2,000 accounts (40 pages) per call.
-- Verified (blue checkmark) accounts return only their first ~50 followers: Instagram no longer exposes the rest of a verified account's followers list, so request `pages=1` for them. Unverified accounts paginate normally.
+- Each page returns up to 50 accounts; you are billed per page returned. If the list runs out before the pages you asked for, you only pay for the pages that came back. Up to 2,000 accounts (40 pages) per call.
+- Verified (blue checkmark) accounts return only their first ~50 followers: Instagram no longer exposes the rest of a verified account's followers list, and extra pages are not billed. Unverified accounts paginate normally.
 - With `query`, the endpoint returns up to 50 matching accounts in one request and bills one page.
 - A private account returns `403` with code `private_account`. A username that does not exist returns `404` with code `not_found`.

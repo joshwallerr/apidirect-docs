@@ -85,6 +85,6 @@ print(response.json())
 
 ## Notes
 
-- Each page returns up to 50 accounts; you are billed per page requested. Up to 2,000 accounts (40 pages) per call.
+- Each page returns up to 50 accounts; you are billed per page returned. If the list runs out before the pages you asked for, you only pay for the pages that came back. Up to 2,000 accounts (40 pages) per call.
 - With `query`, the endpoint returns up to 50 matching accounts in one request and bills one page.
 - A private account returns `403` with code `private_account`. A username that does not exist returns `404` with code `not_found`.
