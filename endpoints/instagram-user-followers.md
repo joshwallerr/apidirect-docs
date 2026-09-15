@@ -1,6 +1,6 @@
 # Instagram User Followers
 
-Get a user's followers by username or profile URL. Returns username, full name, user ID, verification status, and profile picture for each account. Supports pagination and an optional keyword search.
+Get a user's followers by username or profile URL. Returns username, full name, user ID, verification status, and profile picture for each account. Supports pagination and an optional keyword search. Verified accounts return only their first 50 followers.
 
 ## Endpoint
 
@@ -17,7 +17,7 @@ GET /v1/instagram/user/followers
 |-----------|----------|-------------|
 | `username` | One required | Instagram username, with or without leading `@` (max 100 characters). Provide either `username` or `url`. |
 | `url` | One required | Instagram profile URL, e.g. `https://instagram.com/natgeo` (max 500 characters). Provide either `username` or `url`. |
-| `pages` | No | Number of pages to fetch, 1-40 (default: 1). Each page returns up to 50 accounts. |
+| `pages` | No | Number of pages to fetch, 1-40 (default: 1). Each page returns up to 50 accounts. Verified (blue checkmark) accounts return the first page only. |
 | `query` | No | Search the followers list by username or name (max 100 characters). Returns up to 50 matches in a single request; `pages` is ignored. |
 
 ## Response Fields
@@ -42,7 +42,7 @@ GET /v1/instagram/user/followers
 ### cURL
 
 ```bash
-curl "https://apidirect.io/v1/instagram/user/followers?username=natgeo&pages=2" \
+curl "https://apidirect.io/v1/instagram/user/followers?username=worldofartists&pages=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -55,7 +55,7 @@ response = requests.get(
     "https://apidirect.io/v1/instagram/user/followers",
     headers={"X-API-Key": "YOUR_API_KEY"},
     params={
-        "username": "natgeo",
+        "username": "worldofartists",
         "pages": 2
     }
 )
@@ -68,16 +68,16 @@ print(response.json())
 {
   "followers": [
     {
-      "username": "marcuswestbergphotography",
-      "full_name": "Photographer & Storyteller",
-      "user_id": "364094780",
+      "username": "traits_abstraits65",
+      "full_name": "TRAITS ABSTRAITS",
+      "user_id": "25986338196",
       "is_verified": false,
       "is_private": false,
       "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.2885-19/photo.jpg",
-      "url": "https://instagram.com/marcuswestbergphotography"
+      "url": "https://instagram.com/traits_abstraits65"
     }
   ],
-  "username": "natgeo",
+  "username": "worldofartists",
   "pages": 2,
   "count": 100
 }
@@ -86,5 +86,6 @@ print(response.json())
 ## Notes
 
 - Each page returns up to 50 accounts; you are billed per page requested. Up to 2,000 accounts (40 pages) per call.
+- Verified (blue checkmark) accounts return only their first ~50 followers: Instagram no longer exposes the rest of a verified account's followers list, so request `pages=1` for them. Unverified accounts paginate normally.
 - With `query`, the endpoint returns up to 50 matching accounts in one request and bills one page.
 - A private account returns `403` with code `private_account`. A username that does not exist returns `404` with code `not_found`.
