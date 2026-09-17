@@ -6,6 +6,7 @@ API Direct is a pay-as-you-go API that lets you search real-time data across soc
 
 - **LinkedIn** - Search posts and articles
 - **Twitter / X** - Search tweets and threads
+- **Bluesky** - Search posts and users, profiles, feeds, followers, likes, and post engagement
 - **Facebook** - Pages, groups, posts, photos, videos, reels, and reviews
 - **Reddit** - Search posts and comments
 - **YouTube** - Search videos with date filters

@@ -12,6 +12,7 @@ Operators like `OR`, `AND`, and `NOT` must be **UPPERCASE**; lowercase is treate
 | `/v1/twitter/posts` | [X advanced search](https://help.x.com/en/using-x/x-advanced-search) — phrases, `OR`, `-`, `( )`, fields like `from:` `filter:` (use `-`, not `NOT`) |
 | `/v1/forums/posts` | [Google search operators](https://support.google.com/websearch/answer/2466433) — phrases, `OR`/`\|`, `-`, `( )`, `site:` (use `-`, not `NOT`) |
 | `/v1/linkedin/posts` | [LinkedIn boolean search](https://www.linkedin.com/help/linkedin/answer/a524335) — `AND` `OR` `NOT` `-` `( )` (phrases are matched loosely) |
+| `/v1/bluesky/posts` | [Bluesky search syntax](https://bsky.social/about/blog/05-31-2024-search) — phrases, `-`, `from:` `mentions:` `lang:` `since:` `until:` `domain:` `#tag` (no `OR`) |
 
 ```bash
 curl -G "https://apidirect.io/v1/reddit/posts" \

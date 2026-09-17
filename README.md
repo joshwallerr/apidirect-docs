@@ -2,7 +2,7 @@
 
 Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media, web and news API.
 
-Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, Truth Social, TikTok, Reddit, YouTube, web forums, news, Google Search and Google Maps through a unified REST API.
+Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, Threads, Truth Social, TikTok, Reddit, YouTube, web forums, news, Google Search and Google Maps through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
 
@@ -135,6 +135,23 @@ Search real-time data across LinkedIn, Twitter/X, Facebook, Instagram, Threads, 
 | Endpoint | Price | Docs |
 |----------|-------|------|
 | User Posts | $0.006/page | [truthsocial-user-posts.md](endpoints/truthsocial-user-posts.md) |
+
+### Bluesky
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.003/page | [bluesky-posts.md](endpoints/bluesky-posts.md) |
+| Search Users | $0.003/page | [bluesky-users.md](endpoints/bluesky-users.md) |
+| User Profile | $0.003/request | [bluesky-user.md](endpoints/bluesky-user.md) |
+| User Posts | $0.003/page | [bluesky-user-posts.md](endpoints/bluesky-user-posts.md) |
+| User Followers | $0.003/page | [bluesky-user-followers.md](endpoints/bluesky-user-followers.md) |
+| User Following | $0.003/page | [bluesky-user-following.md](endpoints/bluesky-user-following.md) |
+| User Likes | $0.003/page | [bluesky-user-likes.md](endpoints/bluesky-user-likes.md) |
+| Post Details | $0.003/request | [bluesky-post.md](endpoints/bluesky-post.md) |
+| Post Comments | $0.003/request | [bluesky-post-comments.md](endpoints/bluesky-post-comments.md) |
+| Post Likes | $0.003/page | [bluesky-post-likes.md](endpoints/bluesky-post-likes.md) |
+| Post Quotes | $0.003/page | [bluesky-post-quotes.md](endpoints/bluesky-post-quotes.md) |
+| Post Reposts | $0.003/page | [bluesky-post-reposts.md](endpoints/bluesky-post-reposts.md) |
 
 ### TikTok
 
