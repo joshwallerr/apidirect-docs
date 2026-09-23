@@ -28,6 +28,7 @@ GET /v1/instagram/users
 | `users[].is_verified` | boolean | Whether the user is verified (blue checkmark) |
 | `users[].is_private` | boolean | Whether the account is private |
 | `users[].profile_pic_url` | string | URL to profile picture |
+| `users[].is_ai_generated_profile` | boolean | Whether Instagram labels the account as an AI-generated profile |
 | `users[].url` | string | Link to the profile |
 | `count` | integer | Total results returned |
 
@@ -65,6 +66,7 @@ print(response.json())
       "is_verified": true,
       "is_private": false,
       "profile_pic_url": "https://scontent.cdninstagram.com/.../photo.jpg",
+      "is_ai_generated_profile": false,
       "url": "https://instagram.com/natgeo"
     }
   ],

@@ -32,6 +32,7 @@ GET /v1/instagram/post/comments
 | `comments[].author_name` | string | Commenter's display name |
 | `comments[].author_id` | string | Commenter's Instagram user ID |
 | `comments[].author_verified` | boolean | Whether the commenter is verified |
+| `comments[].author_is_ai_generated_profile` | boolean/null | Whether Instagram labels the commenter as an AI-generated profile (`null` if unknown) |
 | `comments[].author_url` | string | Link to the commenter's profile |
 | `comments[].author_profile_pic_url` | string | Commenter's profile picture URL |
 | `comments[].likes` | integer | Number of likes |
@@ -92,6 +93,7 @@ print(response.json())
       "author_name": "Robert Garcia",
       "author_id": "72771312829",
       "author_verified": false,
+      "author_is_ai_generated_profile": false,
       "author_url": "https://instagram.com/garcia99.r",
       "author_profile_pic_url": "https://scontent.cdninstagram.com/v/t51.89012-19/photo.jpg",
       "likes": 23,

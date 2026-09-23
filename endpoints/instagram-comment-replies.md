@@ -32,6 +32,7 @@ GET /v1/instagram/comment/replies
 | `replies[].author_name` | string | Commenter's display name |
 | `replies[].author_id` | string | Commenter's Instagram user ID |
 | `replies[].author_verified` | boolean | Whether the commenter is verified |
+| `replies[].author_is_ai_generated_profile` | boolean/null | Whether Instagram labels the commenter as an AI-generated profile (`null` if unknown) |
 | `replies[].author_url` | string | Link to the commenter's profile |
 | `replies[].author_profile_pic_url` | string | Commenter's profile picture URL |
 | `replies[].likes` | integer | Number of likes |
@@ -95,6 +96,7 @@ print(response.json())
       "author_name": "ÖmerArnc",
       "author_id": "52890574747",
       "author_verified": false,
+      "author_is_ai_generated_profile": false,
       "author_url": "https://instagram.com/omer.arincc",
       "author_profile_pic_url": "https://scontent.cdninstagram.com/v/t51.89012-19/photo.jpg",
       "likes": 9,

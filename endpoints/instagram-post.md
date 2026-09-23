@@ -54,6 +54,7 @@ Provide exactly one of `url` or `code`.
 | `post.height` | integer | Media height in pixels |
 | `post.carousel_media_count` | integer | Number of items in a carousel post (0 for single-media posts) |
 | `post.is_paid_partnership` | boolean | Whether the post is a paid partnership / branded content |
+| `post.ai_label` | object | Instagram's AI label: `label` (text shown on the post, e.g. `"AI content"`, `"Likely made with AI"`, else `null`) and `detection_method` (how Instagram applied it, e.g. `"SELF_DISCLOSURE_FLOW"`, `"C2PA_METADATA"`, `"NONE"`) |
 | `post.location` | object/null | Geotag with `name`, `city`, `lat`, `lng` (null when the post has no location) |
 | `post.tagged_users` | array | Users tagged in the post (`username`, `full_name`, `user_id`) |
 | `post.coauthors` | array | Collaborators on the post (`username`, `full_name`, `user_id`, `is_verified`) |
@@ -131,6 +132,7 @@ curl "https://apidirect.io/v1/instagram/post?code=DaTSSukB-Lb" \
     "height": 1280,
     "carousel_media_count": 0,
     "is_paid_partnership": false,
+    "ai_label": {"label": null, "detection_method": "NONE"},
     "location": null,
     "tagged_users": [
       {"username": "chriswoodlight", "full_name": "Chris Wood Light Studio", "user_id": "2107151539"}

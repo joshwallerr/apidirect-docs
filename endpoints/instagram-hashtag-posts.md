@@ -51,6 +51,7 @@ GET /v1/instagram/hashtag/posts
 | `posts[].height` | integer | Media height in pixels |
 | `posts[].carousel_media_count` | integer | Number of items in a carousel post (`0` for single-media posts) |
 | `posts[].is_paid_partnership` | boolean | Whether the post is a paid partnership / branded content |
+| `posts[].ai_label` | object | Instagram's AI label: `detection_method` (how Instagram applied it, e.g. `"SELF_DISCLOSURE_FLOW"`, `"C2PA_METADATA"`, `"NONE"`). `label` is not returned on this endpoint (`null`) |
 | `posts[].location` | object/null | Geotag: `name`, `city`, `lat`, `lng` (or `null`) |
 | `posts[].tagged_users` | array | Users tagged in the post (`username`, `full_name`, `user_id`) |
 | `posts[].coauthors` | array | Collaborators on the post (`username`, `full_name`, `user_id`, `is_verified`) |
@@ -127,6 +128,7 @@ print(response.json())
       "height": 1920,
       "carousel_media_count": 0,
       "is_paid_partnership": false,
+      "ai_label": {"label": null, "detection_method": "NONE"},
       "location": null,
       "tagged_users": [],
       "coauthors": [],

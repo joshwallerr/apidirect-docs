@@ -63,6 +63,7 @@ GET /v1/instagram/highlight/stories
 | `stories[].audio` | object/null | Audio track: `type`, `title`, `artist`, `audio_id`, `duration_ms` (`null` when none) |
 | `stories[].coauthors` | array | Collaborators on the story (`username`, `full_name`, `user_id`, `is_verified`) |
 | `stories[].is_paid_partnership` | boolean | Whether the story is a paid partnership |
+| `stories[].ai_label` | object | Instagram's AI label: `detection_method` (how Instagram applied it, e.g. `"SELF_DISCLOSURE_FLOW"`, `"C2PA_METADATA"`, `"NONE"`). `label` is not returned on this endpoint (`null`) |
 | `count` | integer | Number of stories returned |
 
 ## Example Request
@@ -138,7 +139,8 @@ print(response.json())
       "links": [],
       "audio": null,
       "coauthors": [],
-      "is_paid_partnership": false
+      "is_paid_partnership": false,
+      "ai_label": {"label": null, "detection_method": "NONE"}
     }
   ],
   "count": 4

@@ -51,6 +51,7 @@ GET /v1/instagram/user/stories
 | `stories[].audio` | object/null | Audio track: `type`, `title`, `artist`, `audio_id`, `duration_ms` (`null` when none) |
 | `stories[].coauthors` | array | Collaborators on the story (`username`, `full_name`, `user_id`, `is_verified`) |
 | `stories[].is_paid_partnership` | boolean | Whether the story is a paid partnership |
+| `stories[].ai_label` | object | Instagram's AI label: `detection_method` (how Instagram applied it, e.g. `"SELF_DISCLOSURE_FLOW"`, `"C2PA_METADATA"`, `"NONE"`). `label` is not returned on this endpoint (`null`) |
 | `username` | string | The requested username |
 | `count` | integer | Number of stories returned |
 
@@ -116,7 +117,8 @@ print(response.json())
       ],
       "audio": null,
       "coauthors": [],
-      "is_paid_partnership": false
+      "is_paid_partnership": false,
+      "ai_label": {"label": null, "detection_method": "NONE"}
     }
   ],
   "username": "natgeo",

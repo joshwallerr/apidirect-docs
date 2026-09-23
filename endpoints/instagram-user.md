@@ -48,6 +48,7 @@ Provide exactly one of `username` or `url`.
 | `user.date_verified` | string | Month and year the account was verified, or empty string |
 | `user.date_verified_timestamp` | integer/null | Unix timestamp of the verification date |
 | `user.former_usernames` | integer/null | Number of former usernames the account has used |
+| `user.is_ai_generated_profile` | boolean | Whether Instagram labels the account as an AI-generated profile |
 | `user.url` | string | Link to the profile |
 
 The "About this account" fields come from Instagram's public transparency info. Instagram does not expose it for every account, so the string fields can be empty and the `integer/null` fields `null`.
@@ -116,6 +117,7 @@ curl "https://apidirect.io/v1/instagram/user?url=https://www.instagram.com/natge
     "date_verified": "",
     "date_verified_timestamp": null,
     "former_usernames": 0,
+    "is_ai_generated_profile": false,
     "url": "https://instagram.com/natgeo"
   }
 }
