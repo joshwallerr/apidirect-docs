@@ -36,7 +36,7 @@ A "page" is 10 results. Each page you request consumes one billable request, so 
 | `results[].title` | string | Result title |
 | `results[].url` | string | Result URL |
 | `results[].snippet` | string | Result snippet |
-| `results[].source` | string | Result source name |
+| `results[].source` | string | Result source name (e.g. "Reddit"). Falls back to the domain when Google shows no source label |
 | `results[].domain` | string | Result domain |
 | `results[].displayed_link` | string | Breadcrumb-style URL as displayed in the SERP |
 | `pages` | integer | Number of pages requested |
