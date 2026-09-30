@@ -30,6 +30,7 @@ When a request fails, API Direct returns a JSON error response with an HTTP stat
 | `502` | `upstream_connection_error` | Could not connect to the upstream data source |
 | `503` | `service_error` | Service configuration error |
 | `503` | `upstream_auth_error` | Authentication with the upstream data source failed |
+| `503` | `service_unavailable` | A temporary issue on our side; retry after a short delay |
 | `500` | `auth_error` | An error occurred during API key validation |
 | `500` | `billing_error` | Billing configuration or processing error |
 | `504` | `upstream_timeout` | The data source did not respond in time |
@@ -60,7 +61,7 @@ These indicate a temporary issue with the data source. A `503` with `service_err
 
 ## Retry Strategy
 
-For transient errors (`502`, `504`, `429` with `concurrency_limit_exceeded` or `upstream_rate_limit`), we recommend:
+For transient errors (`502`, `504`, `503` with `service_unavailable`, `429` with `concurrency_limit_exceeded` or `upstream_rate_limit`), we recommend:
 
 1. Wait 1-2 seconds before retrying
 2. Use exponential backoff for repeated failures
