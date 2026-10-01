@@ -1,6 +1,6 @@
 # LinkedIn Posts
 
-Search LinkedIn posts and articles by keyword. Returns post content, author, publication date, engagement metrics (likes, comments, shares, reactions), and attached content (images, articles, videos, job listings) for each result.
+Search LinkedIn posts and articles by keyword. Returns post content, author, publication date, engagement metrics (likes, comments, shares, reactions), and attached content (images, articles, videos, job listings) for each result. Filter to posts from the past 24 hours, week, or month.
 
 ## Endpoint
 
@@ -18,6 +18,7 @@ GET /v1/linkedin/posts
 | `query` | Conditional | Search keyword (max 500 characters). Required unless at least one filter (e.g. `author`) is provided. |
 | `page` | No | Page number, 1-25 (default: 1). 20 posts per page |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `posted_ago` | No | Only posts from this period: `24h`, `7d`, or `30d` (default: all time). Works with both sort orders and every filter. |
 | `author` | No | Filter to posts authored by a specific person. Accepts a profile URL, public slug (e.g. `williamhgates`), or member URN — resolved automatically. Comma-separate for multiple. |
 | `mentions_member` | No | Filter to posts that mention a specific person (profile URL, slug, or member URN). |
 | `from_company` | No | Filter to posts authored by a company page. Numeric LinkedIn company ID (get it from the [Company Details](/docs/linkedin-company) endpoint). Comma-separate for multiple. |

@@ -1,6 +1,6 @@
 # Reddit Posts
 
-Search Reddit posts by keyword. Returns post title, URL, subreddit, author, and content snippet. Supports multiple sort options including hot and top posts.
+Search Reddit posts by keyword. Returns post title, URL, subreddit, author, and content snippet. Supports multiple sort options including hot and top posts, and a time window from the past hour to the past year.
 
 ## Endpoint
 
@@ -18,6 +18,7 @@ GET /v1/reddit/posts
 | `query` | Yes | Search keyword (max 500 characters) |
 | `page` | No | Page number, 1-12 (default: 1). 20 posts per page |
 | `sort_by` | No | Sort order: `most_recent`, `relevance`, `hot`, or `top` (default: `most_recent`) |
+| `posted_ago` | No | Only posts from this period: `1h`, `24h`, `7d`, `30d`, or `12m` (default: all time). Works with every `sort_by`, e.g. `sort_by=relevance&posted_ago=24h` for the most relevant posts of the past day. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields

@@ -1,6 +1,6 @@
 # Twitter Posts
 
-Search Twitter/X posts by keyword. Returns tweet content, author username, URL, publication date, and engagement metrics (likes, retweets, replies, views, and more). Supports fetching multiple pages in a single API call.
+Search Twitter/X posts by keyword. Returns tweet content, author username, URL, publication date, and engagement metrics (likes, retweets, replies, views, and more). Supports fetching multiple pages in a single API call, and filtering by time window or date range.
 
 ## Endpoint
 
@@ -15,9 +15,12 @@ GET /v1/twitter/posts
 
 | Parameter | Required | Description |
 |-----------|----------|-------------|
-| `query` | Yes | Search keyword (max 500 characters) |
+| `query` | Yes | Search keyword (max 500 characters). Supports [X's search operators](https://help.x.com/en/using-x/x-advanced-search). |
 | `pages` | No | Number of pages to fetch, 1-20 (default: 1) |
 | `sort_by` | No | Sort order: `most_recent` or `relevance` (default: `most_recent`) |
+| `posted_ago` | No | Only posts from this period: `1h`, `24h`, `7d`, `30d`, or `12m` (default: all time). Works with both sort orders, e.g. `sort_by=relevance&posted_ago=24h` for the top posts of the past day. |
+| `start_date` | No | Only posts from this date onward (format: `YYYY-MM-DD`, UTC). Can't be combined with `posted_ago`. |
+| `end_date` | No | Only posts up to and including this date (format: `YYYY-MM-DD`, UTC). Can't be combined with `posted_ago`. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
