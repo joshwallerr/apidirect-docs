@@ -33,7 +33,7 @@ JSON object with a `requests` array of 1–100 items.
 | `results[].body` | object | Exactly what the endpoint returns when called directly |
 | `summary.total` | integer | Number of items in the batch |
 | `summary.succeeded` | integer | Items that returned 2xx |
-| `summary.failed` | integer | Items that did not succeed (failed items are never billed) |
+| `summary.failed` | integer | Items that did not succeed (billed only when the same direct call would be, such as a 404 `not_found`) |
 | `summary.duration_ms` | integer | Total batch execution time |
 
 ## Example Request
@@ -111,7 +111,7 @@ for item in response.json()["results"]:
 
 ## Notes
 
-- **Billing** — batching is free. Each item bills exactly like a direct call: same price, same free tier, same spending limits. Failed items are never billed.
+- **Billing** — batching is free. Each item bills exactly like a direct call: same price, same free tier, same spending limits. A failed item is billed only when the same direct call would be (such as a 404 `not_found`).
 - **Concurrency** — items run in parallel at up to roughly half your per-endpoint concurrency limit; the rest queue and start as slots free.
 - **Isolation** — one item failing never affects the others. Each result is exactly what its endpoint would return directly, and rate-limited items are retried automatically.
-- **Failed items** — any item that fails, including items the batch could not get to, returns an error body with a `code` and is never billed.
+- **Failed items** — any item that fails, including items the batch could not get to, returns an error body with a `code`. Items the batch could not get to are never billed.
