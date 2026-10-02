@@ -186,8 +186,8 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 
 ## How Billing Works
 
-- You are only charged for **successful requests** (2xx responses and 404s)
-- Failed requests (4xx, 5xx) are not billed
+- You are only charged for **answered requests**: 2xx responses, plus 404s, Instagram's `403` with code `private_account`, and a `400` for an Instagram post URL or code that Instagram itself rejects as invalid (each a definitive answer about what you asked for, billed as one request whatever `pages` you set)
+- Other failed requests (4xx, 5xx) are not billed
 - For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Instagram User Followers, Instagram User Following, Instagram Post Comments, Instagram Comment Replies, Instagram Hashtag Posts, Truth Social User Posts, Bluesky (all paginated endpoints), TikTok Search Videos, TikTok Search Users, Web Search, Places Search, Place Reviews, Place Photos, Trustpilot Company Reviews), you are billed per page requested
 - [Batch requests](/docs/batch) are free — each item inside a batch bills under its own endpoint at the rates above, exactly as a direct call (skipped or failed items are not billed)
 - Charges accumulate and are billed when your balance reaches a threshold

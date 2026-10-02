@@ -154,5 +154,4 @@ print(response.json())
 
 - Posts are returned newest first, up to 12 per page. Use `pages` (1-20) to fetch more in a single call; you are billed per page requested.
 - Both regular posts and Reels are returned. Use `media_type` to distinguish them (`clips` for Reels).
-- If the account does not exist, the endpoint returns `404` with code `not_found`. You are not charged for `not_found` responses.
-- Private accounts return no posts.
+- If the account does not exist, the endpoint returns `404` with code `not_found`; a private account returns `403` with code `private_account`. Each is billed as one request, whatever `pages` you asked for.

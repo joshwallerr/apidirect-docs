@@ -154,4 +154,4 @@ print(response.json())
 
 - The website scrape runs on every call and adds ~0.5–1s to the response time.
 - If the site is unreachable or has no contact info, `emails_and_contacts` is returned with empty arrays and `null` social links.
-- A 404 with `code: "not_found"` is returned when the `place_id` doesn't match any place; `not_found` responses are not charged.
+- A 404 with `code: "not_found"` is returned when the `place_id` doesn't match any place. It is billed as one request, because the lookup was still made.

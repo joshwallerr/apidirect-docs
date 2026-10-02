@@ -90,4 +90,4 @@ print(response.json())
 ## Notes
 
 - Pass `highlight_id` to the [Highlight Stories](/docs/instagram-highlight-stories) endpoint to get the stories inside a highlight.
-- An account with no highlights returns an empty `highlights` array. A private account returns `403` with code `private_account`, and a username that does not exist returns `404` with code `not_found`.
+- An account with no highlights returns an empty `highlights` array. A private account returns `403` with code `private_account`, and a username that does not exist returns `404` with code `not_found`. Both are billed as one request.
