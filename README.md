@@ -37,6 +37,7 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, 
 | Endpoint | Price | Docs |
 |----------|-------|------|
 | Search Posts | $0.006/request | [linkedin-posts.md](endpoints/linkedin-posts.md) |
+| Person Details | $0.006/request | [linkedin-person.md](endpoints/linkedin-person.md) |
 | Person Posts | $0.006/request | [linkedin-person-posts.md](endpoints/linkedin-person-posts.md) |
 | Post Details | $0.002/request | [linkedin-post.md](endpoints/linkedin-post.md) |
 | Company Details | $0.006/request | [linkedin-company.md](endpoints/linkedin-company.md) |
