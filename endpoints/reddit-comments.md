@@ -1,6 +1,6 @@
 # Reddit Comments
 
-Search Reddit comments by keyword. Returns comment content, parent post URL, subreddit, author, and publication date. Supports fetching multiple pages in a single API call.
+Search Reddit comments by keyword. Returns comment content, a link for the parent post, subreddit, author, and publication date. Supports fetching multiple pages in a single API call.
 
 ## Endpoint
 
@@ -26,7 +26,7 @@ GET /v1/reddit/comments
 |-------|------|-------------|
 | `posts` | array | Array of matching comments |
 | `posts[].title` | string | Comment title (format: `username on subreddit`) |
-| `posts[].url` | string | Link to the parent post |
+| `posts[].url` | string | Link for the parent post: its Reddit thread, or the article, image or video a link post shares |
 | `posts[].date` | string | Publication date and time |
 | `posts[].author` | string | Reddit username |
 | `posts[].source` | string | `"Reddit (Comment)"` |

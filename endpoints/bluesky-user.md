@@ -1,6 +1,6 @@
 # Bluesky User Profile
 
-Get a Bluesky user's full profile by handle, DID, or profile URL. Returns display name, bio, follower/following/post counts, verification status, profile picture and banner, join date, and the pinned post.
+Get a Bluesky user's full profile by handle, DID, or profile URL. Returns display name, bio, follower/following/post counts, verification status, profile picture and banner, join date, and the pinned post's ID.
 
 ## Endpoint
 

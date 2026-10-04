@@ -1,6 +1,6 @@
 # Instagram Hashtag Posts
 
-Get posts and reels for an Instagram hashtag. Returns captions, engagement metrics, author metadata, media URLs, and the hashtag's total post count. Supports the top, recent, and reels tabs, and pagination.
+Get posts and reels for an Instagram hashtag. Returns captions, engagement metrics, author metadata, media URLs, and the hashtag's total post count (top tab). Supports the top, recent, and reels tabs, and pagination.
 
 ## Endpoint
 
@@ -63,7 +63,7 @@ GET /v1/instagram/hashtag/posts
 | `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
 | `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
 | `hashtag` | string | The requested hashtag, without `#` |
-| `total` | integer/null | Total number of posts using the hashtag (`null` for `recent`) |
+| `total` | integer/null | Total number of posts using the hashtag (`null` for `recent` and `reels`) |
 | `pages` | integer | Number of pages fetched |
 | `count` | integer | Total results returned |
 

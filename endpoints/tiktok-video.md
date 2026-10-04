@@ -18,7 +18,7 @@ Provide exactly one of `url` or `video_id`.
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `url` | One required | TikTok video URL, e.g. `https://www.tiktok.com/@tiktok/video/7516594811734854943` (max 500 characters) |
-| `video_id` | One required | Numeric TikTok video ID, as returned by [Search Videos](/docs/tiktok-videos) |
+| `video_id` | One required | Numeric TikTok video ID: the number at the end of a video URL, e.g. `7516594811734854943` |
 
 ## Response Fields
 
