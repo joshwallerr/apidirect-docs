@@ -206,6 +206,7 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, 
 - [Build with AI](integrations/build-with-ai.md) — Connect your AI coding assistant to the API Direct MCP server and let it wire up endpoints for you.
 - [n8n](integrations/n8n.md) — Use API Direct in your n8n workflows with our verified community node — search social media, news, and the web as a native workflow step, no code required.
 - [Activepieces](integrations/activepieces.md) — Use API Direct in your Activepieces flows with our official piece — search social media, news, reviews and the web as a native flow step, no code required.
+- [Clay](integrations/clay.md) — Use API Direct inside your Clay tables: enrich every row with live data from LinkedIn, X/Twitter, Reddit, YouTube, Instagram, TikTok, Facebook, Threads, Bluesky, Truth Social, Google Maps, Amazon, Trustpilot, news, forums and web search, through Clay's built-in **HTTP API** column.
 - [Claude Code](integrations/mcp-claude-code.md) — Use API Direct as an MCP server in Claude Code to search social media and news directly from your terminal.
 - [Claude Desktop](integrations/mcp-claude-desktop.md) — Use API Direct as an MCP server in Claude Desktop to search social media and news from your conversations.
 - [ChatGPT](integrations/mcp-chatgpt.md) — Use API Direct as an MCP server in ChatGPT to search social media and news from your conversations.
