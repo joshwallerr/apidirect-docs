@@ -2,7 +2,7 @@
 
 Use API Direct in your [Activepieces](https://www.activepieces.com) flows with our official piece — search social media, news, reviews and the web as a native flow step, no code required.
 
-The piece is published on npm as [`@apidirect/piece-api-direct`](https://www.npmjs.com/package/@apidirect/piece-api-direct) and covers 92 actions across Twitter/X, Facebook, Instagram, TikTok, YouTube, Reddit, Threads, Truth Social, Bluesky, Amazon, Trustpilot, and Google (web search, AI Mode, news, forums, and Maps/Places).
+The piece is published on npm as [`@apidirect/piece-api-direct`](https://www.npmjs.com/package/@apidirect/piece-api-direct) and covers 101 actions across Twitter/X, Facebook, Instagram, LinkedIn, TikTok, YouTube, Reddit, Threads, Truth Social, Bluesky, Amazon, Trustpilot, and Google (web search, AI Mode, news, forums, and Maps/Places).
 
 ## Install
 
