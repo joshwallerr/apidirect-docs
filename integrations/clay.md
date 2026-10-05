@@ -82,6 +82,7 @@ Two patterns cover most other tables:
   "query_parameters": [
     {"key": "url", "value": "/LinkedIn Profile URL", "required": true, "example": "reidhoffman"}
   ],
+  "optional_parameters": [],
   "response": {"shape": "object", "field_paths": ["full_name", "headline", "location"]},
   "price": "$0.006 per request",
   "free_tier": "50 requests/month",
@@ -89,7 +90,7 @@ Two patterns cover most other tables:
 }
 ```
 
-`query_parameters` carries every parameter the endpoint accepts, with the row's identifier already written as a column reference and the optional filters left blank. `response.shape` is `list` when the endpoint returns a page of results under `response.list_key`, and `object` for a single profile, post or place.
+`query_parameters` holds what the row supplies, already written as column references. `optional_parameters` lists the filters the endpoint also accepts (`posted_ago`, `sort_by`, `pages` and so on) with their allowed values and defaults; add one to the column only when you set a value, because a blank parameter is sent as an empty string and rejected, unless the column's **Remove empty fields from request** option is on. `response.shape` is `list` when the endpoint returns a page of results under `response.list_key`, and `object` for a single profile, post or place.
 
 ## Working with lists
 
@@ -124,7 +125,7 @@ Skills are plain-language playbooks a coding agent follows. The API Direct agent
 | [Pre-call account brief](https://github.com/apidirect/agent-kit/tree/main/clay-skills/pre-call-account-brief) | A one-page, cited brief on an account from its posts, its executives' posts, news and reviews |
 | [Creator contact sheet](https://github.com/apidirect/agent-kit/tree/main/clay-skills/creator-contact-sheet) | Niche creators on Instagram, TikTok, YouTube and X with the public email or link from their bios |
 
-Install them with the kit (in Claude Code, `/plugin marketplace add apidirect/agent-kit` then `/plugin install api-direct@api-direct`; elsewhere, `npx skills add apidirect/agent-kit`), or from the [Clay Skills Marketplace](https://marketplace.clay.com). Each skill asks for its inputs, prices every paid step, and stops for approval before spending credits or writing anywhere.
+Install them with the kit in Claude Code (`/plugin marketplace add apidirect/agent-kit` then `/plugin install api-direct@api-direct`; the plugin registers the `clay-skills` folder, so they load beside the research skills), copy a skill's folder into any other agent's skills directory, or install from the [Clay Skills Marketplace](https://marketplace.clay.com). Each skill asks for its inputs, prices every paid step, and stops for approval before spending credits or writing anywhere.
 
 ## Pricing and limits
 
