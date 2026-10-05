@@ -65,7 +65,7 @@ Each recipe is an HTTP API column with method `GET`, the **API Direct** header a
 Two patterns cover most other tables:
 
 - **Resolve, then enrich.** Search endpoints return the identifier the detail endpoints need. A column calling `/v1/linkedin/companies` with `query` = `/Company Name` returns `companies[].company_id` and `companies[].url`; the next column passes `url` to `/v1/linkedin/company` or `mentions_company` to `/v1/linkedin/posts`. Google Maps works the same way: `/v1/places/search` gives `places[].place_id`, which feeds details and reviews.
-- **Search per row.** Put the row's own value in `query`: the company name for news, the brand for X and Reddit, the product for Amazon. Searches accept [boolean syntax](/docs/boolean-search), so a formula column can build `"Acme" AND (cancel OR switching)` and feed it in.
+- **Search per row.** Put the row's own value in `query`: the company name for news, the brand for X and Reddit, the product for Amazon. On Reddit, X, forums, LinkedIn and Bluesky the query accepts that platform's [boolean syntax](/docs/boolean-search), so a formula column can build `"Acme" AND (cancel OR switching)` for `/v1/reddit/posts` and feed it in; every other search treats operators as plain words.
 
 ## Every endpoint, as a template
 
@@ -97,17 +97,17 @@ Search and listing endpoints return an array (`posts`, `jobs`, `reviews`, `place
 
 - **Keep it as JSON** (field path `posts`) and let a **Use AI** or formula column summarise, classify or count it. This is the cheapest option: one request per row, whatever the number of results.
 - **Pick fields from the first results** with indexed paths such as `posts[0].snippet` and `posts[0].url` (Clay also accepts `posts.0.snippet`), which turn into plain cells.
-- **Fan out to rows** with Clay's **Write to Table** action on the array field when every result needs its own row (one row per job posting, per review, per complaint).
+- **Fan out to rows** with Clay's **Send Table Data** action (the replacement for the deprecated Write to Table) on the array field when every result needs its own row (one row per job posting, per review, per complaint).
 
 Where an endpoint takes `pages`, each page is billed as one request; start with `pages` = `1` and raise it only on tables that need depth. See [Pagination](/docs/pagination).
 
 ## AI columns through the MCP server
 
-Clay's AI steps can use custom [MCP](https://modelcontextprotocol.io) servers as tools when you bring your own model key. Connecting API Direct's server gives a Claygent or **Use AI** column all 100+ endpoints at once, with the model choosing the call.
+Clay's AI steps can use your own [MCP](https://modelcontextprotocol.io) servers as tools when you bring your own model key (Clay documents this under the **Use AI** action and the Claygent builder). Connecting API Direct's server gives a Claygent or **Use AI** column all 100+ endpoints at once, with the model choosing the call.
 
-1. In Clay, open **Settings → Tools** and click **Add custom MCP server**.
-2. Name it **API Direct** and set the MCP URL to `https://apidirect.io/mcp?token=YOUR_API_KEY` (the key from step 1). If the dialog offers an API key field, you can leave the key out of the URL and paste it there instead; the server accepts it as a bearer token.
-3. Save and enable the server, then write a **Use AI** prompt that names it, for example *"Use API Direct to fetch the latest 10 LinkedIn posts by {{Company LinkedIn URL}} and list the three themes they talk about most."*
+1. In Clay, add your own model key under the AI provider settings, then open the Claygent builder (or a **Use AI** column running on that key) and choose to connect an MCP server. Workspace admins can require approval before a new MCP server is added, so an admin may need to accept it.
+2. Name it **API Direct** and set the server URL to `https://apidirect.io/mcp`. Put the key from step 1 in the server's API key or authorization field; the server accepts it as a bearer token. If there is no such field, use `https://apidirect.io/mcp?token=YOUR_API_KEY` as the URL instead.
+3. Save and enable the server as a tool, then write a prompt that names it, for example *"Use API Direct to fetch the latest 10 LinkedIn posts by {{Company LinkedIn URL}} and list the three themes they talk about most."*
 
 Every MCP tool is read-only and billed at its endpoint price; the tool descriptions carry the price, so the model can keep a run cheap. The server also exposes the [skills library](https://github.com/apidirect/agent-kit#skills) as prompts, so *"run the Competitor Conquest Radar for Acme"* works from an AI column too.
 
@@ -124,12 +124,12 @@ Skills are plain-language playbooks a coding agent follows. The API Direct agent
 | [Pre-call account brief](https://github.com/apidirect/agent-kit/tree/main/clay-skills/pre-call-account-brief) | A one-page, cited brief on an account from its posts, its executives' posts, news and reviews |
 | [Creator contact sheet](https://github.com/apidirect/agent-kit/tree/main/clay-skills/creator-contact-sheet) | Niche creators on Instagram, TikTok, YouTube and X with the public email or link from their bios |
 
-Install them with the kit (`/plugin marketplace add apidirect/agent-kit` in Claude Code, or `npx skills add apidirect/agent-kit`), or from the [Clay Skills Marketplace](https://marketplace.clay.com). Each skill asks for its inputs, prices every paid step, and stops for approval before spending credits or writing anywhere.
+Install them with the kit (in Claude Code, `/plugin marketplace add apidirect/agent-kit` then `/plugin install api-direct@api-direct`; elsewhere, `npx skills add apidirect/agent-kit`), or from the [Clay Skills Marketplace](https://marketplace.clay.com). Each skill asks for its inputs, prices every paid step, and stops for approval before spending credits or writing anywhere.
 
 ## Pricing and limits
 
 - API Direct is pay-as-you-go, $0.002–$0.01 per request depending on the endpoint; each recipe above shows its price in `templates.json` and on the endpoint page. There are no subscriptions. See [Pricing](/docs/pricing).
-- Every endpoint has a free tier of 50 requests per month (20 for Google Maps search and reviews), so a small table runs for free.
+- Every endpoint has a free tier of 50 requests per month (20 for Places Search, Place Reviews and Place Photos), so a small table runs for free.
 - `get_sentiment=true` adds AI emotion analysis to posts and reviews for $0.001 per request on top of the endpoint price (per page on multi-page endpoints).
 - Clay runs HTTP API columns in parallel, and API Direct allows 10 in-flight requests per endpoint per account (see [Rate limits](/docs/rate-limits)). Set the column's **Rate limiting** option to about 5 requests per second; a `429` means lower it.
 - Google AI Mode can take over a minute to answer. Raise the column's timeout in its optional settings for that endpoint.
