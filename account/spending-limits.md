@@ -1,6 +1,6 @@
 # Spending Limits
 
-Spending limits let you cap your API costs on a daily and monthly basis. Configure them in your [dashboard settings](https://apidirect.io/dashboard/settings).
+Spending limits let you cap your API costs on a daily and monthly basis. Configure them on your [billing page](https://apidirect.io/dashboard/billing).
 
 ## Daily Limit
 
@@ -38,10 +38,18 @@ Requests will resume automatically when the next period begins (next day for dai
 
 ## Setting Limits
 
-1. Go to your [Dashboard Settings](https://apidirect.io/dashboard/settings)
-2. Find the Spending Limits section
+1. Go to your [Billing page](https://apidirect.io/dashboard/billing)
+2. Find the Spending Limits section and click **Edit limits**
 3. Enter your desired daily and/or monthly limit
 4. Save your changes
+
+## Threshold Alerts
+
+You can be emailed before a limit is reached. In **Edit limits**, turn on the email alert and choose a percentage (for example 85%). When your daily or monthly spend reaches that percentage of the matching limit, an email goes to the account owner and to any extra addresses you add, such as a finance or ops inbox.
+
+- One alert is sent per limit per period (daily alerts reset at UTC midnight, monthly alerts on the 1st)
+- Changing a limit or the percentage re-arms the alert
+- A separate email is always sent when a limit is actually reached and requests start being blocked
 
 ## Tips
 
