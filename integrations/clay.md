@@ -10,7 +10,7 @@ There are three ways in, and they stack:
 
 ## Before you start
 
-1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys?utm_source=clay) page. New accounts include $5 of free credit plus [50 free requests per endpoint per month](/docs/pricing). Keys start with `ak_live_`.
+1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys?utm_source=clay) page. Every account gets [50 free requests per endpoint per month](/docs/pricing), no card required. Keys start with `ak_live_`.
 2. In Clay, open any table, click **Add column → HTTP API**, click **Select header account → Add account**, and save one header:
 
    | Key | Value |
@@ -139,7 +139,7 @@ Install them with the kit in Claude Code (`/plugin marketplace add apidirect/age
 
 **401 `invalid_api_key`** — The header account is missing or holds the wrong key. Check it under **Settings → Connections**; keys start with `ak_live_`.
 
-**402 `payment_required`** — Your credit balance is empty and the endpoint's free-tier allowance is used up. Top up on the [billing page](https://apidirect.io/dashboard/billing).
+**402 `payment_required`** — The endpoint's free-tier allowance is used up for this month. Add a payment method on the [billing page](https://apidirect.io/dashboard/billing).
 
 **400 "Provide at least one of: username, url"** — The endpoint accepts several identifiers; send exactly one of them as a query string parameter.
 
