@@ -17,7 +17,7 @@ On older self-hosted versions (1.94+) you can install it manually instead: open 
 
 ## Set up credentials
 
-1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys) page — new accounts include $5 of free credit plus [50 free requests per endpoint per month](/docs/pricing).
+1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys) page — every account gets [50 free requests per endpoint per month](/docs/pricing), no card required.
 2. In n8n, add the API Direct node to a workflow and choose **Create new credential**.
 3. Paste your key (starts with `ak_live_`) and save.
 
@@ -43,7 +43,7 @@ The node is flagged as an AI Agent tool. Attach **API Direct** to an n8n AI Agen
 
 **"Authorization failed - please check your credentials"** — Double-check your API key in the [dashboard](https://apidirect.io/dashboard/keys). Keys start with `ak_live_`.
 
-**"Payment required"** — Your credit balance is empty and the endpoint's free-tier allowance is used up. Top up on the [billing page](https://apidirect.io/dashboard/billing).
+**"Payment required"** — The endpoint's free-tier allowance is used up for this month. Add a payment method on the [billing page](https://apidirect.io/dashboard/billing).
 
 **"Service unavailable"** — The endpoint is temporarily suspended; check the [status page](https://apidirect.io/status).
 

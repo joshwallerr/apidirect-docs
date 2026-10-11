@@ -16,7 +16,7 @@ Activepieces Cloud only ships pieces from the main Activepieces repository, whic
 
 ## Set up a connection
 
-1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys) page — new accounts include $5 of free credit plus [50 free requests per endpoint per month](/docs/pricing).
+1. Get your API key from the [API Keys](https://apidirect.io/dashboard/keys) page — every account gets [50 free requests per endpoint per month](/docs/pricing), no card required.
 2. In a flow, add an **API Direct** step, pick an action, and click **Create connection**.
 3. Paste your key (starts with `ak_live_`) and save.
 
@@ -43,7 +43,7 @@ Every action carries the metadata Activepieces agents and its MCP server read, s
 
 **"API Direct returned 401 (invalid_api_key)"** — Double-check your API key in the [dashboard](https://apidirect.io/dashboard/keys). Keys start with `ak_live_`.
 
-**"API Direct returned 402 (payment_required)"** — Your credit balance is empty and the endpoint's free-tier allowance is used up. Top up on the [billing page](https://apidirect.io/dashboard/billing).
+**"API Direct returned 402 (payment_required)"** — The endpoint's free-tier allowance is used up for this month. Add a payment method on the [billing page](https://apidirect.io/dashboard/billing).
 
 **"API Direct returned 503 (endpoint_suspended)"** — The endpoint is temporarily suspended; check the [status page](https://apidirect.io/status).
 
