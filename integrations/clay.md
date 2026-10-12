@@ -1,6 +1,6 @@
 # Clay
 
-Use API Direct inside your [Clay](https://www.clay.com) tables: enrich every row with live data from LinkedIn, X/Twitter, Reddit, YouTube, Instagram, TikTok, Facebook, Threads, Bluesky, Truth Social, Google Maps, Amazon, Trustpilot, news, forums and web search, through Clay's built-in **HTTP API** column. No Clay integration to install and no code: paste the endpoint, pick your saved API key, point a parameter at a column, and run.
+Use API Direct inside your [Clay](https://www.clay.com) tables: enrich every row with live data from LinkedIn, X/Twitter, Reddit, YouTube, Instagram, TikTok, Facebook, Threads, Bluesky, Substack, Truth Social, Google Maps, Amazon, Trustpilot, news, forums and web search, through Clay's built-in **HTTP API** column. No Clay integration to install and no code: paste the endpoint, pick your saved API key, point a parameter at a column, and run.
 
 There are three ways in, and they stack:
 
@@ -58,6 +58,9 @@ Each recipe is an HTTP API column with method `GET`, the **API Direct** header a
 | Instagram profile with public email | `https://apidirect.io/v1/instagram/user` | `username` = `/Instagram Handle` | `user.full_name`, `user.follower_count`, `user.biography`, `user.public_email`, `user.external_url` |
 | TikTok profile | `https://apidirect.io/v1/tiktok/user` | `username` = `/TikTok Handle` | `user.nickname`, `user.followers`, `user.bio`, `user.url` |
 | YouTube channel stats | `https://apidirect.io/v1/youtube/channel` | `url` = `/YouTube Channel URL` | `channel.channel_name`, `channel.subscriber_count`, `channel.description` |
+| A newsletter's latest posts | `https://apidirect.io/v1/substack/publication/posts` | `publication` = `/Substack Publication` | `posts` |
+| Substack writer profile with links and X handle | `https://apidirect.io/v1/substack/user` | `username` = `/Substack Handle` | `user.full_name`, `user.follower_count`, `user.biography`, `user.twitter_handle`, `user.links` |
+| Substack Notes about a topic, with sentiment | `https://apidirect.io/v1/substack/notes` | `query` = `/Keyword`, `sort_by` = `most_recent`, `get_sentiment` = `true` | `notes` |
 | Web search with Google's AI overview | `https://apidirect.io/v1/web/search` | `query` = `/Question`, `include_ai_overview` = `true` | `ai_overview`, `results` |
 | Ask Google AI Mode a question about a row | `https://apidirect.io/v1/web/ai-mode` | `prompt` = `/Prompt` | `reply_parts`, `reference_links` |
 | Amazon product by ASIN | `https://apidirect.io/v1/amazon/product` | `asin` = `/ASIN` | `product.title`, `product.price`, `product.rating`, `product.num_ratings` |
@@ -123,7 +126,7 @@ Skills are plain-language playbooks a coding agent follows. The API Direct agent
 | [Just-funded accounts](https://github.com/apidirect/agent-kit/tree/main/clay-skills/just-funded-accounts) | This week's raises in a sector, resolved to the company page and the buyer persona before the window closes |
 | [Local leads from reviews](https://github.com/apidirect/agent-kit/tree/main/clay-skills/local-leads-from-reviews) | Local businesses in a category and city with their contact details and the complaint themes from their one-star reviews |
 | [Pre-call account brief](https://github.com/apidirect/agent-kit/tree/main/clay-skills/pre-call-account-brief) | A one-page, cited brief on an account from its posts, its executives' posts, news and reviews |
-| [Creator contact sheet](https://github.com/apidirect/agent-kit/tree/main/clay-skills/creator-contact-sheet) | Niche creators on Instagram, TikTok, YouTube and X with the public email or link from their bios |
+| [Creator contact sheet](https://github.com/apidirect/agent-kit/tree/main/clay-skills/creator-contact-sheet) | Niche creators on Instagram, TikTok, YouTube, X and Substack with the public email or link from their bios |
 
 Install them with the kit in Claude Code (`/plugin marketplace add apidirect/agent-kit` then `/plugin install api-direct@api-direct`; the plugin registers the `clay-skills` folder, so they load beside the research skills), copy a skill's folder into any other agent's skills directory, or install from the [Clay Skills Marketplace](https://marketplace.clay.com). Each skill asks for its inputs, prices every paid step, and stops for approval before spending credits or writing anywhere.
 
