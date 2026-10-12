@@ -2,7 +2,7 @@
 
 Official documentation for [API Direct](https://apidirect.io) — a pay-as-you-go social media, web and news API.
 
-Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, Threads, Truth Social, TikTok, Reddit, YouTube, web forums, news, Google Search and Google Maps through a unified REST API.
+Search real-time data across LinkedIn, Twitter/X, Bluesky, Substack, Facebook, Instagram, Threads, Truth Social, TikTok, Reddit, YouTube, web forums, news, Google Search and Google Maps through a unified REST API.
 
 **Base URL:** `https://apidirect.io`
 
@@ -154,6 +154,29 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, 
 | Post Quotes | $0.003/page | [bluesky-post-quotes.md](endpoints/bluesky-post-quotes.md) |
 | Post Reposts | $0.003/page | [bluesky-post-reposts.md](endpoints/bluesky-post-reposts.md) |
 
+### Substack
+
+| Endpoint | Price | Docs |
+|----------|-------|------|
+| Search Posts | $0.003/request | [substack-posts.md](endpoints/substack-posts.md) |
+| Search Users | $0.003/request | [substack-users.md](endpoints/substack-users.md) |
+| Search Publications | $0.003/request | [substack-publications.md](endpoints/substack-publications.md) |
+| Search Notes | $0.003/page | [substack-notes.md](endpoints/substack-notes.md) |
+| User Profile | $0.003/request | [substack-user.md](endpoints/substack-user.md) |
+| User Posts | $0.003/page | [substack-user-posts.md](endpoints/substack-user-posts.md) |
+| User Activity | $0.003/page | [substack-user-activity.md](endpoints/substack-user-activity.md) |
+| Publication Details | $0.003/request | [substack-publication.md](endpoints/substack-publication.md) |
+| Publication Posts | $0.003/request | [substack-publication-posts.md](endpoints/substack-publication-posts.md) |
+| Publication Recommendations | $0.003/request | [substack-publication-recommendations.md](endpoints/substack-publication-recommendations.md) |
+| Post Details | $0.003/request | [substack-post.md](endpoints/substack-post.md) |
+| Post Comments | $0.003/request | [substack-post-comments.md](endpoints/substack-post-comments.md) |
+| Post Likes | $0.003/request | [substack-post-likes.md](endpoints/substack-post-likes.md) |
+| Note Details | $0.003/request | [substack-note.md](endpoints/substack-note.md) |
+| Category IDs | Reference — free | [substack-category-ids.md](endpoints/substack-category-ids.md) |
+| Category Publications | $0.003/request | [substack-category-publications.md](endpoints/substack-category-publications.md) |
+| Category Feed | $0.003/page | [substack-category-feed.md](endpoints/substack-category-feed.md) |
+| Trending Posts | $0.003/request | [substack-trending.md](endpoints/substack-trending.md) |
+
 ### TikTok
 
 | Endpoint | Price | Docs |
@@ -225,6 +248,7 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Facebook, Instagram, 
 
 - [`linkedin-job-locations.json`](linkedin-job-locations.json) — LinkedIn location IDs for the `location_id` filter on [Search Jobs](endpoints/linkedin-jobs.md)
 - [`twitter-trends-locations.json`](twitter-trends-locations.json) — WOEIDs for the `woeid` parameter on [Trends](endpoints/twitter-trends.md)
+- [`substack-categories.json`](substack-categories.json) — category IDs and slugs for the `category` parameter on [Category Publications](endpoints/substack-category-publications.md) and [Category Feed](endpoints/substack-category-feed.md)
 
 ---
 

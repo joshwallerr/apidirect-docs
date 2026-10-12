@@ -42,8 +42,8 @@ Depending on the endpoint, responses include either `page` (current page number)
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `page` | integer | Current page number (used by LinkedIn, Reddit Posts, Forum Posts) |
-| `pages` | integer | Number of pages fetched (used by Twitter, Bluesky, Reddit Comments, YouTube, Instagram, TikTok, Web Search) |
+| `page` | integer | Current page number (used by LinkedIn, Reddit Posts, Forum Posts, Substack search, publication posts and leaderboards) |
+| `pages` | integer | Number of pages fetched (used by Twitter, Bluesky, Substack user posts, activity, notes and category feed, Reddit Comments, YouTube, Instagram, TikTok, Web Search) |
 | `limit` | integer | Requested result limit (used by News Articles) |
 | `count` | integer | Total number of results returned |
 
@@ -53,9 +53,9 @@ Many endpoints include additional fields beyond the core set above. Common examp
 
 | Field | Description |
 |-------|-------------|
-| `likes` | Number of likes (LinkedIn, Twitter, Bluesky, Instagram, TikTok) |
+| `likes` | Number of likes (LinkedIn, Twitter, Bluesky, Substack, Instagram, TikTok) |
 | `views` | Number of views (Twitter, YouTube, Instagram) |
-| `comments` | Number of comments (LinkedIn, Instagram, TikTok) |
+| `comments` | Number of comments (LinkedIn, Instagram, TikTok, Substack) |
 | `shares` | Number of shares (LinkedIn, Instagram, TikTok) |
 | `hashtags` | Hashtags used in the post (Twitter, Bluesky, Instagram) |
 | `subreddit` | Subreddit name (Reddit) |

@@ -1,0 +1,1280 @@
+[
+  {
+    "category_id": 96,
+    "name": "Culture",
+    "slug": "culture",
+    "subcategories": [
+      {
+        "category_id": 76786,
+        "name": "Traditions & Customs",
+        "slug": "traditions-customs"
+      },
+      {
+        "category_id": 76780,
+        "name": "Cultural Commentary",
+        "slug": "cultural-commentary"
+      },
+      {
+        "category_id": 76781,
+        "name": "Festivals & Holidays",
+        "slug": "cultural-events-festivals"
+      },
+      {
+        "category_id": 76783,
+        "name": "Pop Culture",
+        "slug": "pop-culture"
+      },
+      {
+        "category_id": 76784,
+        "name": "Social Issues",
+        "slug": "social-issues"
+      }
+    ]
+  },
+  {
+    "category_id": 4,
+    "name": "Technology",
+    "slug": "technology",
+    "subcategories": [
+      {
+        "category_id": 76966,
+        "name": "Emerging Tech",
+        "slug": "emerging-technologies"
+      },
+      {
+        "category_id": 76967,
+        "name": "Gadgets",
+        "slug": "gadgets-devices"
+      },
+      {
+        "category_id": 76968,
+        "name": "Digital Media",
+        "slug": "internet-social-media"
+      },
+      {
+        "category_id": 77143,
+        "name": "Substack",
+        "slug": "substack-platform"
+      },
+      {
+        "category_id": 76965,
+        "name": "Cybersecurity",
+        "slug": "cybersecurity"
+      },
+      {
+        "category_id": 76964,
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence-robotics"
+      },
+      {
+        "category_id": 76969,
+        "name": "Programming",
+        "slug": "programming-development"
+      },
+      {
+        "category_id": 76970,
+        "name": "Software",
+        "slug": "software-apps"
+      }
+    ]
+  },
+  {
+    "category_id": 62,
+    "name": "Business",
+    "slug": "business",
+    "subcategories": [
+      {
+        "category_id": 76750,
+        "name": "Career Development",
+        "slug": "career-development"
+      },
+      {
+        "category_id": 76755,
+        "name": "Productivity",
+        "slug": "productivity"
+      },
+      {
+        "category_id": 76751,
+        "name": "Entrepreneurship",
+        "slug": "entrepreneurship"
+      },
+      {
+        "category_id": 76752,
+        "name": "Leadership",
+        "slug": "leadership"
+      },
+      {
+        "category_id": 76753,
+        "name": "Marketing",
+        "slug": "marketing"
+      }
+    ]
+  },
+  {
+    "category_id": 76739,
+    "name": "U.S. Politics",
+    "slug": "us-politics",
+    "subcategories": [
+      {
+        "category_id": 77041,
+        "name": "U.S. Elections & Campaigns",
+        "slug": "us-elections-campaigns"
+      },
+      {
+        "category_id": 77142,
+        "name": "Midterms 2026",
+        "slug": "midterms-2026"
+      },
+      {
+        "category_id": 77042,
+        "name": "U.S. Government & Policy",
+        "slug": "us-government-policy"
+      },
+      {
+        "category_id": 77043,
+        "name": "U.S. Political Satire",
+        "slug": "us-political-satire"
+      }
+    ]
+  },
+  {
+    "category_id": 153,
+    "name": "Finance",
+    "slug": "finance",
+    "subcategories": [
+      {
+        "category_id": 76832,
+        "name": "Real Estate",
+        "slug": "real-estate"
+      },
+      {
+        "category_id": 76833,
+        "name": "Retirement Planning",
+        "slug": "retirement-planning"
+      },
+      {
+        "category_id": 76834,
+        "name": "Taxes & Accounting",
+        "slug": "taxes-accounting"
+      },
+      {
+        "category_id": 76828,
+        "name": "Banking & Credit",
+        "slug": "banking-credit"
+      },
+      {
+        "category_id": 76829,
+        "name": "Insurance",
+        "slug": "insurance"
+      },
+      {
+        "category_id": 76830,
+        "name": "Investing",
+        "slug": "investing"
+      },
+      {
+        "category_id": 76831,
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ]
+  },
+  {
+    "category_id": 13645,
+    "name": "Food & Drink",
+    "slug": "food",
+    "subcategories": [
+      {
+        "category_id": 77018,
+        "name": "Wine & Spirits",
+        "slug": "wine"
+      },
+      {
+        "category_id": 76836,
+        "name": "Baking",
+        "slug": "baking"
+      },
+      {
+        "category_id": 77016,
+        "name": "Cocktails",
+        "slug": "cocktails"
+      },
+      {
+        "category_id": 77017,
+        "name": "Coffee",
+        "slug": "coffee"
+      },
+      {
+        "category_id": 76842,
+        "name": "Restaurants",
+        "slug": "restaurants-dining-out"
+      },
+      {
+        "category_id": 76838,
+        "name": "Cooking & Recipes",
+        "slug": "cooking-recipes"
+      },
+      {
+        "category_id": 76839,
+        "name": "Food Culture",
+        "slug": "food-culture"
+      },
+      {
+        "category_id": 76840,
+        "name": "Food Industry",
+        "slug": "food-industry"
+      }
+    ]
+  },
+  {
+    "category_id": 77018,
+    "name": "Wine & Spirits",
+    "slug": "wine",
+    "subcategories": []
+  },
+  {
+    "category_id": 94,
+    "name": "Sports",
+    "slug": "sports",
+    "subcategories": [
+      {
+        "category_id": 77039,
+        "name": "Running",
+        "slug": "running"
+      },
+      {
+        "category_id": 77038,
+        "name": "Motorsports",
+        "slug": "motorsports"
+      },
+      {
+        "category_id": 77040,
+        "name": "Yoga",
+        "slug": "yoga"
+      },
+      {
+        "category_id": 76956,
+        "name": "American Football",
+        "slug": "american-football"
+      },
+      {
+        "category_id": 76957,
+        "name": "Baseball",
+        "slug": "baseball"
+      },
+      {
+        "category_id": 77037,
+        "name": "Cricket",
+        "slug": "cricket"
+      },
+      {
+        "category_id": 76960,
+        "name": "Golf",
+        "slug": "golf"
+      },
+      {
+        "category_id": 76959,
+        "name": "Soccer",
+        "slug": "football-(soccer)"
+      },
+      {
+        "category_id": 76958,
+        "name": "Basketball",
+        "slug": "basketball"
+      },
+      {
+        "category_id": 76961,
+        "name": "Hockey",
+        "slug": "hockey"
+      },
+      {
+        "category_id": 76962,
+        "name": "Tennis",
+        "slug": "tennis"
+      }
+    ]
+  },
+  {
+    "category_id": 15417,
+    "name": "Art & Illustration",
+    "slug": "art",
+    "subcategories": [
+      {
+        "category_id": 76742,
+        "name": "Art History",
+        "slug": "art-history-criticism"
+      },
+      {
+        "category_id": 76743,
+        "name": "Art Supplies & Techniques",
+        "slug": "art-supplies-techniques"
+      },
+      {
+        "category_id": 76744,
+        "name": "Digital Art",
+        "slug": "digital-art"
+      },
+      {
+        "category_id": 76746,
+        "name": "Painting & Drawing",
+        "slug": "painting-drawing"
+      },
+      {
+        "category_id": 76747,
+        "name": "Photography",
+        "slug": "photography"
+      },
+      {
+        "category_id": 76745,
+        "name": "Mixed Media",
+        "slug": "mixed-media"
+      },
+      {
+        "category_id": 76748,
+        "name": "Sculpture",
+        "slug": "sculpture"
+      }
+    ]
+  },
+  {
+    "category_id": 76740,
+    "name": "World Politics",
+    "slug": "world-politics",
+    "subcategories": []
+  },
+  {
+    "category_id": 76741,
+    "name": "Health Politics",
+    "slug": "health-politics",
+    "subcategories": []
+  },
+  {
+    "category_id": 49715,
+    "name": "Fashion & Beauty",
+    "slug": "fashionandbeauty",
+    "subcategories": [
+      {
+        "category_id": 76814,
+        "name": "Fashion Industry",
+        "slug": "fashion-industry"
+      },
+      {
+        "category_id": 76813,
+        "name": "Clothing & Apparel",
+        "slug": "clothing-apparel"
+      },
+      {
+        "category_id": 76812,
+        "name": "Accessories",
+        "slug": "accessories"
+      },
+      {
+        "category_id": 76815,
+        "name": "Fashion Trends",
+        "slug": "fashion-trends"
+      },
+      {
+        "category_id": 76816,
+        "name": "Hairstyling",
+        "slug": "hairstyling"
+      },
+      {
+        "category_id": 76817,
+        "name": "Makeup & Skincare",
+        "slug": "makeup-skincare"
+      },
+      {
+        "category_id": 76818,
+        "name": "Personal Style",
+        "slug": "personal-style"
+      }
+    ]
+  },
+  {
+    "category_id": 103,
+    "name": "News",
+    "slug": "news",
+    "subcategories": [
+      {
+        "category_id": 76907,
+        "name": "Breaking News",
+        "slug": "breaking-news"
+      },
+      {
+        "category_id": 76913,
+        "name": "World News",
+        "slug": "world-news"
+      },
+      {
+        "category_id": 76908,
+        "name": "Human Interest Stories",
+        "slug": "human-interest-stories"
+      },
+      {
+        "category_id": 76911,
+        "name": "National News",
+        "slug": "national-news"
+      },
+      {
+        "category_id": 76912,
+        "name": "Opinion Pieces",
+        "slug": "opinion-commentary"
+      },
+      {
+        "category_id": 76909,
+        "name": "Investigative Journalism",
+        "slug": "investigative-journalism"
+      },
+      {
+        "category_id": 76910,
+        "name": "Local News",
+        "slug": "local-news"
+      }
+    ]
+  },
+  {
+    "category_id": 11,
+    "name": "Music",
+    "slug": "music",
+    "subcategories": [
+      {
+        "category_id": 76899,
+        "name": "Album Reviews",
+        "slug": "album-reviews-analysis"
+      },
+      {
+        "category_id": 76900,
+        "name": "Concerts",
+        "slug": "concerts-festivals"
+      },
+      {
+        "category_id": 77028,
+        "name": "Electronic & Dance",
+        "slug": "electronic-dance"
+      },
+      {
+        "category_id": 77026,
+        "name": "Classical & Opera",
+        "slug": "classical-opera"
+      },
+      {
+        "category_id": 77027,
+        "name": "Country",
+        "slug": "country"
+      },
+      {
+        "category_id": 77029,
+        "name": "Folk",
+        "slug": "folk"
+      },
+      {
+        "category_id": 77030,
+        "name": "Hip-Hop & Rap",
+        "slug": "hip-hop-rap"
+      },
+      {
+        "category_id": 77031,
+        "name": "Jazz",
+        "slug": "jazz"
+      },
+      {
+        "category_id": 77032,
+        "name": "K-Pop",
+        "slug": "kpop"
+      },
+      {
+        "category_id": 77033,
+        "name": "Pop",
+        "slug": "pop"
+      },
+      {
+        "category_id": 77034,
+        "name": "Rock & Alternative",
+        "slug": "rock-alternative"
+      },
+      {
+        "category_id": 76903,
+        "name": "Music History & Theory",
+        "slug": "music-history-theory"
+      },
+      {
+        "category_id": 76904,
+        "name": "Music Industry",
+        "slug": "music-industry"
+      },
+      {
+        "category_id": 76902,
+        "name": "Musical Instruments",
+        "slug": "instruments-gear"
+      },
+      {
+        "category_id": 76905,
+        "name": "Music Production",
+        "slug": "music-production-technology"
+      }
+    ]
+  },
+  {
+    "category_id": 223,
+    "name": "Faith & Spirituality",
+    "slug": "faith",
+    "subcategories": [
+      {
+        "category_id": 76809,
+        "name": "Judaism",
+        "slug": "judaism"
+      },
+      {
+        "category_id": 77015,
+        "name": "Meditation & Mindfulness",
+        "slug": "meditation-mindfulness"
+      },
+      {
+        "category_id": 76806,
+        "name": "Christianity",
+        "slug": "christianity"
+      },
+      {
+        "category_id": 76808,
+        "name": "Islam",
+        "slug": "islam"
+      },
+      {
+        "category_id": 76805,
+        "name": "Buddhism",
+        "slug": "buddhism"
+      },
+      {
+        "category_id": 76804,
+        "name": "Atheism",
+        "slug": "atheism-agnosticism"
+      },
+      {
+        "category_id": 76810,
+        "name": "New Age & Alternative Beliefs",
+        "slug": "new-age-alternative-beliefs"
+      },
+      {
+        "category_id": 76807,
+        "name": "Hinduism",
+        "slug": "hinduism"
+      }
+    ]
+  },
+  {
+    "category_id": 15414,
+    "name": "Climate & Environment",
+    "slug": "climate",
+    "subcategories": [
+      {
+        "category_id": 76760,
+        "name": "Pollution & Waste Management",
+        "slug": "pollution-waste-management"
+      },
+      {
+        "category_id": 76757,
+        "name": "Climate Change",
+        "slug": "climate-change"
+      },
+      {
+        "category_id": 76761,
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      {
+        "category_id": 76762,
+        "name": "Sustainable Living",
+        "slug": "sustainable-living"
+      },
+      {
+        "category_id": 76763,
+        "name": "Wildlife",
+        "slug": "wildlife"
+      },
+      {
+        "category_id": 76759,
+        "name": "Environmental Policy",
+        "slug": "environmental-policy-advocacy"
+      },
+      {
+        "category_id": 76758,
+        "name": "Conservation",
+        "slug": "conservation"
+      }
+    ]
+  },
+  {
+    "category_id": 134,
+    "name": "Science",
+    "slug": "science",
+    "subcategories": [
+      {
+        "category_id": 76953,
+        "name": "Psychology & Neuroscience",
+        "slug": "psychology-neuroscience"
+      },
+      {
+        "category_id": 76948,
+        "name": "Astronomy",
+        "slug": "astronomy-space"
+      },
+      {
+        "category_id": 76949,
+        "name": "Life Sciences",
+        "slug": "biology-life-sciences"
+      },
+      {
+        "category_id": 76954,
+        "name": "Engineering",
+        "slug": "technology-engineering"
+      },
+      {
+        "category_id": 76952,
+        "name": "Physics & Chemistry",
+        "slug": "physics-chemistry"
+      },
+      {
+        "category_id": 76951,
+        "name": "Medicine",
+        "slug": "medicine-healthcare"
+      },
+      {
+        "category_id": 76950,
+        "name": "Earth Sciences",
+        "slug": "earth-sciences-geology"
+      }
+    ]
+  },
+  {
+    "category_id": 339,
+    "name": "Literature",
+    "slug": "literature",
+    "subcategories": [
+      {
+        "category_id": 76897,
+        "name": "Poetry",
+        "slug": "poetry"
+      },
+      {
+        "category_id": 77024,
+        "name": "Book Recommendations",
+        "slug": "book-recommendations"
+      },
+      {
+        "category_id": 77025,
+        "name": "Writing Craft",
+        "slug": "writing-craft"
+      },
+      {
+        "category_id": 76890,
+        "name": "Author Interviews",
+        "slug": "author-interviews"
+      },
+      {
+        "category_id": 76892,
+        "name": "Classic Literature",
+        "slug": "classic-literature"
+      },
+      {
+        "category_id": 76895,
+        "name": "Literary Fiction",
+        "slug": "literary-fiction"
+      },
+      {
+        "category_id": 76896,
+        "name": "Nonfiction",
+        "slug": "nonfiction"
+      },
+      {
+        "category_id": 76891,
+        "name": "Book Clubs",
+        "slug": "book-clubs-reading-groups"
+      },
+      {
+        "category_id": 76893,
+        "name": "Theater",
+        "slug": "drama-theater"
+      },
+      {
+        "category_id": 76894,
+        "name": "Literary Criticism",
+        "slug": "literary-criticism-analysis"
+      }
+    ]
+  },
+  {
+    "category_id": 284,
+    "name": "Fiction",
+    "slug": "fiction",
+    "subcategories": [
+      {
+        "category_id": 76825,
+        "name": "Science Fiction",
+        "slug": "science-fiction"
+      },
+      {
+        "category_id": 76826,
+        "name": "Short Stories",
+        "slug": "short-stories"
+      },
+      {
+        "category_id": 76820,
+        "name": "Fantasy",
+        "slug": "fantasy"
+      },
+      {
+        "category_id": 76821,
+        "name": "Historical Fiction",
+        "slug": "historical-fiction"
+      },
+      {
+        "category_id": 76822,
+        "name": "Horror",
+        "slug": "horror"
+      },
+      {
+        "category_id": 76823,
+        "name": "Mystery & Thriller",
+        "slug": "mystery-thriller"
+      },
+      {
+        "category_id": 76824,
+        "name": "Romance",
+        "slug": "romance"
+      }
+    ]
+  },
+  {
+    "category_id": 61,
+    "name": "Design",
+    "slug": "design",
+    "subcategories": [
+      {
+        "category_id": 76788,
+        "name": "Architectural Design",
+        "slug": "architectural-design"
+      },
+      {
+        "category_id": 76790,
+        "name": "Industrial Design",
+        "slug": "industrial-design"
+      },
+      {
+        "category_id": 76791,
+        "name": "Interior Design",
+        "slug": "interior-design"
+      },
+      {
+        "category_id": 76792,
+        "name": "Typography",
+        "slug": "typography"
+      },
+      {
+        "category_id": 76793,
+        "name": "UX/UI Design",
+        "slug": "ux/ui-design"
+      },
+      {
+        "category_id": 76789,
+        "name": "Graphic Design",
+        "slug": "graphic-design"
+      },
+      {
+        "category_id": 76794,
+        "name": "Web Design",
+        "slug": "web-design"
+      }
+    ]
+  },
+  {
+    "category_id": 355,
+    "name": "Health & Wellness",
+    "slug": "health",
+    "subcategories": [
+      {
+        "category_id": 76845,
+        "name": "Fitness",
+        "slug": "fitness"
+      },
+      {
+        "category_id": 76846,
+        "name": "Medical News",
+        "slug": "medical-news"
+      },
+      {
+        "category_id": 76844,
+        "name": "Alternative Medicine",
+        "slug": "alternative-medicine"
+      },
+      {
+        "category_id": 76847,
+        "name": "Mental Health",
+        "slug": "mental-health"
+      },
+      {
+        "category_id": 76848,
+        "name": "Nutrition",
+        "slug": "nutrition"
+      },
+      {
+        "category_id": 76849,
+        "name": "Personal Growth",
+        "slug": "personal-growth"
+      },
+      {
+        "category_id": 76850,
+        "name": "Self-care",
+        "slug": "self-care"
+      }
+    ]
+  },
+  {
+    "category_id": 109,
+    "name": "Travel",
+    "slug": "travel",
+    "subcategories": [
+      {
+        "category_id": 76978,
+        "name": "Travel Tips",
+        "slug": "travel-tips-advice"
+      },
+      {
+        "category_id": 76974,
+        "name": "Cultural & Historical Travel",
+        "slug": "cultural-historical-travel"
+      },
+      {
+        "category_id": 76972,
+        "name": "Adventure Travel",
+        "slug": "adventure-travel"
+      },
+      {
+        "category_id": 76973,
+        "name": "Budget Travel",
+        "slug": "budget-travel"
+      },
+      {
+        "category_id": 76975,
+        "name": "Destinations",
+        "slug": "destinations"
+      },
+      {
+        "category_id": 76977,
+        "name": "Luxury Travel",
+        "slug": "luxury-travel"
+      }
+    ]
+  },
+  {
+    "category_id": 1796,
+    "name": "Parenting",
+    "slug": "parenting",
+    "subcategories": [
+      {
+        "category_id": 76926,
+        "name": "Infants & Toddlers",
+        "slug": "infants-toddlers"
+      },
+      {
+        "category_id": 76928,
+        "name": "Pregnancy & Birth",
+        "slug": "pregnancy-birth"
+      },
+      {
+        "category_id": 76929,
+        "name": "School-Aged Children",
+        "slug": "school-aged-children"
+      },
+      {
+        "category_id": 76924,
+        "name": "Education & Development",
+        "slug": "education-development"
+      },
+      {
+        "category_id": 76930,
+        "name": "Teenagers",
+        "slug": "teenagers"
+      },
+      {
+        "category_id": 76925,
+        "name": "Family Activities",
+        "slug": "family-activities"
+      },
+      {
+        "category_id": 76927,
+        "name": "Parenting Tips",
+        "slug": "parenting-tips-advice"
+      }
+    ]
+  },
+  {
+    "category_id": 114,
+    "name": "Philosophy",
+    "slug": "philosophy",
+    "subcategories": [
+      {
+        "category_id": 76935,
+        "name": "Logic & Critical Thinking",
+        "slug": "logic-critical-thinking"
+      },
+      {
+        "category_id": 76938,
+        "name": "Political Philosophy",
+        "slug": "political-philosophy"
+      },
+      {
+        "category_id": 76936,
+        "name": "Metaphysics",
+        "slug": "metaphysics-epistemology"
+      },
+      {
+        "category_id": 77035,
+        "name": "Existentialism",
+        "slug": "existentialism"
+      },
+      {
+        "category_id": 76937,
+        "name": "Philosophy of Mind",
+        "slug": "philosophy-of-mind"
+      },
+      {
+        "category_id": 77036,
+        "name": "Stoicism",
+        "slug": "stoicism"
+      },
+      {
+        "category_id": 76932,
+        "name": "Aesthetics",
+        "slug": "aesthetics"
+      },
+      {
+        "category_id": 76933,
+        "name": "Eastern Philosophy",
+        "slug": "eastern-philosophy"
+      },
+      {
+        "category_id": 76934,
+        "name": "Ethics",
+        "slug": "ethics-morality"
+      }
+    ]
+  },
+  {
+    "category_id": 387,
+    "name": "Comics",
+    "slug": "comics",
+    "subcategories": [
+      {
+        "category_id": 76770,
+        "name": "Superheroes",
+        "slug": "superheroes"
+      },
+      {
+        "category_id": 76766,
+        "name": "Comic Strips",
+        "slug": "comic-strips"
+      },
+      {
+        "category_id": 76767,
+        "name": "Graphic Novels",
+        "slug": "graphic-novels"
+      },
+      {
+        "category_id": 76768,
+        "name": "Independent Comics",
+        "slug": "independent-comics"
+      },
+      {
+        "category_id": 76769,
+        "name": "Manga",
+        "slug": "manga"
+      },
+      {
+        "category_id": 76771,
+        "name": "Webcomics",
+        "slug": "webcomics"
+      }
+    ]
+  },
+  {
+    "category_id": 118,
+    "name": "Crypto",
+    "slug": "crypto",
+    "subcategories": [
+      {
+        "category_id": 76773,
+        "name": "Blockchain Technology",
+        "slug": "blockchain-technology"
+      },
+      {
+        "category_id": 76776,
+        "name": "Crypto Investing",
+        "slug": "cryptocurrency-trading-investing"
+      },
+      {
+        "category_id": 76774,
+        "name": "Crypto Regulations",
+        "slug": "crypto-regulations"
+      },
+      {
+        "category_id": 76777,
+        "name": "Decentralized Finance (DeFi)",
+        "slug": "decentralized-finance-(defi)"
+      },
+      {
+        "category_id": 76775,
+        "name": "Crypto Mining",
+        "slug": "cryptocurrency-mining"
+      },
+      {
+        "category_id": 76778,
+        "name": "NFTs",
+        "slug": "nfts"
+      }
+    ]
+  },
+  {
+    "category_id": 51282,
+    "name": "International",
+    "slug": "international",
+    "subcategories": [
+      {
+        "category_id": 76882,
+        "name": "Africa",
+        "slug": "africa"
+      },
+      {
+        "category_id": 76883,
+        "name": "Asia",
+        "slug": "asia"
+      },
+      {
+        "category_id": 76885,
+        "name": "Middle East",
+        "slug": "middle-east"
+      },
+      {
+        "category_id": 76886,
+        "name": "North America",
+        "slug": "north-america"
+      },
+      {
+        "category_id": 76887,
+        "name": "Oceania",
+        "slug": "oceania"
+      },
+      {
+        "category_id": 76888,
+        "name": "South America",
+        "slug": "south-america"
+      },
+      {
+        "category_id": 76884,
+        "name": "Europe",
+        "slug": "europe"
+      }
+    ]
+  },
+  {
+    "category_id": 18,
+    "name": "History",
+    "slug": "history",
+    "subcategories": [
+      {
+        "category_id": 76980,
+        "name": "Genealogy",
+        "slug": "genealogy"
+      },
+      {
+        "category_id": 76857,
+        "name": "Military History",
+        "slug": "military-history"
+      },
+      {
+        "category_id": 76855,
+        "name": "Cultural History",
+        "slug": "cultural-history"
+      },
+      {
+        "category_id": 76858,
+        "name": "Modern History",
+        "slug": "modern-history"
+      },
+      {
+        "category_id": 76856,
+        "name": "Historical Events",
+        "slug": "historical-events"
+      },
+      {
+        "category_id": 76852,
+        "name": "Ancient History",
+        "slug": "ancient-history"
+      },
+      {
+        "category_id": 76853,
+        "name": "Archaeology",
+        "slug": "archaeology"
+      },
+      {
+        "category_id": 76854,
+        "name": "Biographies",
+        "slug": "biographies-memoirs"
+      }
+    ]
+  },
+  {
+    "category_id": 49692,
+    "name": "Humor",
+    "slug": "humor",
+    "subcategories": [
+      {
+        "category_id": 76876,
+        "name": "Humorous Essays",
+        "slug": "humorous-essays"
+      },
+      {
+        "category_id": 76879,
+        "name": "Satire",
+        "slug": "satire"
+      },
+      {
+        "category_id": 76880,
+        "name": "Stand-up Comedy",
+        "slug": "stand-up-comedy"
+      },
+      {
+        "category_id": 76877,
+        "name": "Internet Memes",
+        "slug": "internet-memes"
+      },
+      {
+        "category_id": 76878,
+        "name": "Parody & Spoofs",
+        "slug": "parody-spoofs"
+      },
+      {
+        "category_id": 76875,
+        "name": "Funny Stories",
+        "slug": "funny-stories-anecdotes"
+      },
+      {
+        "category_id": 76874,
+        "name": "Comedy TV & Movies",
+        "slug": "comedy-tv-movies"
+      }
+    ]
+  },
+  {
+    "category_id": 34,
+    "name": "Education",
+    "slug": "education",
+    "subcategories": [
+      {
+        "category_id": 76802,
+        "name": "Teaching Strategies",
+        "slug": "teaching-strategies"
+      },
+      {
+        "category_id": 77013,
+        "name": "Homeschooling",
+        "slug": "homeschooling"
+      },
+      {
+        "category_id": 77014,
+        "name": "Language Learning",
+        "slug": "language-learning"
+      },
+      {
+        "category_id": 76797,
+        "name": "Educational Technology",
+        "slug": "educational-technology"
+      },
+      {
+        "category_id": 76798,
+        "name": "Higher Education",
+        "slug": "higher-education"
+      },
+      {
+        "category_id": 76799,
+        "name": "K-12 Education",
+        "slug": "k-12-education"
+      },
+      {
+        "category_id": 76800,
+        "name": "Online Learning",
+        "slug": "online-learning"
+      },
+      {
+        "category_id": 76796,
+        "name": "Educational Policy",
+        "slug": "educational-policy"
+      },
+      {
+        "category_id": 76801,
+        "name": "Special Education",
+        "slug": "special-education"
+      }
+    ]
+  },
+  {
+    "category_id": 76782,
+    "name": "Film & TV",
+    "slug": "film-and-tv",
+    "subcategories": [
+      {
+        "category_id": 77052,
+        "name": "Emmy Awards",
+        "slug": "emmy-awards"
+      }
+    ]
+  },
+  {
+    "category_id": 76866,
+    "name": "Home & Garden",
+    "slug": "home-garden",
+    "subcategories": [
+      {
+        "category_id": 76867,
+        "name": "DIY Projects",
+        "slug": "diy-projects"
+      },
+      {
+        "category_id": 76870,
+        "name": "Home Improvement",
+        "slug": "home-improvement"
+      },
+      {
+        "category_id": 76871,
+        "name": "Organization & Cleaning",
+        "slug": "organization-cleaning"
+      },
+      {
+        "category_id": 76869,
+        "name": "Home Decor",
+        "slug": "home-decor"
+      },
+      {
+        "category_id": 76868,
+        "name": "Gardening",
+        "slug": "gardening-landscaping"
+      }
+    ]
+  },
+  {
+    "category_id": 76863,
+    "name": "Games",
+    "slug": "games",
+    "subcategories": [
+      {
+        "category_id": 77022,
+        "name": "Tabletop Games",
+        "slug": "tabletop-games"
+      },
+      {
+        "category_id": 76981,
+        "name": "Video Games",
+        "slug": "video-games"
+      }
+    ]
+  }
+]

@@ -6,7 +6,7 @@ API Direct endpoints support pagination to retrieve multiple pages of results. T
 
 Some endpoints use a `page` parameter where you request one page at a time. Each request returns a single page of results.
 
-**Endpoints using `page`:** LinkedIn Posts, Reddit Posts, Forum Posts, Amazon, Trustpilot Company Search, Category Companies and User Profile
+**Endpoints using `page`:** LinkedIn Posts, Reddit Posts, Forum Posts, Amazon, Trustpilot Company Search, Category Companies and User Profile, Substack Search Posts, Search Users, Search Publications, Publication Posts and Category Publications
 
 ```bash
 # Get page 1
@@ -32,7 +32,7 @@ The response includes the current `page` number:
 
 Other endpoints use a `pages` parameter that fetches multiple pages in a single API call. This is useful for retrieving larger result sets without making multiple requests.
 
-**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search, Places, Trustpilot Company Reviews, Bluesky (all paginated endpoints)
+**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search, Places, Trustpilot Company Reviews, Bluesky (all paginated endpoints), Substack User Posts, User Activity, Notes and Category Feed
 
 ```bash
 # Fetch 3 pages of results in one call
@@ -72,6 +72,15 @@ The response includes the number of `pages` fetched:
 | YouTube Comments | `pages` | 20 |
 | Truth Social User Posts | `pages` | 20 |
 | Bluesky (all paginated endpoints) | `pages` | 20 |
+| Substack Search Posts | `page` | 101 |
+| Substack Search Users | `page` | 4 |
+| Substack Search Publications | `page` | 4 |
+| Substack Publication Posts | `page` | No fixed last page; the archive ends with an empty page |
+| Substack Category Publications | `page` | 21 |
+| Substack User Posts | `pages` | 60 |
+| Substack User Activity | `pages` | 250 |
+| Substack Notes | `pages` | 250 |
+| Substack Category Feed | `pages` | 250 |
 | Instagram Posts | `pages` | 20 |
 | Instagram User Posts | `pages` | 20 |
 | Instagram User Followers | `pages` | 40 |
