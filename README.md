@@ -185,6 +185,20 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Substack, Facebook, I
 | Search Users | $0.006/page | [tiktok-users.md](endpoints/tiktok-users.md) |
 | User Profile | $0.006/request | [tiktok-user.md](endpoints/tiktok-user.md) |
 | Video Details | $0.006/request | [tiktok-video.md](endpoints/tiktok-video.md) |
+| User Videos | $0.006/page | [tiktok-user-videos.md](endpoints/tiktok-user-videos.md) |
+| User Likes | $0.006/page | [tiktok-user-likes.md](endpoints/tiktok-user-likes.md) |
+| User Stories | $0.006/page | [tiktok-user-stories.md](endpoints/tiktok-user-stories.md) |
+| User Followers | $0.006/page | [tiktok-user-followers.md](endpoints/tiktok-user-followers.md) |
+| User Following | $0.006/page | [tiktok-user-following.md](endpoints/tiktok-user-following.md) |
+| Video Comments | $0.006/page | [tiktok-video-comments.md](endpoints/tiktok-video-comments.md) |
+| Comment Replies | $0.006/page | [tiktok-comment-replies.md](endpoints/tiktok-comment-replies.md) |
+| Search Hashtags | $0.006/page | [tiktok-hashtags.md](endpoints/tiktok-hashtags.md) |
+| Hashtag Details | $0.006/request | [tiktok-hashtag.md](endpoints/tiktok-hashtag.md) |
+| Hashtag Videos | $0.006/page | [tiktok-hashtag-videos.md](endpoints/tiktok-hashtag-videos.md) |
+| Music Details | $0.006/request | [tiktok-music.md](endpoints/tiktok-music.md) |
+| Music Videos | $0.006/page | [tiktok-music-videos.md](endpoints/tiktok-music-videos.md) |
+| Playlist Details | $0.006/request | [tiktok-playlist.md](endpoints/tiktok-playlist.md) |
+| Playlist Videos | $0.006/page | [tiktok-playlist-videos.md](endpoints/tiktok-playlist-videos.md) |
 
 ### Amazon
 
