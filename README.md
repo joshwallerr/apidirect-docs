@@ -91,7 +91,18 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Substack, Facebook, I
 |----------|-------|------|
 | Search Posts | $0.003/request | [reddit-posts.md](endpoints/reddit-posts.md) |
 | Search Comments | $0.003/page | [reddit-comments.md](endpoints/reddit-comments.md) |
-| Search Users | $0.003/request | [reddit-users.md](endpoints/reddit-users.md) |
+| Search Users | $0.003/page | [reddit-users.md](endpoints/reddit-users.md) |
+| Search Subreddits | $0.003/page | [reddit-subreddits.md](endpoints/reddit-subreddits.md) |
+| Post Details | $0.003/request | [reddit-post.md](endpoints/reddit-post.md) |
+| Post Comments | $0.003/page | [reddit-post-comments.md](endpoints/reddit-post-comments.md) |
+| Post Crossposts | $0.003/request | [reddit-post-crossposts.md](endpoints/reddit-post-crossposts.md) |
+| User Profile | $0.003/request | [reddit-user.md](endpoints/reddit-user.md) |
+| User Posts | $0.003/page | [reddit-user-posts.md](endpoints/reddit-user-posts.md) |
+| User Comments | $0.003/page | [reddit-user-comments.md](endpoints/reddit-user-comments.md) |
+| Subreddit Details | $0.003/request | [reddit-subreddit.md](endpoints/reddit-subreddit.md) |
+| Subreddit Posts | $0.003/page | [reddit-subreddit-posts.md](endpoints/reddit-subreddit-posts.md) |
+| Subreddit Rules | $0.003/request | [reddit-subreddit-rules.md](endpoints/reddit-subreddit-rules.md) |
+| Trending Posts | $0.003/page | [reddit-trending.md](endpoints/reddit-trending.md) |
 
 ### YouTube
 

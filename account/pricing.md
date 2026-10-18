@@ -168,7 +168,18 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 |----------|-------|
 | Search Posts | $0.003/request |
 | Search Comments | $0.003/page |
-| Search Users | $0.003/request |
+| Search Users | $0.003/page |
+| Search Subreddits | $0.003/page |
+| Post Details | $0.003/request |
+| Post Comments | $0.003/page |
+| Post Crossposts | $0.003/request |
+| User Profile | $0.003/request |
+| User Posts | $0.003/page |
+| User Comments | $0.003/page |
+| Subreddit Details | $0.003/request |
+| Subreddit Posts | $0.003/page |
+| Subreddit Rules | $0.003/request |
+| Trending Posts | $0.003/page |
 
 <h3 class="flex gap-x-2 items-center"><img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=32" alt="YouTube" width="16" height="16"> YouTube</h3>
 
@@ -226,6 +237,7 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 - You are only charged for **answered requests**: 2xx responses, plus 404s, Instagram's `403` with code `private_account` or `limited_account`, and a `400` for an Instagram post URL or code that Instagram itself rejects as invalid (each a definitive answer about what you asked for, billed as one request whatever `pages` you set)
 - Other failed requests (4xx, 5xx) are not billed
 - For multi-page endpoints (most Twitter and Facebook endpoints, Reddit Comments, YouTube, Instagram Posts, Instagram User Posts, Instagram User Followers, Instagram User Following, Instagram Post Comments, Instagram Comment Replies, Instagram Hashtag Posts, Truth Social User Posts, Bluesky (all paginated endpoints), Substack User Posts, Substack User Activity, Substack Notes, Substack Category Feed, TikTok Search Videos, TikTok Search Users, TikTok User Videos, TikTok User Likes, TikTok User Stories, TikTok User Followers, TikTok User Following, TikTok Video Comments, TikTok Comment Replies, TikTok Search Hashtags, TikTok Hashtag Videos, TikTok Music Videos, TikTok Playlist Videos, Web Search, Places Search, Place Reviews, Place Photos, Trustpilot Company Reviews), you are billed per page requested
+- Reddit Search Users, Search Subreddits, Post Comments, User Posts, User Comments, Subreddit Posts and Trending Posts are billed per page returned (at least one), so a result that runs out early costs less than the pages you asked for
 - [Batch requests](/docs/batch) are free — each item inside a batch bills under its own endpoint at the rates above, exactly as a direct call (items the batch never attempts are not billed; a failed item is billed only when the same direct call would be, such as a 404)
 - Charges accumulate and are billed when your balance reaches a threshold
 

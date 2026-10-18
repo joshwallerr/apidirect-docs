@@ -32,7 +32,7 @@ The response includes the current `page` number:
 
 Other endpoints use a `pages` parameter that fetches multiple pages in a single API call. This is useful for retrieving larger result sets without making multiple requests.
 
-**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit Comments, YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search, Places, Trustpilot Company Reviews, Bluesky (all paginated endpoints), Substack User Posts, User Activity, Notes and Category Feed
+**Endpoints using `pages`:** Twitter Posts, Facebook (all paginated endpoints), Reddit (Search Comments, Search Users, Search Subreddits, Post Comments, User Posts, User Comments, Subreddit Posts, Trending Posts), YouTube Videos, Instagram (posts, user posts, followers, following, post comments, comment replies, hashtag posts), TikTok Videos, Web Search, Places, Trustpilot Company Reviews, Bluesky (all paginated endpoints), Substack User Posts, User Activity, Notes and Category Feed
 
 ```bash
 # Fetch 3 pages of results in one call
@@ -67,6 +67,11 @@ The response includes the number of `pages` fetched:
 | Facebook Post Comments | `pages` | 20 |
 | Facebook Page Reels, Group Search | `pages` | 10 |
 | Reddit Comments | `pages` | 10 |
+| Reddit Search Users | `pages` | 4 |
+| Reddit Search Subreddits | `pages` | 10 |
+| Reddit Post Comments | `pages` | 10 |
+| Reddit User Posts, User Comments, Subreddit Posts | `pages` | 40 |
+| Reddit Trending Posts | `pages` | 20 |
 | YouTube Videos | `pages` | 20 |
 | YouTube Channels | `pages` | 20 |
 | YouTube Comments | `pages` | 20 |
