@@ -114,3 +114,7 @@ print(response.json())
   }
 }
 ```
+
+## Notes
+
+- A tweet from a protected account returns `403` with code `private_account`.
