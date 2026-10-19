@@ -89,10 +89,10 @@ Prices range from **$0.002 to $0.01 per request** depending on the endpoint.
 
 | Endpoint | Price |
 |----------|-------|
-| Search Posts | $0.006/request |
+| Search Posts | $0.006/page |
 | Search Users | $0.006/request |
 | User Profile | $0.006/request |
-| User Posts | $0.006/request |
+| User Posts | $0.006/page |
 
 <h3 class="flex gap-x-2 items-center"><img src="https://www.google.com/s2/favicons?domain=truthsocial.com&sz=32" alt="Truth Social" width="16" height="16"> Truth Social</h3>
 

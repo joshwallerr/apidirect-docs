@@ -8,7 +8,7 @@ Get a user's recent posts (their feed) on Threads by username. Returns post text
 GET /v1/threads/user/posts
 ```
 
-**Price:** $0.006 per request
+**Price:** $0.006 per page
 **Free tier:** 50 requests/month
 
 ## Parameters
@@ -16,7 +16,8 @@ GET /v1/threads/user/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `username` | Yes | Threads username, with or without leading @ (max 100 characters) |
-| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
+| `pages` | No | Number of pages to fetch, 1-60 (default: 1). Each page returns up to about 35 posts, newest first; you are billed per page returned. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -58,6 +59,7 @@ GET /v1/threads/user/posts
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
 | `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
 | `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
+| `pages` | integer | Number of pages returned |
 | `count` | integer | Number of results returned |
 
 ## Example Request
@@ -65,7 +67,7 @@ GET /v1/threads/user/posts
 ### cURL
 
 ```bash
-curl "https://apidirect.io/v1/threads/user/posts?username=mrbeast" \
+curl "https://apidirect.io/v1/threads/user/posts?username=mrbeast&pages=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -77,7 +79,7 @@ import requests
 response = requests.get(
     "https://apidirect.io/v1/threads/user/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
-    params={"username": "mrbeast"}
+    params={"username": "mrbeast", "pages": 2}
 )
 print(response.json())
 ```
@@ -120,10 +122,11 @@ print(response.json())
       "code": "DPb1G6SEocH"
     }
   ],
-  "count": 25
+  "pages": 2,
+  "count": 66
 }
 ```
 
 ## Notes
 
-- Each request returns a single page of the user's most recent posts, newest first.
+- Posts are returned newest first, up to about 35 per page.

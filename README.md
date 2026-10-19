@@ -137,10 +137,10 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Substack, Facebook, I
 
 | Endpoint | Price | Docs |
 |----------|-------|------|
-| Search Posts | $0.006/request | [threads-posts.md](endpoints/threads-posts.md) |
+| Search Posts | $0.006/page | [threads-posts.md](endpoints/threads-posts.md) |
 | Search Users | $0.006/request | [threads-users.md](endpoints/threads-users.md) |
 | User Profile | $0.006/request | [threads-user.md](endpoints/threads-user.md) |
-| User Posts | $0.006/request | [threads-user-posts.md](endpoints/threads-user-posts.md) |
+| User Posts | $0.006/page | [threads-user-posts.md](endpoints/threads-user-posts.md) |
 
 ### Truth Social
 

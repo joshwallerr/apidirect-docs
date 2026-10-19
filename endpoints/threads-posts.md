@@ -8,7 +8,7 @@ Search Threads posts by keyword. Returns post text, engagement metrics (likes, r
 GET /v1/threads/posts
 ```
 
-**Price:** $0.006 per request
+**Price:** $0.006 per page
 **Free tier:** 50 requests/month
 
 ## Parameters
@@ -16,7 +16,8 @@ GET /v1/threads/posts
 | Parameter | Required | Description |
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
-| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per request to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
+| `pages` | No | Number of pages to fetch, 1-200 (default: 1). The first page returns about 20 posts and later pages about 10; you are billed per page returned. |
+| `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
 
@@ -57,6 +58,7 @@ GET /v1/threads/posts
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
 | `posts[].sentiment.emotional_intensity` | integer | Overall emotional intensity on a scale of 0-10. |
 | `posts[].sentiment.polarity` | string | Overall sentiment polarity: `positive`, `negative`, or `neutral`. |
+| `pages` | integer | Number of pages returned |
 | `count` | integer | Number of results returned |
 
 ## Example Request
@@ -64,7 +66,7 @@ GET /v1/threads/posts
 ### cURL
 
 ```bash
-curl "https://apidirect.io/v1/threads/posts?query=technology" \
+curl "https://apidirect.io/v1/threads/posts?query=technology&pages=2" \
   -H "X-API-Key: YOUR_API_KEY"
 ```
 
@@ -76,7 +78,7 @@ import requests
 response = requests.get(
     "https://apidirect.io/v1/threads/posts",
     headers={"X-API-Key": "YOUR_API_KEY"},
-    params={"query": "technology"}
+    params={"query": "technology", "pages": 2}
 )
 print(response.json())
 ```
@@ -118,6 +120,7 @@ print(response.json())
       "code": "DaqCqtWHdiU"
     }
   ],
-  "count": 25
+  "pages": 2,
+  "count": 30
 }
 ```
