@@ -69,7 +69,7 @@ The response includes the number of `pages` fetched:
 | Reddit Comments | `pages` | 10 |
 | Reddit Search Users | `pages` | 4 |
 | Reddit Search Subreddits | `pages` | 10 |
-| Reddit Post Comments | `pages` | 10 |
+| Reddit Post Comments | `pages` | 80 |
 | Reddit User Posts, User Comments, Subreddit Posts | `pages` | 40 |
 | Reddit Trending Posts | `pages` | 20 |
 | YouTube Videos | `pages` | 20 |

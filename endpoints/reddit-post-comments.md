@@ -18,7 +18,7 @@ GET /v1/reddit/post/comments
 | `url` | One required | Reddit post URL, e.g. `https://www.reddit.com/r/Python/comments/1wwv97o/my_python_magic_is_gone/` or `https://redd.it/1wwv97o` (max 500 characters). Provide exactly one of `url` or `post_id`. |
 | `post_id` | One required | Reddit post ID, e.g. `1wwv97o` (a `t3_` prefix is accepted). Provide exactly one of `url` or `post_id`. |
 | `sort_by` | No | Sort order: `top`, `best` (Reddit's default order), `most_recent`, `controversial`, `oldest`, or `qa` (Q&A) (default: `top`) |
-| `pages` | No | Number of pages to fetch, 1-10 (default: 1). Each page returns up to 50 comments. |
+| `pages` | No | Number of pages to fetch, 1-80 (default: 1). Each page returns up to 50 comments. |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
 
 ## Response Fields
