@@ -19,6 +19,7 @@ Search real-time data across LinkedIn, Twitter/X, Bluesky, Substack, Facebook, I
 - [Introduction](getting-started/introduction.md) — API Direct is a pay-as-you-go API that lets you search real-time data across social media and news through a single, unified interface.
 - [Quickstart](getting-started/quickstart.md) — Get up and running with API Direct in three steps.
 - [Authentication](getting-started/authentication.md) — All API requests require authentication using an API key passed in the `X-API-Key` header.
+- [Pay with x402](getting-started/x402.md) — Call any endpoint without an account or API key, and pay per request in USDC on Base with x402, the open HTTP payment protocol for agents.
 
 ## Core Concepts
 
