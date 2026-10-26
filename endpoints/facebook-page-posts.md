@@ -49,6 +49,9 @@ GET /v1/facebook/page/posts
 | `posts[].image_url` | string/null | URL to attached image, if any |
 | `posts[].video` | string/null | URL to attached video, if any |
 | `posts[].external_url` | string/null | External link shared in the post, if any |
+| `posts[].ai_label` | object | Facebook's "AI content" label. Both values are `null` when the post has no label |
+| `posts[].ai_label.is_detected_as_ai_generated` | boolean/null | Meta detected the post as AI-generated |
+| `posts[].ai_label.is_self_disclosed_as_ai_generated` | boolean/null | The creator labelled the post as AI-generated |
 | `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
@@ -109,6 +112,7 @@ print(response.json())
       "image_url": "https://scontent.xx.fbcdn.net/v/t39.30808-6/472918_..._n.jpg",
       "video": null,
       "external_url": null,
+      "ai_label": {"is_detected_as_ai_generated": null, "is_self_disclosed_as_ai_generated": null},
       "sentiment": {
         "emotions": {
           "joy": 40,
