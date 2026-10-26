@@ -1,6 +1,6 @@
 # YouTube Video Details
 
-Get detailed information about a YouTube video by URL or video ID. Returns title, full description, channel name and ID, publish date, duration, view count, category, keywords, and thumbnail.
+Get detailed information about a YouTube video by URL or video ID. Returns title, full description, channel name and ID, publish date, duration, view count, category, keywords, thumbnail, and YouTube's AI disclosure label (Made with AI or Auto-dubbed).
 
 ## Endpoint
 
@@ -36,6 +36,11 @@ GET /v1/youtube/video
 | `video.is_live` | boolean | Whether the video is a live stream |
 | `video.keywords` | array | The video's tags |
 | `video.thumbnail` | string | URL to the highest resolution thumbnail |
+| `video.ai_label` | object/null | YouTube's "How this content was made" disclosure. `null` in the rare case it can't be determined for a request |
+| `video.ai_label.label` | string/null | The label YouTube shows: `"Made with AI"` or `"Auto-dubbed"`, or `null` if none |
+| `video.ai_label.text` | string/null | The explanation YouTube shows with the label |
+| `video.ai_label.is_altered_or_synthetic` | boolean | The creator declared realistic altered or synthetic (AI) content |
+| `video.ai_label.is_auto_dubbed` | boolean | YouTube machine-translated the audio. Not an AI-content label |
 
 If the video does not exist, the endpoint returns a `404` with `code: "video_not_found"`.
 
@@ -86,7 +91,8 @@ curl "https://apidirect.io/v1/youtube/video?url=dQw4w9WgXcQ" \
     "type": "NORMAL",
     "is_live": false,
     "keywords": ["rick astley", "Never Gonna Give You Up", "rick roll"],
-    "thumbnail": "https://i.ytimg.com/vi_webp/dQw4w9WgXcQ/maxresdefault.webp"
+    "thumbnail": "https://i.ytimg.com/vi_webp/dQw4w9WgXcQ/maxresdefault.webp",
+    "ai_label": {"label": null, "text": null, "is_altered_or_synthetic": false, "is_auto_dubbed": false}
   }
 }
 ```
@@ -95,3 +101,4 @@ curl "https://apidirect.io/v1/youtube/video?url=dQw4w9WgXcQ" \
 
 - Works for regular videos, Shorts, and live streams alike.
 - For live streams, `is_live` is `true` and `duration` reflects the elapsed stream time so far.
+- An AI-labelled video returns `"ai_label": {"label": "Made with AI", "text": "Sounds or visuals were altered or fully generated.", "is_altered_or_synthetic": true, "is_auto_dubbed": false}`.
