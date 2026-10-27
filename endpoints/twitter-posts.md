@@ -48,6 +48,9 @@ GET /v1/twitter/posts
 | `posts[].is_quote` | boolean | Whether the tweet is a quote tweet |
 | `posts[].hashtags` | string[] | Hashtags used in the tweet |
 | `posts[].user_mentions` | string[] | Usernames mentioned in the tweet |
+| `posts[].ai_label` | object/null | X's "Made with AI" label. `null` on the rare results where it can't be read |
+| `posts[].ai_label.has_ai_generated_media` | boolean | `true` if X labels the tweet "Made with AI" |
+| `posts[].ai_label.detection_source` | string/null | How the label was applied: `"UserDeclared"` (the creator added it) or `"C2paClient"` (X detected it from the file). `null` if there is no label |
 | `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
@@ -108,6 +111,7 @@ print(response.json())
       "is_quote": false,
       "hashtags": ["AI", "MachineLearning"],
       "user_mentions": ["OpenAI"],
+      "ai_label": {"has_ai_generated_media": false, "detection_source": null},
       "sentiment": {
         "emotions": {
           "joy": 40,
