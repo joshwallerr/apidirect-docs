@@ -51,9 +51,11 @@ GET /v1/threads/user/posts
 | `posts[].mentions` | array | Usernames mentioned in the post |
 | `posts[].carousel_media` | array | Slides for carousel posts (`media_id`, `is_video`, `image_url`, `video_url`, `width`, `height`); empty otherwise |
 | `posts[].link_preview` | object \| null | Link preview for posts sharing a URL (`url`, `display_url`, `title`, `description`, `image_url`, `favicon_url`), or null |
-| `posts[].quoted_post` | object \| null | The embedded quoted/reposted post (same post shape), or null |
+| `posts[].quoted_post` | object \| null | The embedded quoted/reposted post (same post shape, without `ai_label`), or null |
 | `posts[].post_id` | string | Threads post ID |
 | `posts[].code` | string | Post shortcode (used in the post URL) |
+| `posts[].ai_label` | object | Threads' AI label. Not included on `quoted_post` |
+| `posts[].ai_label.detection_method` | string | How Threads applied the label, for example `"SELF_DISCLOSURE_FLOW"` (the creator labelled the post), `"C2PA_METADATA"` (detected from the file), or `"NONE"` (no label) |
 | `posts[].sentiment` | object/null | Emotion analysis results. Only present when `get_sentiment=true`. Returns `null` if analysis fails. |
 | `posts[].sentiment.emotions` | object | Plutchik emotion scores (0-100) for: `joy`, `trust`, `fear`, `surprise`, `sadness`, `disgust`, `anger`, `anticipation`. |
 | `posts[].sentiment.dominant_emotion` | string | The emotion with the highest score. |
@@ -119,7 +121,8 @@ print(response.json())
       "link_preview": null,
       "quoted_post": null,
       "post_id": "3736813887196137223",
-      "code": "DPb1G6SEocH"
+      "code": "DPb1G6SEocH",
+      "ai_label": {"detection_method": "NONE"}
     }
   ],
   "pages": 2,
