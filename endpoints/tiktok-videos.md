@@ -17,7 +17,7 @@ GET /v1/tiktok/videos
 |-----------|----------|-------------|
 | `query` | Yes | Search keyword (max 500 characters) |
 | `pages` | No | Number of pages to fetch, 1-10 (default: 1) |
-| `region` | No | 2-letter region code (e.g. `us`, `gb`, `jp`) |
+| `region` | No | Country to search in, as an [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code (e.g. `us`, `gb`, `jp`; use `gb` for the UK, not `uk`). |
 | `publish_time` | No | Time filter: `0`=ALL, `1`=24h, `7`=week, `30`=month, `90`=3months, `180`=6months (default: 0) |
 | `sort_by` | No | Sort order: `relevance`, `most_recent`, `most_liked` (default: relevance) |
 | `get_sentiment` | No | Set to `true` to add AI emotion analysis (Plutchik's Wheel) to each result. Adds +$0.001 per page to the cost. Returns emotion scores, dominant emotion, intensity, and polarity. |
